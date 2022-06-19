@@ -1,1 +1,1 @@
-Official Website Of IEEE Computer Society Kerala Chapter.
+Official Website of the IEEE Computer Society Kerala Chapter.
