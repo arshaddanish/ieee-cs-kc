@@ -1,545 +1,68 @@
-<%- include ("partials/header"); %>
+<%- include ("partials/head"); %>
+	<%- include ("partials/navbar"); %>
 
-	<body
-		class="home page-template-default page page-id-238 woocommerce-no-js wpb-js-composer js-comp-ver-5.6 vc_responsive">
-		<!-- <div id="loading">
-			<div class="loader">
-				<div class="loader__bar"></div>
-				<div class="loader__bar"></div>
-				<div class="loader__bar"></div>
-				<div class="loader__bar"></div>
-				<div class="loader__bar"></div>
-				<div class="loader__ball"></div>
-			</div>
-		</div> -->
-		<div id="page" class="site ">
-			<header id="rs-header" class="single-header header-style1">
-				<div class="header-inner  menu-sticky">
-					<div class="menu-area">
-						<div class="container-fluid">
-							<div class="row-table">
-								<div class="col-cell header-logo">
-									<div class="logo-area"> <a href="index.html" rel="home"><img style="max-height: 62px"
-												src="images/cs-logo.png" alt="Finoptis Business WordPress Theme"></a></div>
-									<div class="logo-area sticky-logo"> <a href="index.html" rel="home"><img src="images/cs-logo.png"
-												alt="Finoptis Business WordPress Theme"></a></div>
-								</div>
-								<div class="col-cell menu-responsive">
-									<nav class="nav navbar">
-										<div class="navbar-menu">
-											<div class="menu-main-menu-container">
-												<ul id="primary-menu-single" class="menu">
-													<li id="menu-item-2555"
-														class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-238 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-2555">
-														<a href="/">Home</a>
-													</li>
-													<li id="menu-item-2210"
-														class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2210">
-														<a href="#about">About</a>
-														<ul class="sub-menu">
-															<li id="menu-item-1803"
-																class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1803"><a
-																	href="https://www.ieee.org/">IEEE</a></li>
-															<li id="menu-item-1886"
-																class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1886"><a
-																	href="https://www.computer.org/">IEEE Computer Society</a></li>
-															<li id="menu-item-1886"
-																class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1886"><a
-																	href="/#about">IEEE Computer Society Kerala Chapter</a></li>
-															<li id="menu-item-1886"
-																class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1886"><a
-																	href="https://ieeekerala.org/">IEEE Kerala Section</a></li>
-														</ul>
-													</li>
-													<li id="menu-item-2180"
-														class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2180">
-														<a href="#">Office Bearers</a>
-														<ul class="sub-menu">
-															<li id="menu-item-2054"
-																class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2054"><a
-																	href="services/index.html">Present Officers | 2022</a></li>
-															<li id="menu-item-2116"
-																class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2116"><a
-																	href="services-two/index.html">Past Officers</a>
-																<ul class="sub-menu">
-																	<li id="menu-item-2054"
-																		class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2054"><a
-																			href="services/index.html">2021</a></li>
-																	<li id="menu-item-2054"
-																		class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2054"><a
-																			href="services/index.html">2020</a></li>
-																	<li id="menu-item-2054"
-																		class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2054"><a
-																			href="services/index.html">2019</a></li>
-																	<li id="menu-item-2054"
-																		class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2054"><a
-																			href="services/index.html">2018</a></li>
-																	<li id="menu-item-2054"
-																		class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2054"><a
-																			href="services/index.html">2017</a></li>
-																	<li id="menu-item-2054"
-																		class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2054"><a
-																			href="services/index.html">2016</a></li>
-																	<li id="menu-item-2054"
-																		class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2054"><a
-																			href="services/index.html">2015</a></li>
-																</ul>
-															</li>
-														</ul>
-													</li>
-													<li id="menu-item-2500"
-														class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2500">
-														<a href="#">Techthreads</a>
-														<ul class="sub-menu">
-															<li id="menu-item-2171"
-																class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2171"><a
-																	href="blog/index.html">Techthreads 2022</a>
-																<ul class="sub-menu">
-																	<li id="menu-item-2172"
-																		class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2172"><a
-																			href="blog-2-column/index.html">Edition 1</a></li>
-																</ul>
-															</li>
-															<li id="menu-item-2171"
-																class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2171"><a
-																	href="blog/index.html">Techthreads 2021</a>
-																<ul class="sub-menu">
-																	<li id="menu-item-2172"
-																		class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2172"><a
-																			href="blog-2-column/index.html">Quarter 1</a></li>
-																	<li id="menu-item-2172"
-																		class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2172"><a
-																			href="blog-2-column/index.html">Quarter 2</a></li>
-																	<li id="menu-item-2172"
-																		class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2172"><a
-																			href="blog-2-column/index.html">Quarter 3</a></li>
-																	<li id="menu-item-2172"
-																		class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2172"><a
-																			href="blog-2-column/index.html">Quarter 4</a></li>
-																</ul>
-															</li>
-															<li id="menu-item-2171"
-																class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2171"><a
-																	href="blog/index.html">Previous Blogs</a>
-																<ul class="sub-menu">
-																	<li id="menu-item-2172"
-																		class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2172"><a
-																			href="blog-2-column/index.html">2021</a></li>
-																	<li id="menu-item-2172"
-																		class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2172"><a
-																			href="blog-2-column/index.html">2020</a></li>
-																</ul>
-															</li>
-														</ul>
-													</li>
-													<li id="menu-item-2500"
-														class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2500">
-														<a href="#">Newsletters</a>
-														<ul class="sub-menu">
-															<li id="menu-item-2171"
-																class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2171"><a
-																	href="blog/index.html">2022</a>
-																<ul class="sub-menu">
-																	<li id="menu-item-2172"
-																		class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2172"><a
-																			href="compile/2022/q1/compile.html">Quarter 1</a></li>
-																</ul>
-															</li>
-															<li id="menu-item-2171"
-																class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2171"><a
-																	href="blog/index.html">2021</a>
-																<ul class="sub-menu">
-																	<li id="menu-item-2172"
-																		class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2172"><a
-																			href="compile/2021/q1/compile.html">Quarter 1</a></li>
-																	<li id="menu-item-2172"
-																		class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2172"><a
-																			href="compile/2021/q2/compile.html">Quarter 2</a></li>
-																	<li id="menu-item-2172"
-																		class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2172"><a
-																			href="compile/2021/q3/compile.html">Quarter 3</a></li>
-																	<li id="menu-item-2172"
-																		class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2172"><a
-																			href="compile/2021/q4/compile.html">Quarter 4</a></li>
-																</ul>
-															</li>
-															<li id="menu-item-2171"
-																class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2171"><a
-																	href="blog/index.html">2020</a>
-																<ul class="sub-menu">
-																	<li id="menu-item-2172"
-																		class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2172"><a
-																			href="compile/2020/e1/e1.html">Quarter 1</a></li>
-																	<li id="menu-item-2172"
-																		class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2172"><a
-																			href="compile/2020/e2/e2.html">Quarter 2</a></li>
-																	<li id="menu-item-2172"
-																		class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2172"><a
-																			href="compile/2020/e3/e3.html">Quarter 3</a></li>
-																	<li id="menu-item-2172"
-																		class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2172"><a
-																			href="compile/2020/e4/e4.html">Quarter 4</a></li>
-																</ul>
-															</li>
-															<li id="menu-item-2171"
-																class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2171"><a
-																	href="blog/index.html">2019</a>
-																<ul class="sub-menu">
-																	<li id="menu-item-2172"
-																		class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2172"><a
-																			href="compile/2019/e1/e1.html">Quarter 1</a></li>
-																	<li id="menu-item-2172"
-																		class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2172"><a
-																			href="compile/2019/e2/e2.html">Quarter 2</a></li>
-																	<li id="menu-item-2172"
-																		class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2172"><a
-																			href="compile/2019/e4/e4.html">Quarter 4</a></li>
-																</ul>
-															</li>
-															<li id="menu-item-2171"
-																class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2171"><a
-																	href="blog/index.html">2018</a>
-																<ul class="sub-menu">
-																	<li id="menu-item-2172"
-																		class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2172"><a
-																			href="compile/2018/e1/e1.html">Quarter 1</a></li>
-																	<li id="menu-item-2172"
-																		class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2172"><a
-																			href="compile/2018/e2/e2.html">Quarter 2</a></li>
-																	<li id="menu-item-2172"
-																		class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2172"><a
-																			href="compile/2018/e3/e3.html">Quarter 3</a></li>
-																	<li id="menu-item-2172"
-																		class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2172"><a
-																			href="compile/2018/e4/e4.html">Quarter 4</a></li>
-																</ul>
-															</li>
-														</ul>
-													</li>
-													<li id="menu-item-2555"
-														class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-458">
-														<a href="/#updates">Updates</a>
-													</li>
-													<li id="menu-item-2555"
-														class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-458">
-														<a href="/#events">Events</a>
-													</li>
-													<li id="menu-item-2555"
-														class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-458">
-														<a href="/">CS SB Chapters</a>
-													</li>
-												</ul>
-											</div>
-										</div>
-										<div class='nav-link-container mobile-menu-link'> <a href='#' class="nav-menu-link"> <span
-													class="hamburger1"></span> <span class="hamburger2"></span> <span class="hamburger3"></span>
-											</a></div>
-									</nav>
-									<nav class="nav-container mobile-menu-container">
-										<ul class="sidenav">
-											<li class='nav-link-container'> <a href='#' class="nav-menu-link"> <span
-														class="hamburger1"></span>
-													<span class="hamburger3"></span> </a></li>
-											<li>
-												<div class="menu-main-menu-container">
-													<ul id="primary-menu-single2" class="menu">
-														<li
-															class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-238 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-2555">
-															<a href="/">Home</a>
-															<ul class="sub-menu">
-																<li
-																	class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-238 current_page_item menu-item-2556">
-																	<a href="index.html">Home 1</a>
-																</li>
-																<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-241"><a
-																		href="home-2/index.html">Home 2</a></li>
-																<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3329"><a
-																		href="home-3/index.html">Home 3</a></li>
-																<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3810"><a
-																		href="home-onepage/index.html">Home Onepage</a></li>
-															</ul>
-														</li>
-														<li
-															class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2210">
-															<a href="#">About Us</a>
-															<ul class="sub-menu">
-																<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1803"><a
-																		href="about-us/index.html">About Us One</a></li>
-																<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1886"><a
-																		href="about-us-two/index.html">About Us Two</a></li>
-															</ul>
-														</li>
-														<li
-															class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2180">
-															<a href="#">Services</a>
-															<ul class="sub-menu">
-																<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2054"><a
-																		href="services/index.html">Services One</a></li>
-																<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2116"><a
-																		href="services-two/index.html">Services Two</a></li>
-																<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2131"><a
-																		href="services-three/index.html">Services Three</a></li>
-																<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2692"><a
-																		href="services-four/index.html">Services Four</a></li>
-																<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3463"><a
-																		href="service/business-consulting/index.html">Services Single</a></li>
-															</ul>
-														</li>
-														<li
-															class="mega four-col menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2390">
-															<a href="#">Pages</a>
-															<ul class="sub-menu">
-																<li
-																	class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2324">
-																	<a href="#">Header</a>
-																	<ul class="sub-menu">
-																		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2329">
-																			<a href="header-style-1/index.html">Header Style 1</a>
-																		</li>
-																		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2328">
-																			<a href="header-style-2/index.html">Header Style 2</a>
-																		</li>
-																		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2327">
-																			<a href="header-style-3/index.html">Header Style 3</a>
-																		</li>
-																		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2326">
-																			<a href="header-style-4/index.html">Header Style 4</a>
-																		</li>
-																		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2325">
-																			<a href="header-style-5/index.html">Header Style 5</a>
-																		</li>
-																	</ul>
-																</li>
-																<li
-																	class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2630">
-																	<a href="#">Team</a>
-																	<ul class="sub-menu">
-																		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2627">
-																			<a href="team-one/index.html">Team One</a>
-																		</li>
-																		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2629">
-																			<a href="team-two/index.html">Team Two</a>
-																		</li>
-																		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2628">
-																			<a href="team-three/index.html">Team Three</a>
-																		</li>
-																		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2626">
-																			<a href="team-four/index.html">Team Four</a>
-																		</li>
-																		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2625">
-																			<a href="team-five/index.html">Team Five</a>
-																		</li>
-																	</ul>
-																</li>
-																<li
-																	class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2382">
-																	<a href="#">Projects</a>
-																	<ul class="sub-menu">
-																		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2383">
-																			<a href="project-2-column/index.html">Project 2 Column</a>
-																		</li>
-																		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2388">
-																			<a href="project-3-column/index.html">Project 3 Column</a>
-																		</li>
-																		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2497">
-																			<a href="project-4-column/index.html">Project 4 Column</a>
-																		</li>
-																		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2413">
-																			<a href="project-full-width/index.html">Project Full Width</a>
-																		</li>
-																		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2406">
-																			<a href="portfolio/evaluating-the-use-of-the-web-tourism-marketing/index.html">Project
-																				Single</a>
-																		</li>
-																	</ul>
-																</li>
-																<li
-																	class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2867">
-																	<a href="#">Others</a>
-																	<ul class="sub-menu">
-																		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2973">
-																			<a href="product/coffee-maker/index.html">Shop Single</a>
-																		</li>
-																		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2968">
-																			<a href="cart/index.html">Cart</a>
-																		</li>
-																		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2969">
-																			<a href="checkout/index.html">Checkout</a>
-																		</li>
-																		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2970">
-																			<a href="my-account/index.html">My account</a>
-																		</li>
-																		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3748">
-																			<a href="404.html">404</a>
-																		</li>
-																	</ul>
-																</li>
-															</ul>
-														</li>
-														<li
-															class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3753">
-															<a href="#">Shop</a>
-															<ul class="sub-menu">
-																<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3752"><a
-																		href="shop/index.html">Shop</a></li>
-																<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3750"><a
-																		href="shop-2-column-grid/index.html">Shop 2 Column Grid</a></li>
-																<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3751"><a
-																		href="shop-3-column-grid/index.html">Shop 3 Column Grid</a></li>
-																<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3749"><a
-																		href="shop-4-column-grid/index.html">Shop 4 Column Grid</a></li>
-															</ul>
-														</li>
-														<li
-															class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2500">
-															<a href="#">Blog</a>
-															<ul class="sub-menu">
-																<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2171"><a
-																		href="blog/index.html">Blog</a></li>
-																<li
-																	class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2174">
-																	<a href="#">Blog Grid</a>
-																	<ul class="sub-menu">
-																		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2172">
-																			<a href="blog-2-column/index.html">Blog 2 Column</a>
-																		</li>
-																		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2182">
-																			<a href="blog-3-column/index.html">Blog 3 Column</a>
-																		</li>
-																	</ul>
-																</li>
-																<li
-																	class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2175">
-																	<a href="#">Blog Sidebar</a>
-																	<ul class="sub-menu">
-																		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2193">
-																			<a href="blog-left-sidebar-2/index.html">Blog Left Sidebar</a>
-																		</li>
-																		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2192">
-																			<a href="blog-right-sidebar/index.html">Blog Right Sidebar</a>
-																		</li>
-																	</ul>
-																</li>
-																<li
-																	class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2501">
-																	<a href="#">Single Post</a>
-																	<ul class="sub-menu">
-																		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2503">
-																			<a href="business-needs-customers/index.html">Post With Left Sidebar</a>
-																		</li>
-																		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2505">
-																			<a href="big-ideas-for-business/index.html">Post with Right Sidebar</a>
-																		</li>
-																		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2502">
-																			<a href="small-business-trends/index.html">Full Width Post</a>
-																		</li>
-																	</ul>
-																</li>
-															</ul>
-														</li>
-														<li
-															class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-458">
-															<a href="#contact">Contact Us</a>
-															<ul class="sub-menu">
-																<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2912"><a
-																		href="contact/index.html">Contact 1</a></li>
-																<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2913"><a
-																		href="contact-2/index.html">Contact 2</a></li>
-																<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3067"><a
-																		href="contact-3/index.html">Contact 3</a></li>
-															</ul>
-														</li>
-													</ul>
-												</div>
-											</li>
-											<li class="social-icon-responsive">
-												<ul class="offcanvas_social">
-													<li> <a href="#" target="_blank"><span><i class="fa fa-facebook"></i></span></a></li>
-													<li> <a href="# " target="_blank"><span><i class="fa fa-twitter"></i></span></a></li>
-													<li> <a href="# " target="_blank"><span><i class="fa fa-rss"></i></span></a></li>
-													<li> <a href="# " target="_blank"><span><i class="fa fa-linkedin"></i></span></a></li>
-													<li> <a href="# " target="_blank"><span><i class="fa fa-instagram"></i></span></a></li>
-												</ul>
-											</li>
-										</ul>
-									</nav>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</header>
-			<link href="https://fonts.googleapis.com/css?family=Poppins:600%2C800%2C900%7CMuli:600%2C400%7CRoboto:500"
-				rel="stylesheet" property="stylesheet" type="text/css" media="all">
-			<div id="rev_slider_4_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-source="gallery"
-				style="margin:0px auto;background:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
-				<div id="rev_slider_4_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.8.1">
-					<ul>
-						<li data-index="rs-6" data-transition="fade" data-slotamount="default" data-hideafterloop="0"
-							data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300"
-							data-thumb="https://rstheme.com/products/wordpress/finoptis/wp-content/uploads/2018/11/2-1-100x50.jpg"
-							data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3=""
-							data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10=""
-							data-description=""> <img src="wp-content/uploads/2018/11/2-1.jpg" alt="" title="2" width="1920"
-								height="850" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
-								class="rev-slidebg" data-no-retina>
-							<div class="tp-caption   tp-resizeme" id="slide-6-layer-1" data-x="['left','left','left','center']"
-								data-hoffset="['50','50','42','0']" data-y="['middle','middle','middle','middle']"
-								data-voffset="['-139','-139','-89','-67']" data-fontsize="['40','40','35','30']"
-								data-lineheight="['50','50','45','35']" data-letterspacing="['-2','-2','-1','-1']" data-width="none"
-								data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
-								data-frames='[{"delay":1080,"speed":1000,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-								data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
-								data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-								style="z-index: 5; white-space: nowrap; font-size: 40px; line-height: 50px; font-weight: 600; color: #28406d; letter-spacing: -2px;font-family:Poppins;text-transform:uppercase;">
-								IEEE Computer Society</div>
-							<div class="tp-caption   tp-resizeme" id="slide-6-layer-7" data-x="['left','left','left','center']"
-								data-hoffset="['50','50','43','0']" data-y="['middle','middle','middle','middle']"
-								data-voffset="['-56','-56','-17','-10']" data-fontsize="['70','70','55','36']"
-								data-lineheight="['80','80','60','45']" data-fontweight="['800','800','900','900']"
-								data-letterspacing="['-2','-2','0','0']" data-width="none" data-height="none" data-whitespace="nowrap"
-								data-type="text" data-responsive_offset="on"
-								data-frames='[{"delay":1400,"split":"chars","splitdelay":0.05000000000000000277555756156289135105907917022705078125,"speed":1390,"split_direction":"forward","frame":"0","from":"y:[-100%];z:0;rZ:35deg;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-								data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
-								data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-								style="z-index: 6; white-space: nowrap; font-size: 70px; line-height: 80px; font-weight: 800; color: #28406d; letter-spacing: -2px;font-family:Poppins;text-transform:capitalize;">
-								IEEE Computer Society</div>
-							<div class="tp-caption   tp-resizeme" id="slide-6-layer-8" data-x="['left','left','left','center']"
-								data-hoffset="['50','50','50','0']" data-y="['top','top','top','top']"
-								data-voffset="['404','404','440','442']" data-fontsize="['18','18','16','12']"
-								data-lineheight="['30','30','22','19']" data-fontweight="['600','600','400','600']" data-width="none"
-								data-height="none" data-whitespace="nowrap" data-visibility="['on','on','off','off']" data-type="text"
-								data-responsive_offset="on"
-								data-frames='[{"delay":1840,"speed":2460,"frame":"0","from":"x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;","mask":"x:[100%];y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-								data-textAlign="['inherit','inherit','inherit','center']" data-paddingtop="[0,0,0,0]"
-								data-paddingright="[0,0,0,]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,]"
-								style="z-index: 7; white-space: nowrap; font-size: 18px; line-height: 30px; font-weight: 600; color: #28406d; letter-spacing: 0px;font-family:Muli;">
-								The Community Of Technology Leaders.</div>
-							<a href="/#about">
-								<div class="tp-caption rev-btn rev-hiddenicon " id="slide-6-layer-5"
-									data-x="['left','left','left','center']" data-hoffset="['50','50','45','-1']"
-									data-y="['top','top','middle','middle']" data-voffset="['491','491','73','76']"
-									data-fontsize="['17','17','17','15']" data-letterspacing="['0','0','','']" data-width="none"
-									data-height="none" data-whitespace="nowrap" data-type="button" data-responsive_offset="on"
-									data-responsive="off"
-									data-frames='[{"delay":2110,"speed":2720,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(255,255,255);bg:rgb(40,64,109);bc:rgba(0,0,0,1);bs:solid;bw:0 0 0 0;"}]'
-									data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[18,18,16,16]"
-									data-paddingright="[40,40,30,36]" data-paddingbottom="[18,18,16,16]" data-paddingleft="[40,40,30,36]"
-									style="z-index: 8; white-space: nowrap; font-size: 17px; line-height: 17px; font-weight: 500; color: #000000; letter-spacing: 0px;font-family:Roboto;background-color:rgba(226,198,12,0.75);border-color:rgb(0,0,0);border-radius:30px 30px 30px 30px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">
-									About Us <i class="fa-icon-chevron-right"></i></div>
-							</a>
-						</li>
-					</ul>
-					<script>var htmlDiv = document.getElementById("rs-plugin-settings-inline-css"); var htmlDivCss = "";
-						if (htmlDiv) {
-							htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
-						} else {
-							var htmlDiv = document.createElement("div");
-							htmlDiv.innerHTML = "<style>" + htmlDivCss + "</style>";
-							document.getElementsByTagName("head")[0].appendChild(htmlDiv.childNodes[0]);
-						}</script>
-					<div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
-				</div>
+
+		<link href="https://fonts.googleapis.com/css?family=Poppins:600%2C800%2C900%7CMuli:600%2C400%7CRoboto:500"
+			rel="stylesheet" property="stylesheet" type="text/css" media="all">
+		<div id="rev_slider_4_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-source="gallery"
+			style="margin:0px auto;background:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
+			<div id="rev_slider_4_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.8.1">
+				<ul>
+					<li data-index="rs-6" data-transition="fade" data-slotamount="default" data-hideafterloop="0"
+						data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300"
+						data-thumb="https://rstheme.com/products/wordpress/finoptis/wp-content/uploads/2018/11/2-1-100x50.jpg"
+						data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3=""
+						data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10=""
+						data-description=""> <img src="wp-content/uploads/2018/11/2-1.jpg" alt="" title="2" width="1920"
+							height="850" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
+							class="rev-slidebg" data-no-retina>
+						<div class="tp-caption   tp-resizeme" id="slide-6-layer-1" data-x="['left','left','left','center']"
+							data-hoffset="['50','50','42','0']" data-y="['middle','middle','middle','middle']"
+							data-voffset="['-139','-139','-89','-67']" data-fontsize="['40','40','35','30']"
+							data-lineheight="['50','50','45','35']" data-letterspacing="['-2','-2','-1','-1']" data-width="none"
+							data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
+							data-frames='[{"delay":1080,"speed":1000,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+							data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+							data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+							style="z-index: 5; white-space: nowrap; font-size: 40px; line-height: 50px; font-weight: 600; color: #28406d; letter-spacing: -2px;font-family:Poppins;text-transform:uppercase;">
+							IEEE Computer Society</div>
+						<div class="tp-caption   tp-resizeme" id="slide-6-layer-7" data-x="['left','left','left','center']"
+							data-hoffset="['50','50','43','0']" data-y="['middle','middle','middle','middle']"
+							data-voffset="['-56','-56','-17','-10']" data-fontsize="['70','70','55','36']"
+							data-lineheight="['80','80','60','45']" data-fontweight="['800','800','900','900']"
+							data-letterspacing="['-2','-2','0','0']" data-width="none" data-height="none" data-whitespace="nowrap"
+							data-type="text" data-responsive_offset="on"
+							data-frames='[{"delay":1400,"split":"chars","splitdelay":0.05000000000000000277555756156289135105907917022705078125,"speed":1390,"split_direction":"forward","frame":"0","from":"y:[-100%];z:0;rZ:35deg;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+							data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+							data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+							style="z-index: 6; white-space: nowrap; font-size: 70px; line-height: 80px; font-weight: 800; color: #28406d; letter-spacing: -2px;font-family:Poppins;text-transform:capitalize;">
+							IEEE Computer Society</div>
+						<div class="tp-caption   tp-resizeme" id="slide-6-layer-8" data-x="['left','left','left','center']"
+							data-hoffset="['50','50','50','0']" data-y="['top','top','top','top']"
+							data-voffset="['404','404','440','442']" data-fontsize="['18','18','16','12']"
+							data-lineheight="['30','30','22','19']" data-fontweight="['600','600','400','600']" data-width="none"
+							data-height="none" data-whitespace="nowrap" data-visibility="['on','on','off','off']" data-type="text"
+							data-responsive_offset="on"
+							data-frames='[{"delay":1840,"speed":2460,"frame":"0","from":"x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;","mask":"x:[100%];y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+							data-textAlign="['inherit','inherit','inherit','center']" data-paddingtop="[0,0,0,0]"
+							data-paddingright="[0,0,0,]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,]"
+							style="z-index: 7; white-space: nowrap; font-size: 18px; line-height: 30px; font-weight: 600; color: #28406d; letter-spacing: 0px;font-family:Muli;">
+							The Community Of Technology Leaders.</div>
+						<a href="/#about">
+							<div class="tp-caption rev-btn rev-hiddenicon " id="slide-6-layer-5"
+								data-x="['left','left','left','center']" data-hoffset="['50','50','45','-1']"
+								data-y="['top','top','middle','middle']" data-voffset="['491','491','73','76']"
+								data-fontsize="['17','17','17','15']" data-letterspacing="['0','0','','']" data-width="none"
+								data-height="none" data-whitespace="nowrap" data-type="button" data-responsive_offset="on"
+								data-responsive="off"
+								data-frames='[{"delay":2110,"speed":2720,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(255,255,255);bg:rgb(40,64,109);bc:rgba(0,0,0,1);bs:solid;bw:0 0 0 0;"}]'
+								data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[18,18,16,16]"
+								data-paddingright="[40,40,30,36]" data-paddingbottom="[18,18,16,16]" data-paddingleft="[40,40,30,36]"
+								style="z-index: 8; white-space: nowrap; font-size: 17px; line-height: 17px; font-weight: 500; color: #000000; letter-spacing: 0px;font-family:Roboto;background-color:rgba(226,198,12,0.75);border-color:rgb(0,0,0);border-radius:30px 30px 30px 30px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">
+								About Us <i class="fa-icon-chevron-right"></i></div>
+						</a>
+					</li>
+				</ul>
 				<script>var htmlDiv = document.getElementById("rs-plugin-settings-inline-css"); var htmlDivCss = "";
 					if (htmlDiv) {
 						htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
@@ -548,644 +71,510 @@
 						htmlDiv.innerHTML = "<style>" + htmlDivCss + "</style>";
 						document.getElementsByTagName("head")[0].appendChild(htmlDiv.childNodes[0]);
 					}</script>
-				<script type="text/javascript">if (setREVStartSize !== undefined) setREVStartSize(
-						{ c: '#rev_slider_4_1', responsiveLevels: [1240, 1024, 778, 480], gridwidth: [1240, 1024, 778, 480], gridheight: [820, 768, 600, 500], sliderLayout: 'fullwidth' });
+				<div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+			</div>
+			<script>var htmlDiv = document.getElementById("rs-plugin-settings-inline-css"); var htmlDivCss = "";
+				if (htmlDiv) {
+					htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+				} else {
+					var htmlDiv = document.createElement("div");
+					htmlDiv.innerHTML = "<style>" + htmlDivCss + "</style>";
+					document.getElementsByTagName("head")[0].appendChild(htmlDiv.childNodes[0]);
+				}</script>
+			<script type="text/javascript">if (setREVStartSize !== undefined) setREVStartSize(
+					{ c: '#rev_slider_4_1', responsiveLevels: [1240, 1024, 778, 480], gridwidth: [1240, 1024, 778, 480], gridheight: [820, 768, 600, 500], sliderLayout: 'fullwidth' });
 
-					var revapi4,
-						tpj;
-					(function () {
-						if (!/loaded|interactive|complete/.test(document.readyState)) document.addEventListener("DOMContentLoaded", onLoad); else onLoad();
-						function onLoad() {
-							if (tpj === undefined) { tpj = jQuery; if ("off" == "on") tpj.noConflict(); }
-							if (tpj("#rev_slider_4_1").revolution == undefined) {
-								revslider_showDoubleJqueryError("#rev_slider_4_1");
-							} else {
-								revapi4 = tpj("#rev_slider_4_1").show().revolution({
-									sliderType: "standard",
-									jsFileLocation: "//rstheme.com/products/wordpress/finoptis/wp-content/plugins/revslider/public/assets/js/",
-									sliderLayout: "fullwidth",
-									dottedOverlay: "none",
-									delay: 9000,
-									navigation: {
-										keyboardNavigation: "off",
-										keyboard_direction: "horizontal",
-										mouseScrollNavigation: "off",
-										mouseScrollReverse: "default",
-										onHoverStop: "off",
-										touch: {
-											touchenabled: "on",
-											touchOnDesktop: "on",
-											swipe_threshold: 75,
-											swipe_min_touches: 1,
-											swipe_direction: "horizontal",
-											drag_block_vertical: false
-										}
-										,
-										arrows: {
-											style: "zeus",
-											enable: false,
-											hide_onmobile: true,
-											hide_under: 768,
-											hide_onleave: true,
-											hide_delay: 200,
-											hide_delay_mobile: 1200,
-											tmp: '<div class="tp-title-wrap">  	<div class="tp-arr-imgholder"></div> </div>',
-											left: {
-												h_align: "left",
-												v_align: "center",
-												h_offset: 20,
-												v_offset: 0
-											},
-											right: {
-												h_align: "right",
-												v_align: "center",
-												h_offset: 20,
-												v_offset: 0
-											}
-										}
-									},
-									responsiveLevels: [1240, 1024, 778, 480],
-									visibilityLevels: [1240, 1024, 778, 480],
-									gridwidth: [1240, 1024, 778, 480],
-									gridheight: [820, 768, 600, 500],
-									lazyType: "none",
-									shadow: 0,
-									spinner: "spinner0",
-									stopLoop: "off",
-									stopAfterLoops: -1,
-									stopAtSlide: -1,
-									shuffle: "off",
-									autoHeight: "off",
-									disableProgressBar: "on",
-									hideThumbsOnMobile: "off",
-									hideSliderAtLimit: 0,
-									hideCaptionAtLimit: 0,
-									hideAllCaptionAtLilmit: 0,
-									debugMode: false,
-									fallbacks: {
-										simplifyAll: "off",
-										nextSlideOnWindowFocus: "off",
-										disableFocusListener: false,
+				var revapi4,
+					tpj;
+				(function () {
+					if (!/loaded|interactive|complete/.test(document.readyState)) document.addEventListener("DOMContentLoaded", onLoad); else onLoad();
+					function onLoad() {
+						if (tpj === undefined) { tpj = jQuery; if ("off" == "on") tpj.noConflict(); }
+						if (tpj("#rev_slider_4_1").revolution == undefined) {
+							revslider_showDoubleJqueryError("#rev_slider_4_1");
+						} else {
+							revapi4 = tpj("#rev_slider_4_1").show().revolution({
+								sliderType: "standard",
+								jsFileLocation: "//rstheme.com/products/wordpress/finoptis/wp-content/plugins/revslider/public/assets/js/",
+								sliderLayout: "fullwidth",
+								dottedOverlay: "none",
+								delay: 9000,
+								navigation: {
+									keyboardNavigation: "off",
+									keyboard_direction: "horizontal",
+									mouseScrollNavigation: "off",
+									mouseScrollReverse: "default",
+									onHoverStop: "off",
+									touch: {
+										touchenabled: "on",
+										touchOnDesktop: "on",
+										swipe_threshold: 75,
+										swipe_min_touches: 1,
+										swipe_direction: "horizontal",
+										drag_block_vertical: false
 									}
-								});
-							}; /* END OF revapi call */
+									,
+									arrows: {
+										style: "zeus",
+										enable: false,
+										hide_onmobile: true,
+										hide_under: 768,
+										hide_onleave: true,
+										hide_delay: 200,
+										hide_delay_mobile: 1200,
+										tmp: '<div class="tp-title-wrap">  	<div class="tp-arr-imgholder"></div> </div>',
+										left: {
+											h_align: "left",
+											v_align: "center",
+											h_offset: 20,
+											v_offset: 0
+										},
+										right: {
+											h_align: "right",
+											v_align: "center",
+											h_offset: 20,
+											v_offset: 0
+										}
+									}
+								},
+								responsiveLevels: [1240, 1024, 778, 480],
+								visibilityLevels: [1240, 1024, 778, 480],
+								gridwidth: [1240, 1024, 778, 480],
+								gridheight: [820, 768, 600, 500],
+								lazyType: "none",
+								shadow: 0,
+								spinner: "spinner0",
+								stopLoop: "off",
+								stopAfterLoops: -1,
+								stopAtSlide: -1,
+								shuffle: "off",
+								autoHeight: "off",
+								disableProgressBar: "on",
+								hideThumbsOnMobile: "off",
+								hideSliderAtLimit: 0,
+								hideCaptionAtLimit: 0,
+								hideAllCaptionAtLilmit: 0,
+								debugMode: false,
+								fallbacks: {
+									simplifyAll: "off",
+									nextSlideOnWindowFocus: "off",
+									disableFocusListener: false,
+								}
+							});
+						}; /* END OF revapi call */
 
-						}; /* END OF ON LOAD FUNCTION */
-					}()); /* END OF WRAPPING FUNCTION */</script>
-				<script>var htmlDivCss = unescape("%23rev_slider_4_1%20.zeus.tparrows%20%7B%0A%20%20cursor%3Apointer%3B%0A%20%20min-width%3A70px%3B%0A%20%20min-height%3A70px%3B%0A%20%20position%3Aabsolute%3B%0A%20%20display%3Ablock%3B%0A%20%20z-index%3A100%3B%0A%20%20border-radius%3A50%25%3B%20%20%20%0A%20%20overflow%3Ahidden%3B%0A%20%20background%3Argba%280%2C0%2C0%2C0.1%29%3B%0A%7D%0A%0A%23rev_slider_4_1%20.zeus.tparrows%3Abefore%20%7B%0A%20%20font-family%3A%20%22revicons%22%3B%0A%20%20font-size%3A20px%3B%0A%20%20color%3Argb%28255%2C%20255%2C%20255%29%3B%0A%20%20display%3Ablock%3B%0A%20%20line-height%3A%2070px%3B%0A%20%20text-align%3A%20center%3B%20%20%20%20%0A%20%20z-index%3A2%3B%0A%20%20position%3Arelative%3B%0A%7D%0A%23rev_slider_4_1%20.zeus.tparrows.tp-leftarrow%3Abefore%20%7B%0A%20%20content%3A%20%22%5Ce824%22%3B%0A%7D%0A%23rev_slider_4_1%20.zeus.tparrows.tp-rightarrow%3Abefore%20%7B%0A%20%20content%3A%20%22%5Ce825%22%3B%0A%7D%0A%0A%23rev_slider_4_1%20.zeus%20.tp-title-wrap%20%7B%0A%20%20background%3Argba%280%2C0%2C0%2C0.5%29%3B%0A%20%20width%3A100%25%3B%0A%20%20height%3A100%25%3B%0A%20%20top%3A0px%3B%0A%20%20left%3A0px%3B%0A%20%20position%3Aabsolute%3B%0A%20%20opacity%3A0%3B%0A%20%20transform%3Ascale%280%29%3B%0A%20%20-webkit-transform%3Ascale%280%29%3B%0A%20%20%20transition%3A%20all%200.3s%3B%0A%20%20-webkit-transition%3Aall%200.3s%3B%0A%20%20-moz-transition%3Aall%200.3s%3B%0A%20%20%20border-radius%3A50%25%3B%0A%20%7D%0A%23rev_slider_4_1%20.zeus%20.tp-arr-imgholder%20%7B%0A%20%20width%3A100%25%3B%0A%20%20height%3A100%25%3B%0A%20%20position%3Aabsolute%3B%0A%20%20top%3A0px%3B%0A%20%20left%3A0px%3B%0A%20%20background-position%3Acenter%20center%3B%0A%20%20background-size%3Acover%3B%0A%20%20border-radius%3A50%25%3B%0A%20%20transform%3Atranslatex%28-100%25%29%3B%0A%20%20-webkit-transform%3Atranslatex%28-100%25%29%3B%0A%20%20%20transition%3A%20all%200.3s%3B%0A%20%20-webkit-transition%3Aall%200.3s%3B%0A%20%20-moz-transition%3Aall%200.3s%3B%0A%0A%20%7D%0A%23rev_slider_4_1%20.zeus.tp-rightarrow%20.tp-arr-imgholder%20%7B%0A%20%20%20%20transform%3Atranslatex%28100%25%29%3B%0A%20%20-webkit-transform%3Atranslatex%28100%25%29%3B%0A%20%20%20%20%20%20%7D%0A%23rev_slider_4_1%20.zeus.tparrows%3Ahover%20.tp-arr-imgholder%20%7B%0A%20%20transform%3Atranslatex%280%29%3B%0A%20%20-webkit-transform%3Atranslatex%280%29%3B%0A%20%20opacity%3A1%3B%0A%7D%0A%20%20%20%20%20%20%0A%23rev_slider_4_1%20.zeus.tparrows%3Ahover%20.tp-title-wrap%20%7B%0A%20%20transform%3Ascale%281%29%3B%0A%20%20-webkit-transform%3Ascale%281%29%3B%0A%20%20opacity%3A1%3B%0A%7D%0A%20%0A");
-					var htmlDiv = document.getElementById('rs-plugin-settings-inline-css');
-					if (htmlDiv) {
-						htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
-					}
-					else {
-						var htmlDiv = document.createElement('div');
-						htmlDiv.innerHTML = '<style>' + htmlDivCss + '</style>';
-						document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
-					}</script>
-			</div>
-			<div class="main-contain">
-				<div class="container">
-					<div id="content" class="site-content">
-						<div class="row padding-">
-							<div class="col-md-12 ">
-								<article id="post-238" class="post-238 page type-page status-publish hentry">
-									<div class="entry-content">
-										<div class="vc_row-full-width vc_clearfix"></div>
-										<div id="about" data-vc-full-width="true" data-vc-full-width-init="false" data-vc-parallax="1.5"
-											data-vc-parallax-image="https://rstheme.com/products/wordpress/finoptis/wp-content/uploads/2018/11/about2.jpg"
-											class="vc_row wpb_row vc_row-fluid vc_custom_1542609842417 vc_row-has-fill vc_row-o-content-middle vc_row-flex vc_general vc_parallax vc_parallax-content-moving">
-											<div class="wpb_column vc_column_container vc_col-sm-6">
-												<div class="vc_column-inner">
-													<div class="wpb_wrapper">
-														<div class="wpb_single_image wpb_content_element vc_align_left">
-															<figure class="wpb_wrapper vc_figure">
-																<div class="vc_single_image-wrapper vc_box_rounded  vc_box_border_grey"><img width="550"
-																		height="560" src="wp-content/uploads/2018/12/about.jpg"
-																		class="vc_single_image-img attachment-full" alt=""
-																		srcset="https://rstheme.com/products/wordpress/finoptis/wp-content/uploads/2018/12/about.jpg 550w, https://rstheme.com/products/wordpress/finoptis/wp-content/uploads/2018/12/about-295x300.jpg 295w"
-																		sizes="(max-width: 550px) 100vw, 550px" /></div>
-															</figure>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="wpb_column vc_column_container vc_col-sm-6">
-												<div class="vc_column-inner vc_custom_1544088861967">
-													<div class="wpb_wrapper">
-														<div class="rs-heading   vc_custom_1544088965862 mmb-30 ">
-															<div class="title-inner">
-																<!-- <span style="color: #28406d" class="sub-text">[About Us]</span> -->
-																<h2 class="title">IEEE Computer Society Kerala Chapter</h2>
-															</div>
-														</div>
-														<p>The IEEE Computer Society is the world’s leading membership organization
-															dedicated to computer science and technology. Serving more than 60,000
-															members, the IEEE Computer Society is the trusted information, networking,
-															and career-development source for a global community of technology leaders
-															that includes researchers, educators, software engineers, IT
-															professionals,
-															employers, and students. The IEEE Computer Society Kerala Chapter has 145
-															professional members and 2051 student members.</p>
-														<div class="rs-btn btn-left"> <a data-onhovercolor="#222222" data-onhoverbg=""
-																data-onleavebg="" data-onleavecolor="" class="readon rs_button "
-																href="https://www.computer.org/membership">Join IEEE Computer Scoiety</a></div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="vc_row-full-width vc_clearfix"></div>
-										<div data-vc-full-width="true" data-vc-full-width-init="false"
-											class="vc_row wpb_row vc_row-fluid home1-services vc_custom_1543466383016 vc_row-has-fill vc_row-o-content-bottom vc_row-flex">
-											<div class="wpb_column vc_column_container vc_col-sm-12">
-												<div class="vc_column-inner">
-													<div class="wpb_wrapper">
-														<div class="vc_row wpb_row vc_inner vc_row-fluid">
-															<div class="wpb_column vc_column_container vc_col-sm-12">
-																<div class="vc_column-inner vc_custom_1542178206984">
-																	<div class="wpb_wrapper">
-																		<div class="rs-heading style3 light  vc_custom_1544692758318  ">
-																			<div class="title-inner">
-																				<!-- <span style="color: #e2c60c" class="sub-text">[Benefits]</span> -->
-																				<h2 class="title" style="color: #ffffff">Belong Where Technology Innovators
-																					Thrive
-																				</h2>
-																			</div>
-																			<div class="description">
-																				<p style="color: #ffffff">Become part of the community of computing leaders
-																					driving the future of technology.</p>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="vc_row wpb_row vc_inner vc_row-fluid">
-															<div class="wpb_column vc_column_container vc_col-sm-4">
-																<div class="vc_column-inner vc_custom_1542178206984">
-																	<div class="wpb_wrapper">
-																		<div class="services-main rs-services-default  services-left" data-icon-hover="#ccc"
-																			data-icon-hoverbg="" data-icon-bg="" data-icon-color="#e2c606">
-																			<div class="services-wrap  vc_custom_1543986671267 ">
-																				<div class="services-item">
-																					<div class="services-icon "><i class="fa-solid fa-award" aria-hidden="true"
-																							style="color: #e2c606;"></i></div>
-																					<div class="services-desc">
-																						<h2 class="services-title"><a data-onhovercolor="#222"
-																								data-onleavecolor="#ffffff" style="color: #ffffff;">Apply For
-																								Scholarships
-																								And Awards</a></h2>
-																						<p style="color: #ffffff">Discover the more than US $40,000 in scholarships
-																							plus travel grants from the IEEE Computer Society. Richard E. Merwin
-																							Student
-																							Scholarship for those who are actively involved in their chapter and show
-																							academic promise. Lance Stafford Larson Student Best Paper Award for
-																							papers
-																							presented at a computer-related conference or in a publication. Upsilion
-																							Pi
-																							Epsilon Award for students with exceptional academic achievement.</p>
-																					</div>
-																				</div>
-																			</div>
-																		</div>
-																		<div class="services-main rs-services-default  services-left" data-icon-hover="#ccc"
-																			data-icon-hoverbg="" data-icon-bg="" data-icon-color="#e2c606">
-																			<div class="services-wrap  vc_custom_1543986970122 ">
-																				<div class="services-item">
-																					<div class="services-icon "><i class="fa-solid fa-certificate"
-																							aria-hidden="true" style="color: #e2c606;"></i></div>
-																					<div class="services-desc">
-																						<h2 class="services-title"><a data-onhovercolor="#222"
-																								data-onleavecolor="#ffffff" style="color: #ffffff;">Empower Yourself
-																								Through Certification</a>
-																						</h2>
-																						<p style="color: #ffffff">Get your foot in the door with an IT, desktop, or
-																							business certification. IT Skills & Certifications – Security, cloud
-																							computing, software development, networking, PMI, and more. Desktop &
-																							Certifications – MS Office (Windows and iOS), Adobe, coding, Python,
-																							computing fundamentals, and internet skills. Business & Leadership Skills
-																							–
-																							Leadership development, business acumen, building teams, self-management,
-																							communication skills, and more.</p>
-																					</div>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-															<div class="wpb_column vc_column_container vc_col-sm-4">
-																<div class="vc_column-inner vc_custom_1542177916485">
-																	<div class="wpb_wrapper">
-																		<div class="services-main rs-services-default  services-left" data-icon-hover="#ccc"
-																			data-icon-hoverbg="" data-icon-bg="" data-icon-color="#e2c606">
-																			<div class="services-wrap  vc_custom_1543986981338 ">
-																				<div class="services-item">
-																					<div class="services-icon "><i class="fa-solid fa-book" aria-hidden="true"
-																							style="color: #e2c606;"></i></div>
-																					<div class="services-desc">
-																						<h2 class="services-title"><a data-onhovercolor="#222"
-																								data-onleavecolor="#ffffff" style="color: #ffffff;">Discover The IEEE
-																								CS Digital Library</a></h2>
-																						<p style="color: #ffffff">As a student member, you get access to the
-																							ultimate
-																							collection of technical periodicals and conference publications. The
-																							latest
-																							research from 37 peer-reviewed magazines and journals, covering the whole
-																							spectrum of computing. 9,000+ conference publications from around the
-																							world—at your fingertips to help with your research. 700,000 documents
-																							from
-																							more than 300,000 content experts covering virtually every computing
-																							topic.
-																						</p>
-																					</div>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-															<div class="wpb_column vc_column_container vc_col-sm-4">
-																<div class="vc_column-inner vc_custom_1542177947484">
-																	<div class="wpb_wrapper"></div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="vc_row-full-width vc_clearfix"></div>
-										<div id="updates" data-vc-full-width="true" data-vc-full-width-init="false"
-											class="vc_row wpb_row vc_row-fluid blog-gap vc_custom_1544169667700 vc_row-has-fill">
-											<div class="wpb_column vc_column_container vc_col-sm-12">
-												<div class="vc_column-inner">
-													<div class="wpb_wrapper">
-														<div class="rs-heading style3  vc_custom_1543920863426  ">
-															<div class="title-inner">
-																<!-- <span style="color: #28406d" class="sub-text">[News]</span> -->
-																<h2 class="title">Updates</h2>
-															</div>
-															<div class="description">
-																<p>Updates from IEEE Computer Society Kerala Chapter.</p>
-															</div>
-														</div>
-														<div class="rs-blog home-blog-area ">
-															<div class="blog-carousel blog-slider owl-carousel owl-navigation-yes"
-																data-carousel-options="{&quot;nav&quot;:false,&quot;navText&quot;:[&quot;&lt;i class=&#039;icofont icofont-bubble-left&#039;&gt;&lt;\/i&gt;&quot;,&quot;&lt;i class=&#039;icofont icofont-bubble-right&#039;&gt;&lt;\/i&gt;&quot;],&quot;dots&quot;:true,&quot;autoplay&quot;:true,&quot;autoplayTimeout&quot;:&quot;5000&quot;,&quot;stagePadding&quot;:0,&quot;autoplaySpeed&quot;:&quot;200&quot;,&quot;autoplayHoverPause&quot;:true,&quot;loop&quot;:true,&quot;margin&quot;:20,&quot;items&quot;:3,&quot;responsive&quot;:{&quot;0&quot;:{&quot;items&quot;:&quot;1&quot;},&quot;480&quot;:{&quot;items&quot;:&quot;1&quot;},&quot;768&quot;:{&quot;items&quot;:&quot;2&quot;},&quot;992&quot;:{&quot;items&quot;:&quot;3&quot;},&quot;1200&quot;:{&quot;items&quot;:&quot;3&quot;}}}">
-																<% for(let i=0; i < 6; i++) { %>
-																	<div class="blog-item style2 ">
-																		<div class="blog-img content-overlay"> <img width="1200" height="800"
-																				src="wp-content/uploads/2018/11/2.jpg"
-																				class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""
-																				srcset="https://rstheme.com/products/wordpress/finoptis/wp-content/uploads/2018/11/2.jpg 1200w, https://rstheme.com/products/wordpress/finoptis/wp-content/uploads/2018/11/2-365x243.jpg 365w, https://rstheme.com/products/wordpress/finoptis/wp-content/uploads/2018/11/2-600x400.jpg 600w, https://rstheme.com/products/wordpress/finoptis/wp-content/uploads/2018/11/2-300x200.jpg 300w, https://rstheme.com/products/wordpress/finoptis/wp-content/uploads/2018/11/2-768x512.jpg 768w, https://rstheme.com/products/wordpress/finoptis/wp-content/uploads/2018/11/2-1024x683.jpg 1024w"
-																				sizes="(max-width: 1200px) 100vw, 1200px" />
-																			<div class="blog-date"> <span class="date">19 </span> <span class="month">Nov
-																				</span>
-																			</div>
-																		</div>
-																		<div class="blog-meta">
-																			<h3 class="blog-title"><a href="index16ad.html?post_type=post&amp;p=2164">Small
-																					Business Trends</a></h3>
-																		</div>
-																		<!-- <div class="blog-slidermeta blog-date"> <span class="author">By admin</span><span
-																				class="seperator">/</span> <span class="category"><a
-																					href="category/corporate/index.html">Corporate</a></span></div> -->
-																		<div class="home_full_blog slider-blog-title">
-																			<div class="blog-desc"> Below are the original Latin passages We denounce with
-																				righteous indignation and dislike men who are so beguiled and demoralized by
-																				the...
-																			</div>
-																		</div>
-																	</div>
-																	<% } %>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="vc_row-full-width vc_clearfix"></div>
-										<div data-vc-full-width="true" data-vc-full-width-init="false"
-											class="vc_row wpb_row vc_row-fluid vc_custom_1542443423538 vc_row-has-fill vc_row-o-content-middle vc_row-flex">
-											<div class="wpb_column vc_column_container vc_col-sm-6">
-												<div class="vc_column-inner vc_custom_1542784966797">
-													<div class="wpb_wrapper">
-														<div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1545304777733">
-															<div class="mmb-30 wpb_column vc_column_container vc_col-sm-6">
-																<div class="vc_column-inner">
-																	<div class="wpb_wrapper">
-																		<div class="counter-top-area text-center "
-																			style="background-image: url(wp-content/uploads/2018/11/dark-mosaic.png)">
-																			<div class="rs-counter-list">
-																				<div class="count-text">
-																					<div style="margin-top:0px; margin-bottom:4px; color:#e2c606"
-																						class="count-number"> <span
-																							style="font-size:60px; line-height:60px; color:#e2c606"
-																							class="rs-counter">
-																							37</span> <span style="color:#e2c606"><span
-																								style="font-size:20px; line-height:20px"></span></span></div>
-																					<h4 style="color: #ffffff"><span
-																							style="font-size: 20px; line-height: 20px!important">SB Chapters</span>
-																					</h4>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-															<div class="wpb_column vc_column_container vc_col-sm-6">
-																<div class="vc_column-inner">
-																	<div class="wpb_wrapper">
-																		<div class="counter-top-area text-center "
-																			style="background-image: url(wp-content/uploads/2018/11/dark-mosaic.png)">
-																			<div class="rs-counter-list">
-																				<div class="count-text">
-																					<div style="margin-top:0px; margin-bottom:4px; color:#e2c606"
-																						class="count-number"> <span
-																							style="font-size:60px; line-height:60px; color:#e2c606"
-																							class="rs-counter">
-																							99</span> <span style="color:#e2c606"><span
-																								style="font-size:20px; line-height:20px"></span></span></div>
-																					<h4 style="color: #ffffff"><span
-																							style="font-size: 20px; line-height: 20px!important">Professional
-																							Members</span>
-																					</h4>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1545304818805">
-															<div class="mmb-30 wpb_column vc_column_container vc_col-sm-6">
-																<div class="vc_column-inner">
-																	<div class="wpb_wrapper">
-																		<div class="counter-top-area text-center "
-																			style="background-image: url(wp-content/uploads/2018/11/dark-mosaic.png)">
-																			<div class="rs-counter-list">
-																				<div class="count-text">
-																					<div style="margin-top:0px; margin-bottom:4px; color:#e2c606"
-																						class="count-number"> <span
-																							style="font-size:60px; line-height:60px; color:#e2c606"
-																							class="rs-counter">
-																							1898</span> <span style="color:#e2c606"></span></div>
-																					<h4 style="color: #ffffff"><span
-																							style="font-size: 20px; line-height: 20px!important">Student
-																							Members</span>
-																					</h4>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-															<div class="wpb_column vc_column_container vc_col-sm-6">
-																<div class="vc_column-inner">
-																	<div class="wpb_wrapper">
-																		<div class="counter-top-area text-center "
-																			style="background-image: url(wp-content/uploads/2018/11/dark-mosaic.png)">
-																			<div class="rs-counter-list">
-																				<div class="count-text">
-																					<div style="margin-top:0px; margin-bottom:4px; color:#e2c606"
-																						class="count-number"> <span
-																							style="font-size:60px; line-height:60px; color:#e2c606"
-																							class="rs-counter">
-																							8</span> <span style="color:#e2c606"></span></div>
-																					<h4 style="color: #ffffff"><span
-																							style="font-size: 20px; line-height: 20px!important">Years Of
-																							Experience</span>
-																					</h4>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="wpb_column vc_column_container vc_col-sm-6">
-												<div class="vc_column-inner vc_custom_1542784961365">
-													<div class="wpb_wrapper">
-														<div class="rs-heading style3 light  vc_custom_1545304997702  ">
-															<div class="title-inner"> <span style="color: #e2c60c" class="sub-text">[Since
-																	2015]</span>
-																<h2 class="title" style="color: #ffffff">Experience In Business Development</h2>
-															</div>
-															<div class="description">
-																<p style="color: #ffffff">We denounce with righteous indignation and dislike men who are
-																	so beguiled and demoralized by the charms of pleasure of the moment. Contact with us
-																	for
-																	more awesome work.</p>
-															</div>
-														</div>
-														<div class="rs-btn btn-left"> <a data-onhovercolor="#222222" data-onhoverbg=""
-																data-onleavebg="#e2c60c" data-onleavecolor="#212121" class="readon rs_button " href="#"
-																style="color:#212121;background:#e2c60c;">SB Chapters</a></div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="vc_row-full-width vc_clearfix"></div>
-										<div id="events" data-vc-full-width="true" data-vc-full-width-init="false"
-											class="vc_row wpb_row vc_row-fluid blog-gap vc_custom_1544169667700 vc_row-has-fill">
-											<div class="wpb_column vc_column_container vc_col-sm-12">
-												<div class="vc_column-inner">
-													<div class="wpb_wrapper">
-														<div class="rs-heading style3  vc_custom_1543920863426  ">
-															<div class="title-inner">
-																<!-- <span style="color: #28406d" class="sub-text">[News]</span> -->
-																<h2 class="title">Events</h2>
-															</div>
-															<div class="description">
-																<p>Accelerating innovative young minds.</p>
-															</div>
-														</div>
-														<div class="rs-blog home-blog-area ">
-															<div class="blog-carousel blog-slider owl-carousel owl-navigation-yes"
-																data-carousel-options="{&quot;nav&quot;:false,&quot;navText&quot;:[&quot;&lt;i class=&#039;icofont icofont-bubble-left&#039;&gt;&lt;\/i&gt;&quot;,&quot;&lt;i class=&#039;icofont icofont-bubble-right&#039;&gt;&lt;\/i&gt;&quot;],&quot;dots&quot;:true,&quot;autoplay&quot;:true,&quot;autoplayTimeout&quot;:&quot;5000&quot;,&quot;stagePadding&quot;:0,&quot;autoplaySpeed&quot;:&quot;200&quot;,&quot;autoplayHoverPause&quot;:true,&quot;loop&quot;:true,&quot;margin&quot;:20,&quot;items&quot;:3,&quot;responsive&quot;:{&quot;0&quot;:{&quot;items&quot;:&quot;1&quot;},&quot;480&quot;:{&quot;items&quot;:&quot;1&quot;},&quot;768&quot;:{&quot;items&quot;:&quot;2&quot;},&quot;992&quot;:{&quot;items&quot;:&quot;3&quot;},&quot;1200&quot;:{&quot;items&quot;:&quot;3&quot;}}}">
-																<% for(let i=0; i < 6; i++) { %>
-																	<div class="blog-item style2 ">
-																		<div class="blog-img content-overlay"> <img width="1200" height="800"
-																				src="wp-content/uploads/2018/11/2.jpg"
-																				class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""
-																				srcset="https://rstheme.com/products/wordpress/finoptis/wp-content/uploads/2018/11/2.jpg 1200w, https://rstheme.com/products/wordpress/finoptis/wp-content/uploads/2018/11/2-365x243.jpg 365w, https://rstheme.com/products/wordpress/finoptis/wp-content/uploads/2018/11/2-600x400.jpg 600w, https://rstheme.com/products/wordpress/finoptis/wp-content/uploads/2018/11/2-300x200.jpg 300w, https://rstheme.com/products/wordpress/finoptis/wp-content/uploads/2018/11/2-768x512.jpg 768w, https://rstheme.com/products/wordpress/finoptis/wp-content/uploads/2018/11/2-1024x683.jpg 1024w"
-																				sizes="(max-width: 1200px) 100vw, 1200px" />
-																			<div class="blog-date"> <span class="date">19 </span> <span class="month">Nov
-																				</span>
-																			</div>
-																		</div>
-																		<div class="blog-meta">
-																			<h3 class="blog-title"><a href="index16ad.html?post_type=post&amp;p=2164">Small
-																					Business Trends</a></h3>
-																		</div>
-																		<!-- <div class="blog-slidermeta blog-date"> <span class="author">By admin</span><span
-																				class="seperator">/</span> <span class="category"><a
-																					href="category/corporate/index.html">Corporate</a></span></div> -->
-																		<div class="home_full_blog slider-blog-title">
-																			<div class="blog-desc"> Below are the original Latin passages We denounce with
-																				righteous indignation and dislike men who are so beguiled and demoralized by
-																				the...
-																			</div>
-																		</div>
-																	</div>
-																	<% } %>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="vc_row-full-width vc_clearfix"></div>
-									</div>
-								</article>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<footer id="rs-footer" class=" rs-footer footer-style-1"
-				style="background-image: url('wp-content/uploads/2018/12/footer-bg.jpg')">
-				<div class="footer-top">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-4">
-								<section id="contact_widget-2" class="widget widget_contact_widget">
-									<ul class="fa-ul">
-										<li class="about-widget-img"> <a href='index.html'><img alt="image" src="images/cs-logo.png"></a>
-										</li>
-									</ul>
-								</section>
-								<section id="contact_widget-5" class="widget widget_contact_widget">
-									<ul class="fa-ul">
-										<li><i class="fa fa-envelope"></i><a href="mailto:ieeecs.ks@gmail.com">ieeecs.ks@gmail.com</a></li>
-									</ul>
-								</section>
-								<section id="finoptissocialiconwi_widget-2" class="widget widget_finoptissocialiconwi_widget">
-									<ul class="footer_social">
-										<li> <a href="#" target="_blank"><span><i class="fa-brands fa-facebook"></i></span></a></li>
-										<li> <a href="# " target="_blank"><span><i class="fa fa-twitter"></i></span></a></li>
-										<li> <a href="# " target="_blank"><span><i class="fa fa-pinterest-p"></i></span></a></li>
-										<li> <a href="# " target="_blank"><span><i class="fa fa-linkedin"></i></span></a></li>
-									</ul>
-								</section>
-							</div>
-							<div class="col-lg-4">
-								<section id="nav_menu-2" class="widget widget_nav_menu">
-									<h3 class="footer-title">Quick Links</h3>
-									<div class="menu-company-container">
-										<ul id="menu-company" class="menu">
-											<li id="menu-item-3147"
-												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-238 current_page_item menu-item-3147">
-												<a href="/">Home</a>
-											</li>
-											<li id="menu-item-3151"
-												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3151"><a
-													href="/#updates">Updates</a></li>
-											<li id="menu-item-3149"
-												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3149"><a
-													href="/#events">Events</a></li>
-										</ul>
-									</div>
-								</section>
-							</div>
-							<div class="col-lg-4">
-								<section id="" class="widget widget_nav_menu">
-									<h3 class="footer-title">Useful Links</h3>
-									<div class="menu-company-container">
-										<ul id="" class="menu">
-											<li id=""
-												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-238 current_page_item menu-item-3147">
-												<a href="https://www.computer.org/csdl/home">CS Digital Library</a>
-											</li>
-											<li id="" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3148">
-												<a href="https://www.computer.org/publications">CS Publications</a>
-											</li>
-											<li id="" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3151">
-												<a href="https://www.ieee.org/conferences/index.html">Conferences</a>
-											</li>
-										</ul>
-									</div>
-								</section>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="footer-bottom">
-					<div class="container-fluid">
-						<div class="row">
-							<div class="col-md-12 col-sm-12">
-								<div class="copyright">
-									<p>Copyright ©2022 IEEE Computer Society Kerala Chapter. All Rights Reserved.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</footer>
+					}; /* END OF ON LOAD FUNCTION */
+				}()); /* END OF WRAPPING FUNCTION */</script>
+			<script>var htmlDivCss = unescape("%23rev_slider_4_1%20.zeus.tparrows%20%7B%0A%20%20cursor%3Apointer%3B%0A%20%20min-width%3A70px%3B%0A%20%20min-height%3A70px%3B%0A%20%20position%3Aabsolute%3B%0A%20%20display%3Ablock%3B%0A%20%20z-index%3A100%3B%0A%20%20border-radius%3A50%25%3B%20%20%20%0A%20%20overflow%3Ahidden%3B%0A%20%20background%3Argba%280%2C0%2C0%2C0.1%29%3B%0A%7D%0A%0A%23rev_slider_4_1%20.zeus.tparrows%3Abefore%20%7B%0A%20%20font-family%3A%20%22revicons%22%3B%0A%20%20font-size%3A20px%3B%0A%20%20color%3Argb%28255%2C%20255%2C%20255%29%3B%0A%20%20display%3Ablock%3B%0A%20%20line-height%3A%2070px%3B%0A%20%20text-align%3A%20center%3B%20%20%20%20%0A%20%20z-index%3A2%3B%0A%20%20position%3Arelative%3B%0A%7D%0A%23rev_slider_4_1%20.zeus.tparrows.tp-leftarrow%3Abefore%20%7B%0A%20%20content%3A%20%22%5Ce824%22%3B%0A%7D%0A%23rev_slider_4_1%20.zeus.tparrows.tp-rightarrow%3Abefore%20%7B%0A%20%20content%3A%20%22%5Ce825%22%3B%0A%7D%0A%0A%23rev_slider_4_1%20.zeus%20.tp-title-wrap%20%7B%0A%20%20background%3Argba%280%2C0%2C0%2C0.5%29%3B%0A%20%20width%3A100%25%3B%0A%20%20height%3A100%25%3B%0A%20%20top%3A0px%3B%0A%20%20left%3A0px%3B%0A%20%20position%3Aabsolute%3B%0A%20%20opacity%3A0%3B%0A%20%20transform%3Ascale%280%29%3B%0A%20%20-webkit-transform%3Ascale%280%29%3B%0A%20%20%20transition%3A%20all%200.3s%3B%0A%20%20-webkit-transition%3Aall%200.3s%3B%0A%20%20-moz-transition%3Aall%200.3s%3B%0A%20%20%20border-radius%3A50%25%3B%0A%20%7D%0A%23rev_slider_4_1%20.zeus%20.tp-arr-imgholder%20%7B%0A%20%20width%3A100%25%3B%0A%20%20height%3A100%25%3B%0A%20%20position%3Aabsolute%3B%0A%20%20top%3A0px%3B%0A%20%20left%3A0px%3B%0A%20%20background-position%3Acenter%20center%3B%0A%20%20background-size%3Acover%3B%0A%20%20border-radius%3A50%25%3B%0A%20%20transform%3Atranslatex%28-100%25%29%3B%0A%20%20-webkit-transform%3Atranslatex%28-100%25%29%3B%0A%20%20%20transition%3A%20all%200.3s%3B%0A%20%20-webkit-transition%3Aall%200.3s%3B%0A%20%20-moz-transition%3Aall%200.3s%3B%0A%0A%20%7D%0A%23rev_slider_4_1%20.zeus.tp-rightarrow%20.tp-arr-imgholder%20%7B%0A%20%20%20%20transform%3Atranslatex%28100%25%29%3B%0A%20%20-webkit-transform%3Atranslatex%28100%25%29%3B%0A%20%20%20%20%20%20%7D%0A%23rev_slider_4_1%20.zeus.tparrows%3Ahover%20.tp-arr-imgholder%20%7B%0A%20%20transform%3Atranslatex%280%29%3B%0A%20%20-webkit-transform%3Atranslatex%280%29%3B%0A%20%20opacity%3A1%3B%0A%7D%0A%20%20%20%20%20%20%0A%23rev_slider_4_1%20.zeus.tparrows%3Ahover%20.tp-title-wrap%20%7B%0A%20%20transform%3Ascale%281%29%3B%0A%20%20-webkit-transform%3Ascale%281%29%3B%0A%20%20opacity%3A1%3B%0A%7D%0A%20%0A");
+				var htmlDiv = document.getElementById('rs-plugin-settings-inline-css');
+				if (htmlDiv) {
+					htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+				}
+				else {
+					var htmlDiv = document.createElement('div');
+					htmlDiv.innerHTML = '<style>' + htmlDivCss + '</style>';
+					document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
+				}</script>
 		</div>
-		<div id="scrollUp"> <i class="fa fa-angle-up"></i></div>
-		<script>(function () {
-				function addEventListener(element, event, handler) {
-					if (element.addEventListener) {
-						element.addEventListener(event, handler, false);
-					} else if (element.attachEvent) {
-						element.attachEvent('on' + event, handler);
-					}
-				} function maybePrefixUrlField() {
-					if (this.value.trim() !== '' && this.value.indexOf('http') !== 0) {
-						this.value = "http://" + this.value;
-					}
-				}
+		<div class="main-contain">
+			<div class="container">
+				<div id="content" class="site-content">
+					<div class="row padding-">
+						<div class="col-md-12 ">
+							<article id="post-238" class="post-238 page type-page status-publish hentry">
+								<div class="entry-content">
+									<div class="vc_row-full-width vc_clearfix"></div>
+									<div id="about" data-vc-full-width="true" data-vc-full-width-init="false" data-vc-parallax="1.5"
+										data-vc-parallax-image="https://rstheme.com/products/wordpress/finoptis/wp-content/uploads/2018/11/about2.jpg"
+										class="vc_row wpb_row vc_row-fluid vc_custom_1542609842417 vc_row-has-fill vc_row-o-content-middle vc_row-flex vc_general vc_parallax vc_parallax-content-moving">
+										<div class="wpb_column vc_column_container vc_col-sm-6">
+											<div class="vc_column-inner">
+												<div class="wpb_wrapper">
+													<div class="wpb_single_image wpb_content_element vc_align_left">
+														<figure class="wpb_wrapper vc_figure">
+															<div class="vc_single_image-wrapper vc_box_rounded  vc_box_border_grey"><img width="550"
+																	height="560" src="wp-content/uploads/2018/12/about.jpg"
+																	class="vc_single_image-img attachment-full" alt=""
+																	srcset="https://rstheme.com/products/wordpress/finoptis/wp-content/uploads/2018/12/about.jpg 550w, https://rstheme.com/products/wordpress/finoptis/wp-content/uploads/2018/12/about-295x300.jpg 295w"
+																	sizes="(max-width: 550px) 100vw, 550px" /></div>
+														</figure>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="wpb_column vc_column_container vc_col-sm-6">
+											<div class="vc_column-inner vc_custom_1544088861967">
+												<div class="wpb_wrapper">
+													<div class="rs-heading   vc_custom_1544088965862 mmb-30 ">
+														<div class="title-inner">
+															<!-- <span style="color: #28406d" class="sub-text">[About Us]</span> -->
+															<h2 class="title">IEEE Computer Society Kerala Chapter</h2>
+														</div>
+													</div>
+													<p>The IEEE Computer Society is the world’s leading membership organization
+														dedicated to computer science and technology. Serving more than 60,000
+														members, the IEEE Computer Society is the trusted information, networking,
+														and career-development source for a global community of technology leaders
+														that includes researchers, educators, software engineers, IT
+														professionals,
+														employers, and students. The IEEE Computer Society Kerala Chapter has 145
+														professional members and 2051 student members.</p>
+													<div class="rs-btn btn-left"> <a data-onhovercolor="#222222" data-onhoverbg=""
+															data-onleavebg="" data-onleavecolor="" class="readon rs_button "
+															href="https://www.computer.org/membership">Join IEEE Computer Scoiety</a></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="vc_row-full-width vc_clearfix"></div>
+									<div data-vc-full-width="true" data-vc-full-width-init="false"
+										class="vc_row wpb_row vc_row-fluid home1-services vc_custom_1543466383016 vc_row-has-fill vc_row-o-content-bottom vc_row-flex">
+										<div class="wpb_column vc_column_container vc_col-sm-12">
+											<div class="vc_column-inner">
+												<div class="wpb_wrapper">
+													<div class="vc_row wpb_row vc_inner vc_row-fluid">
+														<div class="wpb_column vc_column_container vc_col-sm-12">
+															<div class="vc_column-inner vc_custom_1542178206984">
+																<div class="wpb_wrapper">
+																	<div class="rs-heading style3 light  vc_custom_1544692758318  ">
+																		<div class="title-inner">
+																			<!-- <span style="color: #e2c60c" class="sub-text">[Benefits]</span> -->
+																			<h2 class="title" style="color: #ffffff">Belong Where Technology Innovators
+																				Thrive
+																			</h2>
+																		</div>
+																		<div class="description">
+																			<p style="color: #ffffff">Become part of the community of computing leaders
+																				driving the future of technology.</p>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="vc_row wpb_row vc_inner vc_row-fluid">
+														<div class="wpb_column vc_column_container vc_col-sm-4">
+															<div class="vc_column-inner vc_custom_1542178206984">
+																<div class="wpb_wrapper">
+																	<div class="services-main rs-services-default  services-left" data-icon-hover="#ccc"
+																		data-icon-hoverbg="" data-icon-bg="" data-icon-color="#e2c606">
+																		<div class="services-wrap  vc_custom_1543986671267 ">
+																			<div class="services-item">
+																				<div class="services-icon "><i class="fa-solid fa-award" aria-hidden="true"
+																						style="color: #e2c606;"></i></div>
+																				<div class="services-desc">
+																					<h2 class="services-title"><a data-onhovercolor="#222"
+																							data-onleavecolor="#ffffff" style="color: #ffffff;">Apply For
+																							Scholarships
+																							And Awards</a></h2>
+																					<p style="color: #ffffff">Discover the more than US $40,000 in scholarships
+																						plus travel grants from the IEEE Computer Society. Richard E. Merwin
+																						Student
+																						Scholarship for those who are actively involved in their chapter and show
+																						academic promise. Lance Stafford Larson Student Best Paper Award for
+																						papers
+																						presented at a computer-related conference or in a publication. Upsilion
+																						Pi
+																						Epsilon Award for students with exceptional academic achievement.</p>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="services-main rs-services-default  services-left" data-icon-hover="#ccc"
+																		data-icon-hoverbg="" data-icon-bg="" data-icon-color="#e2c606">
+																		<div class="services-wrap  vc_custom_1543986970122 ">
+																			<div class="services-item">
+																				<div class="services-icon "><i class="fa-solid fa-certificate"
+																						aria-hidden="true" style="color: #e2c606;"></i></div>
+																				<div class="services-desc">
+																					<h2 class="services-title"><a data-onhovercolor="#222"
+																							data-onleavecolor="#ffffff" style="color: #ffffff;">Empower Yourself
+																							Through Certification</a>
+																					</h2>
+																					<p style="color: #ffffff">Get your foot in the door with an IT, desktop, or
+																						business certification. IT Skills & Certifications – Security, cloud
+																						computing, software development, networking, PMI, and more. Desktop &
+																						Certifications – MS Office (Windows and iOS), Adobe, coding, Python,
+																						computing fundamentals, and internet skills. Business & Leadership Skills
+																						–
+																						Leadership development, business acumen, building teams, self-management,
+																						communication skills, and more.</p>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="wpb_column vc_column_container vc_col-sm-4">
+															<div class="vc_column-inner vc_custom_1542177916485">
+																<div class="wpb_wrapper">
+																	<div class="services-main rs-services-default  services-left" data-icon-hover="#ccc"
+																		data-icon-hoverbg="" data-icon-bg="" data-icon-color="#e2c606">
+																		<div class="services-wrap  vc_custom_1543986981338 ">
+																			<div class="services-item">
+																				<div class="services-icon "><i class="fa-solid fa-book" aria-hidden="true"
+																						style="color: #e2c606;"></i></div>
+																				<div class="services-desc">
+																					<h2 class="services-title"><a data-onhovercolor="#222"
+																							data-onleavecolor="#ffffff" style="color: #ffffff;">Discover The IEEE
+																							CS Digital Library</a></h2>
+																					<p style="color: #ffffff">As a student member, you get access to the
+																						ultimate
+																						collection of technical periodicals and conference publications. The
+																						latest
+																						research from 37 peer-reviewed magazines and journals, covering the whole
+																						spectrum of computing. 9,000+ conference publications from around the
+																						world—at your fingertips to help with your research. 700,000 documents
+																						from
+																						more than 300,000 content experts covering virtually every computing
+																						topic.
+																					</p>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="wpb_column vc_column_container vc_col-sm-4">
+															<div class="vc_column-inner vc_custom_1542177947484">
+																<div class="wpb_wrapper"></div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="vc_row-full-width vc_clearfix"></div>
+									<div id="updates" data-vc-full-width="true" data-vc-full-width-init="false"
+										class="vc_row wpb_row vc_row-fluid blog-gap vc_custom_1544169667700 vc_row-has-fill">
+										<div class="wpb_column vc_column_container vc_col-sm-12">
+											<div class="vc_column-inner">
+												<div class="wpb_wrapper">
+													<div class="rs-heading style3  vc_custom_1543920863426  ">
+														<div class="title-inner">
+															<!-- <span style="color: #28406d" class="sub-text">[News]</span> -->
+															<h2 class="title">Updates</h2>
+														</div>
+														<div class="description">
+															<p>Updates from IEEE Computer Society Kerala Chapter.</p>
+														</div>
+													</div>
+													<div class="rs-blog home-blog-area ">
+														<div class="blog-carousel blog-slider owl-carousel owl-navigation-yes"
+															data-carousel-options="{&quot;nav&quot;:false,&quot;navText&quot;:[&quot;&lt;i class=&#039;icofont icofont-bubble-left&#039;&gt;&lt;\/i&gt;&quot;,&quot;&lt;i class=&#039;icofont icofont-bubble-right&#039;&gt;&lt;\/i&gt;&quot;],&quot;dots&quot;:true,&quot;autoplay&quot;:true,&quot;autoplayTimeout&quot;:&quot;5000&quot;,&quot;stagePadding&quot;:0,&quot;autoplaySpeed&quot;:&quot;200&quot;,&quot;autoplayHoverPause&quot;:true,&quot;loop&quot;:true,&quot;margin&quot;:20,&quot;items&quot;:3,&quot;responsive&quot;:{&quot;0&quot;:{&quot;items&quot;:&quot;1&quot;},&quot;480&quot;:{&quot;items&quot;:&quot;1&quot;},&quot;768&quot;:{&quot;items&quot;:&quot;2&quot;},&quot;992&quot;:{&quot;items&quot;:&quot;3&quot;},&quot;1200&quot;:{&quot;items&quot;:&quot;3&quot;}}}">
+															<% for(let i=0; i < 6; i++) { %>
+																<div class="blog-item style2 ">
+																	<div class="blog-img content-overlay"> <img width="1200" height="800"
+																			src="wp-content/uploads/2018/11/2.jpg"
+																			class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""
+																			srcset="https://rstheme.com/products/wordpress/finoptis/wp-content/uploads/2018/11/2.jpg 1200w, https://rstheme.com/products/wordpress/finoptis/wp-content/uploads/2018/11/2-365x243.jpg 365w, https://rstheme.com/products/wordpress/finoptis/wp-content/uploads/2018/11/2-600x400.jpg 600w, https://rstheme.com/products/wordpress/finoptis/wp-content/uploads/2018/11/2-300x200.jpg 300w, https://rstheme.com/products/wordpress/finoptis/wp-content/uploads/2018/11/2-768x512.jpg 768w, https://rstheme.com/products/wordpress/finoptis/wp-content/uploads/2018/11/2-1024x683.jpg 1024w"
+																			sizes="(max-width: 1200px) 100vw, 1200px" />
+																		<div class="blog-date"> <span class="date">19 </span> <span class="month">Nov
+																			</span>
+																		</div>
+																	</div>
+																	<div class="blog-meta">
+																		<h3 class="blog-title"><a href="index16ad.html?post_type=post&amp;p=2164">Small
+																				Business Trends</a></h3>
+																	</div>
+																	<!-- <div class="blog-slidermeta blog-date"> <span class="author">By admin</span><span
+																				class="seperator">/</span> <span class="category"><a
+																					href="category/corporate/index.html">Corporate</a></span></div> -->
+																	<div class="home_full_blog slider-blog-title">
+																		<div class="blog-desc"> Below are the original Latin passages We denounce with
+																			righteous indignation and dislike men who are so beguiled and demoralized by
+																			the...
+																		</div>
+																	</div>
+																</div>
+																<% } %>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="vc_row-full-width vc_clearfix"></div>
+									<div data-vc-full-width="true" data-vc-full-width-init="false"
+										class="vc_row wpb_row vc_row-fluid vc_custom_1542443423538 vc_row-has-fill vc_row-o-content-middle vc_row-flex">
+										<div class="wpb_column vc_column_container vc_col-sm-6">
+											<div class="vc_column-inner vc_custom_1542784966797">
+												<div class="wpb_wrapper">
+													<div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1545304777733">
+														<div class="mmb-30 wpb_column vc_column_container vc_col-sm-6">
+															<div class="vc_column-inner">
+																<div class="wpb_wrapper">
+																	<div class="counter-top-area text-center "
+																		style="background-image: url(wp-content/uploads/2018/11/dark-mosaic.png)">
+																		<div class="rs-counter-list">
+																			<div class="count-text">
+																				<div style="margin-top:0px; margin-bottom:4px; color:#e2c606"
+																					class="count-number"> <span
+																						style="font-size:60px; line-height:60px; color:#e2c606" class="rs-counter">
+																						37</span> <span style="color:#e2c606"><span
+																							style="font-size:20px; line-height:20px"></span></span></div>
+																				<h4 style="color: #ffffff"><span
+																						style="font-size: 20px; line-height: 20px!important">SB Chapters</span>
+																				</h4>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="wpb_column vc_column_container vc_col-sm-6">
+															<div class="vc_column-inner">
+																<div class="wpb_wrapper">
+																	<div class="counter-top-area text-center "
+																		style="background-image: url(wp-content/uploads/2018/11/dark-mosaic.png)">
+																		<div class="rs-counter-list">
+																			<div class="count-text">
+																				<div style="margin-top:0px; margin-bottom:4px; color:#e2c606"
+																					class="count-number"> <span
+																						style="font-size:60px; line-height:60px; color:#e2c606" class="rs-counter">
+																						99</span> <span style="color:#e2c606"><span
+																							style="font-size:20px; line-height:20px"></span></span></div>
+																				<h4 style="color: #ffffff"><span
+																						style="font-size: 20px; line-height: 20px!important">Professional
+																						Members</span>
+																				</h4>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1545304818805">
+														<div class="mmb-30 wpb_column vc_column_container vc_col-sm-6">
+															<div class="vc_column-inner">
+																<div class="wpb_wrapper">
+																	<div class="counter-top-area text-center "
+																		style="background-image: url(wp-content/uploads/2018/11/dark-mosaic.png)">
+																		<div class="rs-counter-list">
+																			<div class="count-text">
+																				<div style="margin-top:0px; margin-bottom:4px; color:#e2c606"
+																					class="count-number"> <span
+																						style="font-size:60px; line-height:60px; color:#e2c606" class="rs-counter">
+																						1898</span> <span style="color:#e2c606"></span></div>
+																				<h4 style="color: #ffffff"><span
+																						style="font-size: 20px; line-height: 20px!important">Student
+																						Members</span>
+																				</h4>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="wpb_column vc_column_container vc_col-sm-6">
+															<div class="vc_column-inner">
+																<div class="wpb_wrapper">
+																	<div class="counter-top-area text-center "
+																		style="background-image: url(wp-content/uploads/2018/11/dark-mosaic.png)">
+																		<div class="rs-counter-list">
+																			<div class="count-text">
+																				<div style="margin-top:0px; margin-bottom:4px; color:#e2c606"
+																					class="count-number"> <span
+																						style="font-size:60px; line-height:60px; color:#e2c606" class="rs-counter">
+																						8</span> <span style="color:#e2c606"></span></div>
+																				<h4 style="color: #ffffff"><span
+																						style="font-size: 20px; line-height: 20px!important">Years Of
+																						Experience</span>
+																				</h4>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="wpb_column vc_column_container vc_col-sm-6">
+											<div class="vc_column-inner vc_custom_1542784961365">
+												<div class="wpb_wrapper">
+													<div class="rs-heading style3 light  vc_custom_1545304997702  ">
+														<div class="title-inner"> <span style="color: #e2c60c" class="sub-text">[Since
+																2015]</span>
+															<h2 class="title" style="color: #ffffff">Experience In Business Development</h2>
+														</div>
+														<div class="description">
+															<p style="color: #ffffff">We denounce with righteous indignation and dislike men who are
+																so beguiled and demoralized by the charms of pleasure of the moment. Contact with us
+																for
+																more awesome work.</p>
+														</div>
+													</div>
+													<div class="rs-btn btn-left"> <a data-onhovercolor="#222222" data-onhoverbg=""
+															data-onleavebg="#e2c60c" data-onleavecolor="#212121" class="readon rs_button " href="#"
+															style="color:#212121;background:#e2c60c;">SB Chapters</a></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="vc_row-full-width vc_clearfix"></div>
+									<div id="events" data-vc-full-width="true" data-vc-full-width-init="false"
+										class="vc_row wpb_row vc_row-fluid blog-gap vc_custom_1544169667700 vc_row-has-fill">
+										<div class="wpb_column vc_column_container vc_col-sm-12">
+											<div class="vc_column-inner">
+												<div class="wpb_wrapper">
+													<div class="rs-heading style3  vc_custom_1543920863426  ">
+														<div class="title-inner">
+															<!-- <span style="color: #28406d" class="sub-text">[News]</span> -->
+															<h2 class="title">Events</h2>
+														</div>
+														<div class="description">
+															<p>Accelerating innovative young minds.</p>
+														</div>
+													</div>
+													<div class="rs-blog home-blog-area ">
+														<div class="blog-carousel blog-slider owl-carousel owl-navigation-yes"
+															data-carousel-options="{&quot;nav&quot;:false,&quot;navText&quot;:[&quot;&lt;i class=&#039;icofont icofont-bubble-left&#039;&gt;&lt;\/i&gt;&quot;,&quot;&lt;i class=&#039;icofont icofont-bubble-right&#039;&gt;&lt;\/i&gt;&quot;],&quot;dots&quot;:true,&quot;autoplay&quot;:true,&quot;autoplayTimeout&quot;:&quot;5000&quot;,&quot;stagePadding&quot;:0,&quot;autoplaySpeed&quot;:&quot;200&quot;,&quot;autoplayHoverPause&quot;:true,&quot;loop&quot;:true,&quot;margin&quot;:20,&quot;items&quot;:3,&quot;responsive&quot;:{&quot;0&quot;:{&quot;items&quot;:&quot;1&quot;},&quot;480&quot;:{&quot;items&quot;:&quot;1&quot;},&quot;768&quot;:{&quot;items&quot;:&quot;2&quot;},&quot;992&quot;:{&quot;items&quot;:&quot;3&quot;},&quot;1200&quot;:{&quot;items&quot;:&quot;3&quot;}}}">
+															<% for(let i=0; i < 6; i++) { %>
+																<div class="blog-item style2 ">
+																	<div class="blog-img content-overlay"> <img width="1200" height="800"
+																			src="wp-content/uploads/2018/11/2.jpg"
+																			class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""
+																			srcset="https://rstheme.com/products/wordpress/finoptis/wp-content/uploads/2018/11/2.jpg 1200w, https://rstheme.com/products/wordpress/finoptis/wp-content/uploads/2018/11/2-365x243.jpg 365w, https://rstheme.com/products/wordpress/finoptis/wp-content/uploads/2018/11/2-600x400.jpg 600w, https://rstheme.com/products/wordpress/finoptis/wp-content/uploads/2018/11/2-300x200.jpg 300w, https://rstheme.com/products/wordpress/finoptis/wp-content/uploads/2018/11/2-768x512.jpg 768w, https://rstheme.com/products/wordpress/finoptis/wp-content/uploads/2018/11/2-1024x683.jpg 1024w"
+																			sizes="(max-width: 1200px) 100vw, 1200px" />
+																		<div class="blog-date"> <span class="date">19 </span> <span class="month">Nov
+																			</span>
+																		</div>
+																	</div>
+																	<div class="blog-meta">
+																		<h3 class="blog-title"><a href="index16ad.html?post_type=post&amp;p=2164">Small
+																				Business Trends</a></h3>
+																	</div>
+																	<!-- <div class="blog-slidermeta blog-date"> <span class="author">By admin</span><span
+																				class="seperator">/</span> <span class="category"><a
+																					href="category/corporate/index.html">Corporate</a></span></div> -->
+																	<div class="home_full_blog slider-blog-title">
+																		<div class="blog-desc"> Below are the original Latin passages We denounce with
+																			righteous indignation and dislike men who are so beguiled and demoralized by
+																			the...
+																		</div>
+																	</div>
+																</div>
+																<% } %>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="vc_row-full-width vc_clearfix"></div>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-				var urlFields = document.querySelectorAll('.mc4wp-form input[type="url"]');
-				if (urlFields && urlFields.length > 0) {
-					for (var j = 0; j < urlFields.length; j++) {
-						addEventListener(urlFields[j], 'blur', maybePrefixUrlField);
-					}
-				}/* test if browser supports date fields */
-				var testInput = document.createElement('input');
-				testInput.setAttribute('type', 'date');
-				if (testInput.type !== 'date') {
 
-					/* add placeholder & pattern to all date fields */
-					var dateFields = document.querySelectorAll('.mc4wp-form input[type="date"]');
-					for (var i = 0; i < dateFields.length; i++) {
-						if (!dateFields[i].placeholder) {
-							dateFields[i].placeholder = 'YYYY-MM-DD';
-						}
-						if (!dateFields[i].pattern) {
-							dateFields[i].pattern = '[0-9]{4}-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01])';
-						}
-					}
-				}
-
-			})();</script>
-		<script type="text/javascript">var c = document.body.className;
-			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
-			document.body.className = c;</script>
-		<script type="text/javascript">function revslider_showDoubleJqueryError(sliderID) {
-				var errorMessage = "Revolution Slider Error: You have some jquery.js library include that comes after the revolution files js include.";
-				errorMessage += "<br> This includes make eliminates the revolution slider libraries, and make it not work.";
-				errorMessage += "<br><br> To fix it you can:<br>&nbsp;&nbsp;&nbsp; 1. In the Slider Settings -> Troubleshooting set option:  <strong><b>Put JS Includes To Body</b></strong> option to true.";
-				errorMessage += "<br>&nbsp;&nbsp;&nbsp; 2. Find the double jquery.js include and remove it.";
-				errorMessage = "<span style='font-size:16px;color:#BC0C06;'>" + errorMessage + "</span>";
-				jQuery(sliderID).show().html(errorMessage);
-			}</script>
-		<script
-			type='text/javascript'>var wpcf7 = { "apiSettings": { "root": "https:\/\/rstheme.com\/products\/wordpress\/finoptis\/wp-json\/contact-form-7\/v1", "namespace": "contact-form-7\/v1" }, "recaptcha": { "messages": { "empty": "Please verify that you are not a robot." } } };</script>
-		<script
-			type='text/javascript'>var woocommerce_params = { "ajax_url": "\/products\/wordpress\/finoptis\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/products\/wordpress\/finoptis\/?wc-ajax=%%endpoint%%" };</script>
-		<script
-			type='text/javascript'>var wc_cart_fragments_params = { "ajax_url": "\/products\/wordpress\/finoptis\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/products\/wordpress\/finoptis\/?wc-ajax=%%endpoint%%", "cart_hash_key": "wc_cart_hash_4077b553ceece1e59c10433e34153fcd", "fragment_name": "wc_fragments_4077b553ceece1e59c10433e34153fcd" };</script>
-		<script type='text/javascript'>var flicker_data = { "limit_f": "6", "flicker_id": "159794289@N02" };</script>
-		<script type='text/javascript'>var mc4wp_forms_config = [];</script>
-		<!--[if lte IE 9]> <script type='text/javascript' src='https://rstheme.com/products/wordpress/finoptis/wp-content/plugins/mailchimp-for-wp/assets/js/third-party/placeholders.min.js?ver=4.3.1'></script> <![endif]-->
-		<script type="text/javascript" defer
-			src="wp-content/cache/autoptimize/js/autoptimize_e5fb01b82e91cd3791eb4751d0118d4d.js"></script>
-	</body>
-	<!-- Mirrored from rstheme.com/products/wordpress/finoptis/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 09 May 2022 10:53:02 GMT -->
-
-	</html>
+		<%- include ("partials/footer"); %>

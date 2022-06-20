@@ -7,6 +7,10 @@ app.get("/", (req, res) => {
   res.render("home");
 });
 
+app.get("/office-bearers/:year", (req, res) => {
+  res.render("office-bearers/" + req.params.year);
+});
+
 app.listen(process.env.PORT || 3000, () => {
   console.log("Server is running at port 3000");
 });
