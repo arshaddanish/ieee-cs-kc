@@ -11,6 +11,10 @@ app.get("/office-bearers/:year", (req, res) => {
   res.render("office-bearers/" + req.params.year);
 });
 
+app.get("*", function (req, res) {
+  res.render("404");
+});
+
 app.listen(process.env.PORT || 3000, () => {
   console.log("Server is running at port 3000");
 });
