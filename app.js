@@ -11,6 +11,14 @@ app.get("/office-bearers/:year", (req, res) => {
   res.render("office-bearers/" + req.params.year);
 });
 
+app.get("/updates", (req, res) => {
+  res.render("updates");
+});
+
+app.get("/events", (req, res) => {
+  res.render("updates");
+});
+
 app.get("*", function (req, res) {
   res.render("404");
 });
