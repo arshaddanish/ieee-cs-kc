@@ -19,6 +19,10 @@ app.get("/events", (req, res) => {
   res.render("updates");
 });
 
+app.get("/sb-chapters", (req, res) => {
+  res.send("SB Chapters");
+});
+
 app.get("*", function (req, res) {
   res.render("404");
 });
