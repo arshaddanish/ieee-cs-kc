@@ -15,8 +15,16 @@ app.get("/updates", (req, res) => {
   res.render("updates");
 });
 
-app.get("/events", (req, res) => {
-  res.render("updates");
+app.get("/updates/:update", (req, res) => {
+  res.render("updates-single");
+});
+
+app.get("/events/", (req, res) => {
+  res.render("events");
+});
+
+app.get("/events/:event", (req, res) => {
+  res.render("events-single");
 });
 
 app.get("/sb-chapters", (req, res) => {
