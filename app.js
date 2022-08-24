@@ -28,7 +28,7 @@ app.get("/events/:event", (req, res) => {
 });
 
 app.get("/sb-chapters", (req, res) => {
-  res.send("SB Chapters");
+  res.render("sb-chapters");
 });
 
 app.get("*", function (req, res) {
