@@ -52,3 +52,23 @@
 .team-item .team-title {
   font-size: 16px !important;
 }
+
+/* ........................ */
+
+.techthreads {
+  max-width: 800px !important;
+  margin-bottom: 6rem;
+}
+
+.techthreads img {
+  margin-bottom: 3rem;
+  max-width: 600px;
+}
+
+.techthreads h4 {
+  margin-bottom: 0.5rem;
+}
+
+.techthreads .reg-message {
+  margin-top: 1.5rem;
+}

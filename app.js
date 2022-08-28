@@ -11,6 +11,10 @@ app.get("/office-bearers/:year", (req, res) => {
   res.render("office-bearers/" + req.params.year);
 });
 
+app.get("/techthreads/:edition", (req, res) => {
+  res.render("techthreads/" + req.params.edition);
+});
+
 app.get("/updates", (req, res) => {
   res.render("updates");
 });
