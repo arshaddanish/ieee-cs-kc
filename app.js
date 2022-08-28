@@ -15,6 +15,14 @@ app.get("/techthreads/:edition", (req, res) => {
   res.render("techthreads/" + req.params.edition);
 });
 
+app.get("/previous-blogs/:year", (req, res) => {
+  res.render("prev-blogs/" + req.params.year);
+});
+
+app.get("/previous-blogs/:year/:blog", (req, res) => {
+  res.render("prev-blogs/blog");
+});
+
 app.get("/updates", (req, res) => {
   res.render("updates");
 });

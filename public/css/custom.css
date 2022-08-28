@@ -72,3 +72,9 @@
 .techthreads .reg-message {
   margin-top: 1.5rem;
 }
+
+/* ........................ */
+
+.home-img {
+  filter: brightness(40%);
+}

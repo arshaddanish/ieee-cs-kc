@@ -9495,7 +9495,7 @@ if (window.tplogs == true)
                 r.bgfit +
                 ";background-position:" +
                 r.bgposition +
-                ';width:100%;height:100%;"'),
+                ';width:100%;height:100%; filter: brightness(40%)"'),
             i.data("mediafilter", n),
             (n = "on" === i.data("kenburns") ? "" : n);
           var d = jQuery(
