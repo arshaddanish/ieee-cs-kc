@@ -1,0 +1,24 @@
+.admin-btns {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: space-between;
+}
+
+.event-item {
+  background: #fff;
+}
+
+.bottom-shadow1 {
+  padding-top: 1.25rem !important;
+}
+
+.blog-title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem !important;
+}
+
+.event-card {
+  padding: 1rem;
+  background: #EEEEEE;
+  border-radius: 1rem;
+}
