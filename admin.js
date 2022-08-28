@@ -26,15 +26,19 @@ app.get("/admin/statistics", (req, res) => {
   res.render("admin/statistics");
 });
 
+app.get("/admin/add-blog", (req, res) => {
+  res.render("admin/add-blog");
+});
+
+app.get("/admin/statistics", (req, res) => {
+  res.render("admin/statistics");
+});
+
 app.get("/admin/:blog_year", (req, res) => {
   blog_year = req.params.blog_year;
   if (blog_year.substr(0, 5) === "blogs")
     res.render("admin/blogs", { year: blog_year });
   else res.render("404");
-});
-
-app.get("/admin/statistics", (req, res) => {
-  res.render("admin/statistics");
 });
 
 module.exports = app;
