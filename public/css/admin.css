@@ -19,6 +19,29 @@
 
 .event-card {
   padding: 1rem;
-  background: #EEEEEE;
+  background: #eeeeee;
   border-radius: 1rem;
+}
+
+.admin-form {
+  margin-bottom: 6rem;
+}
+
+.admin-form textarea {
+  margin-top: 1.5rem;
+  height: 300px;
+}
+
+.admin-form button {
+  width: 250px;
+  padding: 0.75rem 1rem;
+}
+
+.admin-form .mini-width-field {
+  /* margin-bottom: 1.5rem; */
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: start;
+  column-gap: 4rem;
+  margin-bottom: 1.5rem;
 }
