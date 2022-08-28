@@ -1,0 +1,53 @@
+<%- include ("partials/head"); %>
+  <%- include ("partials/navbar-shadow"); %>
+
+    <div id="page" class="site ">
+      <div class="main-contain updates-padding">
+        <div class="container">
+          <div id="content" class="site-content">
+            <div class="rs-heading style3  vc_custom_1543920863426  ">
+              <div class="title-inner">
+                <!-- <span style="color: #28406d" class="sub-text">[News]</span> -->
+                <h2 class="title" style="margin-bottom: 0;">SB Chapters</h2>
+              </div>
+              <!-- <div class="description">
+            <p>Accelerating innovative young minds.</p>
+          </div> -->
+            </div>
+            <div>
+              <table class="sb-chapters-table">
+                <thead>
+                  <tr class="head">
+                    <th class="top-left">OU Name</th>
+                    <th class="top-right">OU Formed Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="first-row odd">
+                    <td><a href="">Rajiv Gandhi Institute of Technology</a></td>
+                    <td>28-04-2010</td>
+                  </tr>
+                  <% for (let index=0; index < 20; index++) { %>
+                    <tr class="even">
+                      <td>Rajiv Gandhi Institute of Technology</td>
+                      <td>28-04-2010</td>
+                    </tr>
+                    <tr class="odd">
+                      <td>Rajiv Gandhi Institute of Technology</td>
+                      <td>28-04-2010</td>
+                    </tr>
+                    <% } %>
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        document.getElementById("sbcs19").classList.add("current-menu-ancestor");
+        document.getElementById("home19").classList.remove("current_page_item", "current-menu-ancestor");
+      </script>
+
+      <%- include ("partials/footer"); %>
