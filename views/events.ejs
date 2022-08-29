@@ -36,7 +36,7 @@
                                   </div>
                                   <div class="bottom-shadow1 ">
                                     <div class="blog-meta">
-                                      <h3 class="blog-title"><a href="/events/event"><%= event.name %></a></h3>
+                                      <h3 class="blog-title"><a href="/events/<%= event.id %>"><%= event.name %></a></h3>
                                       <!-- <div class="blog-date"> <span class="author">By admin</span><span class="seperator">/</span> <span class="categories"><a href="../category/corporate/index.html">Corporate </a></span></div> -->
                                     </div>
                                     <div class="blog-desc"> 
@@ -50,16 +50,45 @@
                                </div>                               
 				<div class="pagination-area">
 				<div class="nav-links">
-				<% if(data.page != 1){ %>
-                                  <a class="next page-numbers" href="/events?page=<%= data.page-1 %>">Prev. &raquo;</a>
-                                  <a class='page-numbers' href='/events?page=<%= data.page-1 %>'><%= data.page-1 %></a> 
+
+				<% if(data.page-2 > 1){ %>
+                                  <a class="next page-numbers" href="/events?page=<%= data.page-1 %>">&laquo;</a>
 				<% } %>
+
+				<% for (var i = data.page-2 ; i < data.page; i++) {
+				  if (i > 0) { %>
+                                  <a class="next page-numbers" href="/events?page=<%= i %>"><%= i %></a>
+                                <% }} %>
 
                                   <span aria-current='page' class='page-numbers current'><%= data.page %></span>
 
+				<% for (var i = data.page+1 ; i < data.page+3; i++) {
+				  if (i <= data.no_of_pages) { %>
+				  <a class="next page-numbers" href="/events?page=<%= i %>"><%= i %></a>
+				<% }} %>
+
+				<% if(data.page+2 < data.no_of_pages){ %>
+                                  <a class="next page-numbers" href="/events?page=<%= data.page+1 %>">&raquo;</a>
+				<% } %>
+				</div>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+		      </div>
+		    </div>
+		  </div>
+		  <!-- .entry-content -->
+		</article>
+		<!-- #post-## -->
+	      </div>
+	    </div>
+	  </div>
+	</div>
+      </div>
 				<% if(data.page != data.no_of_pages){ %>
                                   <a class='page-numbers' href='/events?page=<%= data.page+1 %>'><%= data.page+1 %></a> 
-                                  <a class="next page-numbers" href="/events?page=<%= data.page+1 %>">Next &raquo;</a>
+                                  <a class="next page-numbers" href="/events?page=<%= data.page+1 %>">&raquo;</a>
 				<% } %>
                                 </div>
                               </div>

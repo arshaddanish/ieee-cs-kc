@@ -31,16 +31,32 @@ app.get("/previous-blogs/:year/:blog", (req, res) => {
   res.render("prev-blogs/blog");
 });
 
-app.get("/updates", (req, res) => {
-  res.render("updates");
+app.get("/updates", async (req, res) => {
+  var page = req.query.page;
+  if (page == undefined) {
+	page = 1;
+  }
+
+  var url = apiRoute + "items/updates?page=" + page;
+  const apiResponse = await axios.get(url)
+  
+  const data = apiResponse.data;
+  JSON.stringify(data);
+  res.render("updates", { data: data.data });
 });
 
-app.get("/updates/:update", (req, res) => {
-  res.render("updates-single");
+app.get("/updates/:update",async (req, res) => {
+  var url = apiRoute + "items/updates/" + req.params.update;
+  const apiResponse = await axios.get(url)
+  
+  const data = apiResponse.data;
+  JSON.stringify(data);
+
+  res.render("updates-single", { data: data.data });
 });
 
 app.get("/events/", async (req, res) => {
-
+	
   var page = req.query.page;
   if (page == undefined) {
 	page = 1;

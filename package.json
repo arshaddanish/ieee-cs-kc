@@ -10,11 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-<<<<<<< HEAD
     "axios": "^0.27.2",
-=======
     "cors": "^2.8.5",
->>>>>>> 0b5dfcce839c8f919615eb35e60dba14736d9836
     "ejs": "^3.1.8",
     "express": "^4.18.1",
     "node-fetch": "^3.2.10"
