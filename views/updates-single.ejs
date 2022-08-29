@@ -39,7 +39,9 @@
         <div class="rs-heading style3  vc_custom_1543920863426  ">
           <div class="title-inner">
             <!-- <span style="color: #28406d" class="sub-text">[News]</span> -->
-            <h2 class="title" style="margin-bottom: 0;">Updates /<span style="color: gray ; font-size: 1.5rem"> <%= data.name %></span></h2>
+            <h2 class="title" style="margin-bottom: 0;">Updates /<span style="color: gray ; font-size: 1.5rem">
+                <%= data.name %>
+              </span></h2>
           </div>
         </div>
         <div class="rs-blog-details pt-70 pb-70">
@@ -51,9 +53,13 @@
                 </div>
                 <div class="single-content-full">
                   <div class="bs-desc update-content">
-                    <h2><%= data.name %></h2>
-                    <p><%= data.description %></p>
-		    </div>
+                    <h2>
+                      <%= data.name %>
+                    </h2>
+                    <p>
+                      <%= data.description %>
+                    </p>
+                  </div>
                 </div>
                 <div class="clear-fix"></div>
               </article>

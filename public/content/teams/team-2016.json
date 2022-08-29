@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
 	"execom":[
 		{
@@ -20,3 +21,25 @@
 		}
 	]
 }
+=======
+[
+ {
+  "name": "Mr. G Padmakumar",
+  "post": "Chair",
+  "image": "/public/images/members/mrgpadmakumar.jpg",
+  "linkedin": ""
+ },
+ {
+  "name": "Dr. G. Santhosh Kumar",
+  "post": "Vice-Chair",
+  "image": "/public/images/members/drgsanthoshkumar.jpg",
+  "linkedin": ""
+ },
+ {
+  "name": "Mr. M. P. Gilesh",
+  "post": "Secretary",
+  "image": "/public/images/members/mrmpgilesh.jpg",
+  "linkedin": ""
+ }
+]
+>>>>>>> 6cc97b9c57132568ad2a4255308667e0694a0a6a

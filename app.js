@@ -92,7 +92,12 @@ app.get("/events/:event", async(req, res) => {
 
 app.get("/sb-chapters", (req, res) => {
 
+<<<<<<< HEAD
   const data = getData("public/content/sb-chapters.json");
+=======
+  const data = getData("./public/content/sb-chapters.json");
+  console.log(data);
+>>>>>>> 6cc97b9c57132568ad2a4255308667e0694a0a6a
   res.render("sb-chapters", { data: data });
 
 });

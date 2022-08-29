@@ -34,6 +34,18 @@ app.get("/admin/statistics", (req, res) => {
   res.render("admin/statistics");
 });
 
+app.get("/admin/edit-update", (req, res) => {
+  res.render("admin/edit-update");
+});
+
+app.get("/admin/edit-event", (req, res) => {
+  res.render("admin/edit-event");
+});
+
+app.get("/admin/edit-blog", (req, res) => {
+  res.render("admin/edit-blog");
+});
+
 app.get("/admin/:blog_year", (req, res) => {
   blog_year = req.params.blog_year;
   if (blog_year.substr(0, 5) === "blogs")
