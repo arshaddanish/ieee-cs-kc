@@ -1,80 +1,82 @@
-[
- {
-  "name": "Mr. Senthilkumar KB",
-  "post": "Chair",
-  "image": "/public/images/members/mrsenthilkumarkb.jpg",
-  "linkedin": "https://www.linkedin.com/in/senthilkumar-k-b-51871313/"
- },
- {
-  "name": "Mr. M. P. Gilesh",
-  "post": "Vice-Chair",
-  "image": "/public/images/members/mrmpgilesh.jpg",
-  "linkedin": "https://www.linkedin.com/in/gilesh-m-p-4204691b/"
- },
- {
-  "name": "Mr. Jishnu Krishna",
-  "post": "Secretary",
-  "image": "/public/images/members/mrjishnukrishna.jpg",
-  "linkedin": "https://www.linkedin.com/in/jishnukrishna/"
- },
- {
-  "name": "Ms.Keerthana Krishnan",
-  "post": "Kochi Subsection Coordinator",
-  "image": "/public/images/members/mskeerthanakrishnan.jpg",
-  "linkedin": "https://www.linkedin.com/in/keerthana-krishnan-39375557/"
- },
- {
-  "name": "Mr. Sridev Shyam",
-  "post": "Industrial Relations Coordinator",
-  "image": "/public/images/members/mrsridevshyam.jpg",
-  "linkedin": "https://in.linkedin.com/in/sridevshyam"
- },
- {
-  "name": "Mr. Nandu R",
-  "post": "Young Professional Coordinator",
-  "image": "/public/images/members/mrnandur.jpg",
-  "linkedin": "https://www.linkedin.com/in/nandurnair/"
- },
- {
-  "name": "Mr. Alan Anto",
-  "post": "Section CS Student Coordinator",
-  "image": "/public/images/members/mralananto.jpg",
-  "linkedin": "https://linkedin.com/in/alananto"
- },
- {
-  "name": "Mr. Reon Saji",
-  "post": "Webmaster",
-  "image": "/public/images/members/mrreonsaji.jpg",
-  "linkedin": "https://linkedin.com/in/reonsaji"
- },
- {
-  "name": "Mr. Afnan Nazer",
-  "post": "Electronics and Communication Coordinator",
-  "image": "/public/images/members/mrafnannazer.jpg",
-  "linkedin": "https://www.linkedin.com/in/afnan-nazer-593212138/"
- },
- {
-  "name": "Ms. Athira S Pillai",
-  "post": "WIC Coordinator",
-  "image": "/public/images/members/msathiraspillai.jpg",
-  "linkedin": "https://www.linkedin.com/in/athira-s-pillai-211a6a115/"
- },
- {
-  "name": "Ms. Veni S",
-  "post": "Travancore Hub Coordinator",
-  "image": "/public/images/members/msvenis.jpg",
-  "linkedin": "https://linkedin.com/in/veni-sreekumar"
- },
- {
-  "name": "Ms. Varnana Vijay",
-  "post": "Kochi Hub Coordinator",
-  "image": "/public/images/members/msvarnanavijay.jpg",
-  "linkedin": "https://in.linkedin.com/in/varnanavijay"
- },
- {
-  "name": "Ms. Sneha Das PH",
-  "post": "Malabar Hub Coordinator",
-  "image": "/public/images/members/mssnehadasph.jpg",
-  "linkedin": "https://www.linkedin.com/in/sneha-das-ph-54743312a/"
- }
-]
+{
+	"execom":[
+		{
+			"name": "Mr. Senthilkumar KB",
+			"post": "Chair",
+			"image": "/images/members/mrsenthilkumarkb.jpg",
+			"linkedin": "https://www.linkedin.com/in/senthilkumar-k-b-51871313/"
+		},
+		{
+			"name": "Mr. M. P. Gilesh",
+			"post": "Vice-Chair",
+			"image": "/images/members/mrmpgilesh.jpg",
+			"linkedin": "https://www.linkedin.com/in/gilesh-m-p-4204691b/"
+		},
+		{
+			"name": "Mr. Jishnu Krishna",
+			"post": "Secretary",
+			"image": "/images/members/mrjishnukrishna.jpg",
+			"linkedin": "https://www.linkedin.com/in/jishnukrishna/"
+		},
+		{
+			"name": "Ms.Keerthana Krishnan",
+			"post": "Kochi Subsection Coordinator",
+			"image": "/images/members/mskeerthanakrishnan.jpg",
+			"linkedin": "https://www.linkedin.com/in/keerthana-krishnan-39375557/"
+		},
+		{
+			"name": "Mr. Sridev Shyam",
+			"post": "Industrial Relations Coordinator",
+			"image": "/images/members/mrsridevshyam.jpg",
+			"linkedin": "https://in.linkedin.com/in/sridevshyam"
+		},
+		{
+			"name": "Mr. Nandu R",
+			"post": "Young Professional Coordinator",
+			"image": "/images/members/mrnandur.jpg",
+			"linkedin": "https://www.linkedin.com/in/nandurnair/"
+		},
+		{
+			"name": "Mr. Alan Anto",
+			"post": "Section CS Student Coordinator",
+			"image": "/images/members/mralananto.jpg",
+			"linkedin": "https://linkedin.com/in/alananto"
+		},
+		{
+			"name": "Mr. Reon Saji",
+			"post": "Webmaster",
+			"image": "/images/members/mrreonsaji.jpg",
+			"linkedin": "https://linkedin.com/in/reonsaji"
+		},
+		{
+			"name": "Mr. Afnan Nazer",
+			"post": "Electronics and Communication Coordinator",
+			"image": "/images/members/mrafnannazer.jpg",
+			"linkedin": "https://www.linkedin.com/in/afnan-nazer-593212138/"
+		},
+		{
+			"name": "Ms. Athira S Pillai",
+			"post": "WIC Coordinator",
+			"image": "/images/members/msathiraspillai.jpg",
+			"linkedin": "https://www.linkedin.com/in/athira-s-pillai-211a6a115/"
+		},
+		{
+			"name": "Ms. Veni S",
+			"post": "Travancore Hub Coordinator",
+			"image": "/images/members/msvenis.jpg",
+			"linkedin": "https://linkedin.com/in/veni-sreekumar"
+		},
+		{
+			"name": "Ms. Varnana Vijay",
+			"post": "Kochi Hub Coordinator",
+			"image": "/images/members/msvarnanavijay.jpg",
+			"linkedin": "https://in.linkedin.com/in/varnanavijay"
+		},
+		{
+			"name": "Ms. Sneha Das PH",
+			"post": "Malabar Hub Coordinator",
+			"image": "/images/members/mssnehadasph.jpg",
+			"linkedin": "https://www.linkedin.com/in/sneha-das-ph-54743312a/"
+		}
+	]
+}

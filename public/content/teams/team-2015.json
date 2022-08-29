@@ -1,20 +1,22 @@
-[
- {
-  "name": "Mrs. Mini Ulanat",
-  "post": "Chair",
-  "image": "/public/images/members/mrsminiulanat.jpg",
-  "linkedin": ""
- },
- {
-  "name": "Mr.G Padmakumar",
-  "post": "Vice-Chair",
-  "image": "/public/images/members/mrgpadmakumar.jpg",
-  "linkedin": ""
- },
- {
-  "name": "Mr.Farish C V",
-  "post": "Secretary",
-  "image": "/public/images/members/mrfarishcv.jpg",
-  "linkedin": ""
- }
-]
+{
+	"execom":[
+		{
+			"name": "Mrs. Mini Ulanat",
+			"post": "Chair",
+			"image": "/images/members/mrsminiulanat.jpg",
+			"linkedin": ""
+		},
+		{
+			"name": "Mr.G Padmakumar",
+			"post": "Vice-Chair",
+			"image": "/images/members/mrgpadmakumar.jpg",
+			"linkedin": ""
+		},
+		{
+			"name": "Mr.Farish C V",
+			"post": "Secretary",
+			"image": "/images/members/mrfarishcv.jpg",
+			"linkedin": ""
+		}
+	]
+}

@@ -1,146 +1,150 @@
-[
- {
-  "name": "Mr. Srinivasan Ravindran",
-  "post": "Chair",
-  "image": "/public/images/members/mrsrinivasanravindran.jpg",
-  "linkedin": "https://www.linkedin.com/in/srinitvm/"
- },
- {
-  "name": "Dr. Vishnukumar S.",
-  "post": "Vice Chairman",
-  "image": "/public/images/members/drvishnukumars.jpg",
-  "linkedin": "https://www.linkedin.com/in/dr-vishnukumar-s-a41bb643/"
- },
- {
-  "name": "Dr. Deepthi Sasidharan",
-  "post": "Secretary",
-  "image": "/public/images/members/drdeepthisasidharan.jpg",
-  "linkedin": "https://www.linkedin.com/in/deepthi-sasidharan-26330b7/"
- },
- {
-  "name": "Aathira M",
-  "post": "Joint Secretary - Industry",
-  "image": "/public/images/members/aathiram.jpg",
-  "linkedin": "https://www.linkedin.com/in/aathira-marayil-68391b112/"
- },
- {
-  "name": "Josna V R",
-  "post": "Joint Secretary – Academia, Trivancore Region",
-  "image": "/public/images/members/josnavr.jpg",
-  "linkedin": "https://www.linkedin.com/in/josna-v-r-75aba647/"
- },
- {
-  "name": "Anu Maria",
-  "post": "Joint Secretary - Kochi Region",
-  "image": "/public/images/members/anumaria.jpg",
-  "linkedin": "https://www.linkedin.com/in/anu-maria-joykutty-6997671a7/"
- },
- {
-  "name": "Sasinas Alias Haritha Z A",
-  "post": "Joint Secretary - Malabar Region",
-  "image": "/public/images/members/sasinasaliasharithaza.jpg",
-  "linkedin": "http://linkedin.com/in/sasinas-haritha-5106537"
- },
- {
-  "name": "Mr. Abhishek Sankar",
-  "post": "Student Representative",
-  "image": "/public/images/members/mrabhisheksankar.jpg",
-  "linkedin": "https://linkedin.com/in/abhishek-sankar-in"
- },
- {
-  "name": "Mr. Akarsh Ashok",
-  "post": "Technical Coordinator",
-  "image": "/public/images/members/mrakarshashok.jpg",
-  "linkedin": "https://www.linkedin.com/in/akarsh-ashok/"
- },
- {
-  "name": "Mr. Shinu Shaju",
-  "post": "Electronics and Communication Coordinator",
-  "image": "/public/images/members/mrshinushaju.jpg",
-  "linkedin": "https://www.linkedin.com/in/shinushaju/"
- },
- {
-  "name": "Mr. Jacob Abraham",
-  "post": "Webmaster",
-  "image": "/public/images/members/mrjacobabraham.jpg",
-  "linkedin": "https://www.linkedin.com/in/jacob-abraham-3b4b05190/"
- },
- {
-  "name": "Mr. Rithin Jose",
-  "post": "Webmaster",
-  "image": "/public/images/members/mrrithinjose.jpg",
-  "linkedin": "https://www.linkedin.com/in/rithinja/"
- },
- {
-  "name": "Ms. Shibiliya Ismail",
-  "post": "Women in Computing Coordinator",
-  "image": "/public/images/members/msshibiliyaismail.jpg",
-  "linkedin": "https://www.linkedin.com/in/shibiliya-ismail-13961b166/"
- },
- {
-  "name": "Ms. Bhadra Jayakumar",
-  "post": "Malabar Hub Coordinator",
-  "image": "/public/images/members/msbhadrajayakumar.jpg",
-  "linkedin": "https://www.linkedin.com/in/bhadra-jayakumar-934b5816b"
- },
- {
-  "name": "Mr. Krishna Prasad",
-  "post": "Travancore Hub coordinator",
-  "image": "/public/images/members/mrkrishnaprasad.jpg",
-  "linkedin": "https://www.linkedin.com/mwlite/in/krishna-prasad-s-nambiar-828bb7185"
- },
- {
-  "name": "Ms. Ann Rose Cherian",
-  "post": "Kochi Hub Coordinator",
-  "image": "/public/images/members/msannrosecherian.jpg",
-  "linkedin": "https://www.linkedin.com/in/ann-rose-cherian-2abb47195"
- },
- {
-  "name": "Ms. Vishnumaya S Unni",
-  "post": "Content Writer",
-  "image": "/public/images/members/msvishnumayasunni.jpg",
-  "linkedin": "https://www.linkedin.com/in/vishnumayasunni/"
- },
- {
-  "name": "Ms. Tinu Sam",
-  "post": "Content Writer",
-  "image": "/public/images/members/mstinusam.jpg",
-  "linkedin": "https://www.linkedin.com/in/tinu-sam-074170186/"
- },
- {
-  "name": "Ms. Gouri Krishna",
-  "post": "Content Writer",
-  "image": "/public/images/members/msgourikrishna.jpg",
-  "linkedin": "https://www.linkedin.com/in/gouri-krishna-944823196/"
- },
- {
-  "name": "Mr. Joel John Kandathil",
-  "post": "Designer",
-  "image": "/public/images/members/mrjoeljohnkandathil.jpg",
-  "linkedin": "https://www.linkedin.com/in/joel-jo/"
- },
- {
-  "name": "Mr. Romal Roy",
-  "post": "Designer",
-  "image": "/public/images/members/mrromalroy.jpg",
-  "linkedin": "https://www.linkedin.com/in/romal-roy-825a7614b/"
- },
- {
-  "name": "Mr. Omkar R",
-  "post": "Designer",
-  "image": "/public/images/members/mromkarr.jpg",
-  "linkedin": "https://www.linkedin.com/in/omkar-r-2078a916a/"
- },
- {
-  "name": "Mr. Rohith Joseph Mathew",
-  "post": "Designer",
-  "image": "/public/images/members/mrrohithjosephmathew.jpg",
-  "linkedin": "https://www.linkedin.com/in/rohith-mathew/"
- },
- {
-  "name": "Mr. Sarath Babu John",
-  "post": "Video Editor",
-  "image": "/public/images/members/mrsarathbabujohn.jpg",
-  "linkedin": "#"
- }
-]
+{
+	"execom":[
+		{
+			"name": "Mr. Srinivasan Ravindran",
+			"post": "Chair",
+			"image": "/images/members/mrsrinivasanravindrannew.jpg",
+			"linkedin": "https://www.linkedin.com/in/srinitvm/"
+		},
+		{
+			"name": "Dr. Vishnukumar S.",
+			"post": "Vice Chairman",
+			"image": "/images/members/drvishnukumars.jpg",
+			"linkedin": "https://www.linkedin.com/in/dr-vishnukumar-s-a41bb643/"
+		},
+		{
+			"name": "Dr. Deepthi Sasidharan",
+			"post": "Secretary",
+			"image": "/images/members/drdeepthisasidharan.jpg",
+			"linkedin": "https://www.linkedin.com/in/deepthi-sasidharan-26330b7/"
+		},
+		{
+			"name": "Aathira M",
+			"post": "Joint Secretary - Industry",
+			"image": "/images/members/aathiram.jpg",
+			"linkedin": "https://www.linkedin.com/in/aathira-marayil-68391b112/"
+		},
+		{
+			"name": "Josna V R",
+			"post": "Joint Secretary – Academia, Trivancore Region",
+			"image": "/images/members/josnavr.jpg",
+			"linkedin": "https://www.linkedin.com/in/josna-v-r-75aba647/"
+		},
+		{
+			"name": "Anu Maria",
+			"post": "Joint Secretary - Kochi Region",
+			"image": "/images/members/anumaria.jpg",
+			"linkedin": "https://www.linkedin.com/in/anu-maria-joykutty-6997671a7/"
+		},
+		{
+			"name": "Sasinas Alias Haritha Z A",
+			"post": "Joint Secretary - Malabar Region",
+			"image": "/images/members/sasinasaliasharithaza.jpg",
+			"linkedin": "http://linkedin.com/in/sasinas-haritha-5106537"
+		},
+		{
+			"name": "Mr. Abhishek Sankar",
+			"post": "Student Representative",
+			"image": "/images/members/mrabhisheksankar.jpg",
+			"linkedin": "https://linkedin.com/in/abhishek-sankar-in"
+		},
+		{
+			"name": "Mr. Akarsh Ashok",
+			"post": "Technical Coordinator",
+			"image": "/images/members/mrakarshashok.jpg",
+			"linkedin": "https://www.linkedin.com/in/akarsh-ashok/"
+		},
+		{
+			"name": "Mr. Shinu Shaju",
+			"post": "Electronics and Communication Coordinator",
+			"image": "/images/members/mrshinushaju.jpg",
+			"linkedin": "https://www.linkedin.com/in/shinushaju/"
+		},
+		{
+			"name": "Mr. Jacob Abraham",
+			"post": "Webmaster",
+			"image": "/images/members/mrjacobabraham.jpg",
+			"linkedin": "https://www.linkedin.com/in/jacob-abraham-3b4b05190/"
+		},
+		{
+			"name": "Mr. Rithin Jose",
+			"post": "Webmaster",
+			"image": "/images/members/mrrithinjose.jpg",
+			"linkedin": "https://www.linkedin.com/in/rithinja/"
+		},
+		{
+			"name": "Ms. Shibiliya Ismail",
+			"post": "Women in Computing Coordinator",
+			"image": "/images/members/msshibiliyaismail.jpg",
+			"linkedin": "https://www.linkedin.com/in/shibiliya-ismail-13961b166/"
+		},
+		{
+			"name": "Ms. Bhadra Jayakumar",
+			"post": "Malabar Hub Coordinator",
+			"image": "/images/members/msbhadrajayakumar.jpg",
+			"linkedin": "https://www.linkedin.com/in/bhadra-jayakumar-934b5816b"
+		},
+		{
+			"name": "Mr. Krishna Prasad",
+			"post": "Travancore Hub coordinator",
+			"image": "/images/members/mrkrishnaprasad.jpg",
+			"linkedin": "https://www.linkedin.com/mwlite/in/krishna-prasad-s-nambiar-828bb7185"
+		},
+		{
+			"name": "Ms. Ann Rose Cherian",
+			"post": "Kochi Hub Coordinator",
+			"image": "/images/members/msannrosecherian.jpg",
+			"linkedin": "https://www.linkedin.com/in/ann-rose-cherian-2abb47195"
+		}
+	],
+	"volunteers":[
+		{
+			"name": "Ms. Vishnumaya S Unni",
+			"post": "Content Writer",
+			"image": "/images/members/msvishnumayasunni.jpg",
+			"linkedin": "https://www.linkedin.com/in/vishnumayasunni/"
+		},
+		{
+			"name": "Ms. Tinu Sam",
+			"post": "Content Writer",
+			"image": "/images/members/mstinusam.jpg",
+			"linkedin": "https://www.linkedin.com/in/tinu-sam-074170186/"
+		},
+		{
+			"name": "Ms. Gouri Krishna",
+			"post": "Content Writer",
+			"image": "/images/members/msgourikrishna.jpg",
+			"linkedin": "https://www.linkedin.com/in/gouri-krishna-944823196/"
+		},
+		{
+			"name": "Mr. Joel John Kandathil",
+			"post": "Designer",
+			"image": "/images/members/mrjoeljohnkandathil.jpg",
+			"linkedin": "https://www.linkedin.com/in/joel-jo/"
+		},
+		{
+			"name": "Mr. Romal Roy",
+			"post": "Designer",
+			"image": "/images/members/mrromalroy.jpg",
+			"linkedin": "https://www.linkedin.com/in/romal-roy-825a7614b/"
+		},
+		{
+			"name": "Mr. Omkar R",
+			"post": "Designer",
+			"image": "/images/members/mromkarr.jpg",
+			"linkedin": "https://www.linkedin.com/in/omkar-r-2078a916a/"
+		},
+		{
+			"name": "Mr. Rohith Joseph Mathew",
+			"post": "Designer",
+			"image": "/images/members/mrrohithjosephmathew.jpg",
+			"linkedin": "https://www.linkedin.com/in/rohith-mathew/"
+		},
+		{
+			"name": "Mr. Sarath Babu John",
+			"post": "Video Editor",
+			"image": "/images/members/mrsarathbabujohn.jpg",
+			"linkedin": "#"
+		}
+	]
+}

@@ -22,7 +22,10 @@ app.get("/", (req, res) => {
 });
 
 app.get("/office-bearers/:year", (req, res) => {
-  res.render("office-bearers/" + req.params.year);
+  const year = req.params.year;
+  const data = getData("public/content/teams/team-" + year + ".json");
+
+  res.render("office-bearers" , { data : data ,year : year});
 });
 
 app.get("/techthreads/:edition", (req, res) => {
@@ -90,7 +93,6 @@ app.get("/events/:event", async(req, res) => {
 app.get("/sb-chapters", (req, res) => {
 
   const data = getData("public/content/sb-chapters.json");
-  console.log(data);
   res.render("sb-chapters", { data: data });
 
 });
