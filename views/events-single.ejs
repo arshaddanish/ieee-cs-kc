@@ -9,7 +9,7 @@
               <div class="title-inner">
                 <!-- <span style="color: #28406d" class="sub-text">[News]</span> -->
                 <h2 class="title" style="margin-bottom: 0;">Events /<span style="color: gray ; font-size: 1.5rem">
-                    Event 19</span></h2>
+                    <%= data.name %></span></h2>
               </div>
             </div>
             <div class="rs-blog-details pt-70 pb-70">
@@ -17,34 +17,17 @@
                 <div class="col-md-12 ">
                   <article id="post-2164"
                     class="post-2164 post type-post status-publish format-standard has-post-thumbnail hentry category-corporate tag-business tag-corporate">
-                    <div class="bs-img"> <img style="width: 60%;" src="../wp-content/uploads/2018/11/2.jpg"
+                    <div class="bs-img"> <img style="width: 60%;" src="<%= data.image  %>"
                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""
-                        srcset="https://rstheme.com/products/wordpress/finoptis/wp-content/uploads/2018/11/2.jpg 1200w, https://rstheme.com/products/wordpress/finoptis/wp-content/uploads/2018/11/2-365x243.jpg 365w, https://rstheme.com/products/wordpress/finoptis/wp-content/uploads/2018/11/2-600x400.jpg 600w, https://rstheme.com/products/wordpress/finoptis/wp-content/uploads/2018/11/2-300x200.jpg 300w, https://rstheme.com/products/wordpress/finoptis/wp-content/uploads/2018/11/2-768x512.jpg 768w, https://rstheme.com/products/wordpress/finoptis/wp-content/uploads/2018/11/2-1024x683.jpg 1024w"
-                        sizes="(max-width: 1200px) 100vw, 1200px" />
-                      <div class="blog-date"> <span class="date">19</span> <span class="month">Nov</span></div>
+                        srcset= "<%= data.image  %>"
+			sizes="(max-width: 1200px) 100vw, 1200px" />
+                      <div class="blog-date"> <span class="date"><%= data.day %></span> <span class="month"><%= data.month %></span></div>
                     </div>
                     <div class="single-content-full">
                       <div class="bs-desc update-content">
-                        <h2>Event 19</h2>
-                        <p>We denounce with righteous indignation and dislike men who are so beguiled and demoralized by
-                          the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain
-                          and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty
-                          through weakness of will, which is the same as saying through shrinking from toil and pain.
-                          They were sparing of the Heat-Ray that night, either because they had but a limited supply of
-                          material for its production or because they did not wish to destroy the country but only to
-                          crush and overawe the opposition they had aroused. In the latter aim they certainly succeeded.
-                          Sunday night was the end of the organised opposition to their movements. After that no body of
-                          men would stand against them, so hopeless was the enterprise.</p>
-                        <p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque
-                          laudantium, totam rem aperiam eaque ipsa, quae  sunt, explicabo. Nemo enim ipsam voluptatem,
-                          quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui
-                          ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit
-                          amet consectetur adipisci[ng] velit, sed quia non numquam [do] eius modi tempora inci[di]dunt,
-                          ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-                        <p>I must explain to you how all this mistaken idea of denouncing of a pleasure and praising
-                          pain was born and I will give you a complete account of the system, and expound the actual
-                          teachings of the great explorer of the truth, the master-builder of human happiness .</p>
-                      </div>
+                        <h2><%= data.name %></h2>
+                        <p><%= data.description %></p>
+			</div>
                     </div>
                     <div class="clear-fix"></div>
                   </article>

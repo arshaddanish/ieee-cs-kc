@@ -1,5 +1,8 @@
 const express = require("express");
 const app = express();
+const axios = require("axios");
+const apiRoute = "https://ieee-cs-kc.herokuapp.com/api/";
+
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
 
@@ -31,12 +34,30 @@ app.get("/updates/:update", (req, res) => {
   res.render("updates-single");
 });
 
-app.get("/events/", (req, res) => {
-  res.render("events");
+app.get("/events/", async (req, res) => {
+
+  var page = req.query.page;
+  if (page == undefined) {
+	page = 1;
+  }
+
+  var url = apiRoute + "items/events?page=" + page;
+  const apiResponse = await axios.get(url)
+  
+  const data = apiResponse.data;
+  JSON.stringify(data);
+  res.render("events", { data: data.data });
 });
 
-app.get("/events/:event", (req, res) => {
-  res.render("events-single");
+app.get("/events/:event", async(req, res) => {
+  
+  var url = apiRoute + "items/events/" + req.params.event;
+  const apiResponse = await axios.get(url)
+  
+  const data = apiResponse.data;
+  JSON.stringify(data);
+
+  res.render("events-single", { data: data.data });
 });
 
 app.get("/sb-chapters", (req, res) => {
