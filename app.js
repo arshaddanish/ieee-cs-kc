@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const axios = require("axios");
+const fs = require("fs");
 const apiRoute = "https://ieee-cs-kc.herokuapp.com/api/";
 
 app.set("view engine", "ejs");
@@ -10,6 +11,11 @@ app.use(express.static(__dirname + "/public"));
 
 let adminRouter = require("./admin");
 app.use(adminRouter);
+
+function getData (path) {
+	const jsonData = fs.readFileSync(path);
+	return JSON.parse(jsonData);
+}
 
 app.get("/", (req, res) => {
   res.render("home");
@@ -82,7 +88,11 @@ app.get("/events/:event", async(req, res) => {
 });
 
 app.get("/sb-chapters", (req, res) => {
-  res.render("sb-chapters");
+
+  const data = getData("/public/content/sb-chapters.json");
+  console.log(data);
+  res.render("sb-chapters", { data: data });
+
 });
 
 app.get("*", function (req, res) {

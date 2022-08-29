@@ -23,20 +23,32 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr class="first-row odd">
-                    <td><a href="">Rajiv Gandhi Institute of Technology</a></td>
-                    <td>28-04-2010</td>
-                  </tr>
-                  <% for (let index=0; index < 20; index++) { %>
+                  <% i=1; data.forEach(function(item){ %>
+		    <% if (i%2 == 0) { %>
                     <tr class="even">
-                      <td>Rajiv Gandhi Institute of Technology</td>
-                      <td>28-04-2010</td>
+
+		      <% if(item.url == ''){ %> 
+                      	<td><%= item.name %></td>
+		      <% } else{ %>
+		      	<td><a href="<%= item.url %>"><%= item.name %></a></td>
+		      <% } %>
+                      <td><%= item.date %></td>
+
                     </tr>
-                    <tr class="odd">
-                      <td>Rajiv Gandhi Institute of Technology</td>
-                      <td>28-04-2010</td>
+
+		    <% } else { %>
+                    
+		    <tr class="odd">
+
+		    	<% if(item.url == ''){ %> 
+                      	  <td><%= item.name %></td>
+		        <% } else{ %>
+		      	  <td><a href="<%= item.url %>"><%= item.name %></a></td>
+			<% } %>
+                        <td><%= item.date %></td>
                     </tr>
-                    <% } %>
+                    
+		    <% } i++; }) %>
 
                 </tbody>
               </table>
