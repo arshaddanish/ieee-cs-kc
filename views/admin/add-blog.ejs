@@ -1,0 +1,45 @@
+<%- include ("../partials/admin-head"); %>
+  <%- include ("../partials/admin-navbar-shadow"); %>
+
+    <div id="page" class="site ">
+      <div class="main-contain updates-padding">
+        <div class="container">
+          <div id="content" class="site-content">
+            <div class="rs-heading style3  vc_custom_1543920863426  ">
+              <div class="title-inner">
+                <!-- <span style="color: #28406d" class="sub-text">[News]</span> -->
+                <h2 class="title" style="margin-bottom: 0;">Add Blog</h2>
+              </div>
+              <!-- <div class="description">
+            <p>Accelerating innovative young minds.</p>
+          </div> -->
+            </div>
+
+            <div class="admin-form">
+              <form action="">
+                <div class="mini-width-field x">
+                  <input type="date" class="form-control">
+                  <input type="file" class="form-control" placeholder="Poster">
+                </div>
+                <input type="text" class="form-control" placeholder="Title">
+                <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Content"></textarea>
+                <h4>Author Details: </h4>
+                <div class="author-details">
+                  <input type="text" class="form-control" placeholder="Author">
+                  <input type="text" class="form-control" placeholder="College">
+                  <input type="file" class="form-control" placeholder="Photo">
+                  <input type="text" class="form-control" placeholder="Linkedin URL" style="margin-bottom: 0;">
+                </div>
+                <button type="submit" class="btn btn-primary" style="margin-top: 2.5rem;">Add</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        document.getElementById("tt19").classList.add("current-menu-ancestor");
+        document.getElementById("home19").classList.remove("current_page_item", "current-menu-ancestor");
+      </script>
+
+      <%- include ("../partials/admin-footer"); %>

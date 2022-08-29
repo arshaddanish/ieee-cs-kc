@@ -5,6 +5,11 @@ const apiRoute = "https://ieee-cs-kc.herokuapp.com/api/";
 
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
+// const cors = require('cors');
+// app.use(cors())
+
+let adminRouter = require("./admin");
+app.use(adminRouter);
 
 app.get("/", (req, res) => {
   res.render("home");
@@ -19,7 +24,7 @@ app.get("/techthreads/:edition", (req, res) => {
 });
 
 app.get("/previous-blogs/:year", (req, res) => {
-  res.render("prev-blogs/" + req.params.year);
+  res.render("prev-blogs/blogs" , {year: req.params.year});
 });
 
 app.get("/previous-blogs/:year/:blog", (req, res) => {
