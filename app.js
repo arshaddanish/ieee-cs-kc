@@ -89,7 +89,7 @@ app.get("/events/:event", async(req, res) => {
 
 app.get("/sb-chapters", (req, res) => {
 
-  const data = getData("/public/content/sb-chapters.json");
+  const data = getData("public/content/sb-chapters.json");
   console.log(data);
   res.render("sb-chapters", { data: data });
 
