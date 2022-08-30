@@ -48,6 +48,7 @@
 .team-item h3 {
   font-family: Muli !important;
   cursor: default;
+  font-size: 1.2rem !important;
 }
 
 .team-item .team-title {
@@ -78,4 +79,8 @@
 
 .home-img {
   filter: brightness(40%);
+}
+
+.ob-img {
+  width: 100%;
 }
