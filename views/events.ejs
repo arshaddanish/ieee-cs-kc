@@ -1,8 +1,9 @@
 <%- include ("partials/head"); %>
 <%- include ("partials/navbar-shadow"); %>
+<%- include ("partials/loader");  %>
 
-<div id="page" class="site ">
-  <div class="main-contain updates-padding">
+<div id="page" class="site">
+  <div class="main-contain updates-padding loadah">
     <div class="container">
       <div id="content" class="site-content">
         <div class="rs-heading style3  vc_custom_1543920863426  ">
@@ -42,7 +43,7 @@
                                   <!-- <div class="blog-date"> <span class="author">By admin</span><span class="seperator">/</span> <span class="categories"><a href="../category/corporate/index.html">Corporate </a></span></div> -->
                                 </div>
                                 <div class="blog-desc">
-                                  <%= event.description.substring(0,100) %> ...
+                                  <%= event.description.substring(0,80) %> ...
                                 </div>
                                 <div class="blog-button"><a href="/events/<%= event.id  %>">Read More</a></div>
                               </div>
@@ -94,11 +95,9 @@
     </div>
   </div>
 
+  <script>
+    document.getElementById("events19").classList.add("current-menu-ancestor");
+    document.getElementById("home19").classList.remove("current_page_item", "current-menu-ancestor");
+  </script>
 
-
-<script>
-  document.getElementById("events19").classList.add("current-menu-ancestor");
-  document.getElementById("home19").classList.remove("current_page_item", "current-menu-ancestor");
-</script>
-
-<%- include ("partials/footer"); %>
+  <%- include ("partials/footer"); %>
