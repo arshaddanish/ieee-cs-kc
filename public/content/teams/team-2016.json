@@ -4,19 +4,19 @@
 		{
 			"name": "Mr. G Padmakumar",
 			"post": "Chair",
-			"image": "/public/images/members/mrgpadmakumar.jpg",
+			"image": "/images/members/mrgpadmakumar.jpg",
 			"linkedin": ""
 		},
 		{
 			"name": "Dr. G. Santhosh Kumar",
 			"post": "Vice-Chair",
-			"image": "/public/images/members/drgsanthoshkumar.jpg",
+			"image": "/images/members/drgsanthoshkumar.jpg",
 			"linkedin": ""
 		},
 		{
 			"name": "Mr. M. P. Gilesh",
 			"post": "Secretary",
-			"image": "/public/images/members/mrmpgilesh.jpg",
+			"image": "/images/members/mrmpgilesh.jpg",
 			"linkedin": ""
 		}
 	]
