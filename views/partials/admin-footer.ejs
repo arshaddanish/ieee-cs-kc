@@ -13,6 +13,19 @@
   </div>
 </footer>
 </div>
+<script>
+  document.onreadystatechange = function() {
+    if (document.readyState !== "complete") {
+      document.querySelector(".loader-container").style.display = "block";
+      document.querySelector(".rs-footer").style.display = "none";
+      document.querySelector(".loadah").style.display = "none";
+    } else {
+      document.querySelector(".loader-container").style.display = "none";
+      document.querySelector(".rs-footer").style.display = "block";
+      document.querySelector(".loadah").style.display = "block";
+    }
+  };
+</script>
 <div id="scrollUp"> <i class="fa fa-angle-up"></i></div>
 <script>(function () {
     function addEventListener(element, event, handler) {
