@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "purge": "purgecss --css **/*.css --content **/*.ejs **/*.js --output public/css-purged -font -keyframes -v"
   },
   "keywords": [],
   "author": "",
@@ -17,5 +18,8 @@
     "formidable": "^2.0.1",
     "multer": "^1.4.5-lts.1",
     "node-fetch": "^3.2.10"
+  },
+  "devDependencies": {
+    "purgecss": "^4.1.3"
   }
 }
