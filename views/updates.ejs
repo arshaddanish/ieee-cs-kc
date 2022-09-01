@@ -24,7 +24,7 @@
                             <!-- start of card -->
                             <% data.events.forEach(function(event){%>
                             <div class="blog-item col-lg-4 col-md-12 style1">
-                              <div class="blog-img image-scale"> <img width="1200" height="800" src="<%= event.image %>" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="<%= event.image %>" />
+                              <div class="blog-img image-scale"> <img src="<%= event.image %>" class="attachment-post-thumbnail size-post-thumbnail wp-post-image event-img" alt="" srcset="<%= event.image %>" />
                                 <div class="blog-date"> <span class="date">
                                     <%= event.day %>
                                   </span> <span class="month">
