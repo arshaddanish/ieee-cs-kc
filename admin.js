@@ -1,6 +1,18 @@
 const express = require("express");
 const app = express();
 
+const bodyParser = require("body-parser");
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
+const axios = require("axios");
+const multer = require("multer");
+const upload = multer({dest: "uploads/"});
+
+const FormData = require("form-data");
+const fs = require("fs");
+
+const url = "https://ieee-cs-kc.herokuapp.com/api/"
 app.get("/admin", (req, res) => {
   res.render("admin/login");
 });
@@ -16,6 +28,25 @@ app.get("/admin/home", (req, res) => {
 
 app.get("/admin/events", (req, res) => {
   res.render("admin/events");
+});
+
+app.post("/admin/events", upload.single('image') ,(req, res) => {
+	  form_data = new FormData();
+	  
+	  form_data.append("name", req.body.title);
+	  form_data.append("description", req.body.description);
+	  form_data.append("category", req.body.type);
+	  form_data.append("date", req.body.date);
+	  form_data.append("image", fs.createReadStream(req.file.path));
+	
+	  axios.post(url + "items", form_data,{
+	    headers: {
+	      "Content-Type": "multipart/form-data"
+	    },
+	  }).then(response => {
+	    console.log(response.data);
+	    res.redirect("/admin/events");
+	  });
 });
 
 app.get("/admin/updates", (req, res) => {

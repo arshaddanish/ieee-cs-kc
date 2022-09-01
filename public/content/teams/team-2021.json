@@ -127,5 +127,91 @@
 			"image": "/images/members/mrrithinjose.jpg",
 			"linkedin": "https://www.linkedin.com/in/rithinja/"
 		}
-	]
+	],
+	"volunteers":[
+			{
+				"name": "R Sreyas",
+				"post": "Design Team",
+				"image": "/images/members/rsreyas.jpg",
+				"linkedin": "https://www.linkedin.com/in/sreyas-r-6462a9184"
+			},
+			{
+				"name": "Alia Shiraz",
+				"post": "Content Writer",
+				"image": "/images/members/aliashiraz.jpg",
+				"linkedin": "https://www.linkedin.com/in/alia-shiraz"
+			},
+			{
+				"name": "Veena R",
+				"post": "Design Team",
+				"image": "/images/members/veenar.jpg",
+				"linkedin": "https://www.linkedin.com/in/veena-r-0058a41a5"
+			},
+			{
+				"name": "Devanarayan S R",
+				"post": "Video Editor",
+				"image": "/images/members/devanarayansr.jpg",
+				"linkedin": "https://www.linkedin.com/in/devanarayan-s-r-20a603206"
+			},
+			{
+				"name": "Jagan Venugopal",
+				"post": "Content Writer",
+				"image": "/images/members/jaganvenugopal.jpg",
+				"linkedin": "https://www.linkedin.com/mwlite/in/jagan-venugopal-7953681a1"
+			},
+			{
+				"name": "Ron Zacharia",
+				"post": "Video Editor",
+				"image": "/images/members/ronzacharia.jpg",
+				"linkedin": "https://www.linkedin.com/in/ron-zacharia-6630611a2/"
+			},
+			{
+				"name": "Yadukrishnan P S",
+				"post": "Design Team",
+				"image": "/images/members/yadukrishnanps.jpg",
+				"linkedin": "http://linkedin.com/in/yadukrishnan-p-s-b49762159"
+			},
+			{
+				"name": "Suchithra P V",
+				"post": "Design Team",
+				"image": "/images/members/suchithrapv.jpg",
+				"linkedin": "https://www.linkedin.com/in/suchithra-p-v-b466a918b"
+			},
+			{
+				"name": "Jyothika Nithin",
+				"post": "Content Writer",
+				"image": "/images/members/jyothikanithin.jpg",
+				"linkedin": "https://www.linkedin.com/in/jyothika-nithin-71846a193/?originalSubdomain=in"
+			},
+			{
+				"name": "Aswin Sreeraj",
+				"post": "Design Team",
+				"image": "/images/members/aswinsreeraj.jpg",
+				"linkedin": "https://in.linkedin.com/in/aswin-sreeraj-16864b1a5"
+			},
+			{
+				"name": "Sara Paul",
+				"post": "Video Editor",
+				"image": "/images/members/sarapaul.jpg",
+				"linkedin": "https://www.linkedin.com/in/sara-paul-b558921a7"
+			},
+			{
+				"name": "Maria Rojo Jose",
+				"post": "Content Writer",
+				"image": "/images/members/mariarojojose.jpg",
+				"linkedin": "http://www.linkedin.com/in/maria-rojo-jose"
+			},
+			{
+				"name": "Devarenjini P",
+				"post": "Video Editor",
+				"image": "/images/members/devarenjinip.jpg",
+				"linkedin": "https://www.linkedin.com/in/devarenjini-p-934496205"
+			},
+			{
+				"name": "Anandhu Prasad",
+				"post": "Video Editor",
+				"image": "/images/members/anandhuprasad.jpg",
+				"linkedin": "http://www.linkedin.com/in/anandhuprasad16"
+			}
+		]		
 }

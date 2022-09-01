@@ -16,25 +16,25 @@
             </div>
 
             <div class="admin-form">
-              <form action="">
+              <form action="/admin/events" method="post" enctype="multipart/form-data">
                 <div class="mini-width-field">
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" name="type" id="flexRadioDefault1" checked>
+                    <input class="form-check-input" type="radio" name="type" value="updates" id="flexRadioDefault1" checked>
                     <label class="form-check-label" for="flexRadioDefault1" style="margin-right: 2.5rem">
                       Update
                     </label>
 
-                    <input class="form-check-input" type="radio" name="type" id="flexRadioDefault2">
+                    <input class="form-check-input" type="radio" name="type" value="events" id="flexRadioDefault2">
                     <label for="flexRadioDefault2">
                       Event
                     </label>
                   </div>
-                  <input type="date" class="form-control">
+                  <input type="date" name="date" class="form-control">
 
-                  <input type="file" class="form-control" placeholder="Poster">
+                  <input type="file" name="image" class="form-control" placeholder="Poster">
                 </div>
-                <input type="text" class="form-control" placeholder="Title">
-                <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Content"></textarea>
+                <input type="text" name="title" class="form-control" placeholder="Title">
+                <textarea name="description" id="" cols="30" rows="10" class="form-control" placeholder="Content"></textarea>
 
                 <button type="submit" class="btn btn-primary">Add</button>
               </form>
