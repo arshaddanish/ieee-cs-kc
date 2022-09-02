@@ -1,0 +1,19 @@
+@media(max-width: 1250px) {
+  #rs-header .container-fluid {
+    padding-left: 5px;
+    padding-right: 0px;
+  }
+}
+
+@media(max-width: 990px) {
+  #rs-header .container-fluid {
+    padding-left: 10px;
+    padding-right: 25px;
+  }
+}
+
+@media(max-width: 600px) {
+  .tp-caption {
+    max-width: 80%;
+  }
+}
