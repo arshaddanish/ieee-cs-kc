@@ -42,6 +42,33 @@
 
 /* ........................ */
 
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 2rem;
+}
+
+@media (max-width: 600px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+    row-gap: 0.5rem;
+  }
+  .rs-team-grid.team-grid-style1 .team-item {
+    padding-bottom: 1rem;
+  }
+  .team-name a {
+    font-size: 14px;
+    line-height: 0;
+  }
+  .team-grid-style1 .team-item .team-content1 span.team-title {
+    font-size: 14px !important;
+  }
+  .team-grid-style1 .team-item .team-content1 {
+    margin-top: 0.5rem;
+  }
+}
+
 .team-item h3 {
   font-family: Muli !important;
   cursor: default;
@@ -60,12 +87,31 @@
 }
 
 .techthreads img {
+  width: 100%;
   margin-bottom: 3rem;
   max-width: 600px;
 }
 
 .techthreads h4 {
   margin-bottom: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .techthreads h4 {
+    font-size: 16px;
+  }
+
+  .techthreads p {
+    font-size: 14px;
+  }
+
+  .readon {
+    font-size: 1rem;
+  }
+
+  .techthreads ul {
+    margin-left: 1.25rem;
+  }
 }
 
 .techthreads .reg-message {
