@@ -133,8 +133,54 @@
 /* ........................ */
 
 .landing {
-  background: url(../images/akcssc.jpg);
   height: 90vh;
+  width: 100%;
+  position: relative;
+}
+
+.landing-img {
+  background-image: url(../images/akcssc.jpg);
   background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
   filter: brightness(40%);
+}
+
+.landing .content {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  padding-bottom: 3rem;
+}
+
+.landing .content h2,
+.landing .content p {
+  color: #fff;
+  z-index: 99;
+}
+
+.landing .content h2 {
+  font-size: 2.5rem;
+}
+
+.landing .content p {
+  font-size: 1.2rem;
+}
+
+.landing .content button {
+  border: none;
+}
+
+.landing .content button a {
+  color: #fff;
+}
+
+.landing .content button:hover a {
+  color: #5866b5;
 }

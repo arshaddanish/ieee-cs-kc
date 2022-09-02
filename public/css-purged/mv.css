@@ -102,4 +102,8 @@
   .stats .title-inner {
     margin-top: 1.5rem;
   }
+
+  #rs-header .menu-sticky.sticky {
+    position: fixed !important;
+  }
 }
