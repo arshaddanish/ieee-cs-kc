@@ -12,9 +12,9 @@ app.use(express.static(__dirname + "/public"));
 let adminRouter = require("./admin");
 app.use(adminRouter);
 
-function getData (path) {
-	const jsonData = fs.readFileSync(path);
-	return JSON.parse(jsonData);
+function getData(path) {
+  const jsonData = fs.readFileSync(path);
+  return JSON.parse(jsonData);
 }
 
 app.get("/", (req, res) => {
@@ -25,7 +25,7 @@ app.get("/office-bearers/:year", (req, res) => {
   const year = req.params.year;
   const data = getData("public/content/teams/team-" + year + ".json");
 
-  res.render("office-bearers" , { data : data ,year : year});
+  res.render("office-bearers", { data: data, year: year });
 });
 
 app.get("/techthreads/:edition", (req, res) => {
@@ -33,31 +33,40 @@ app.get("/techthreads/:edition", (req, res) => {
 });
 
 app.get("/previous-blogs/:year", (req, res) => {
-  res.render("prev-blogs/blogs" , {year: req.params.year});
+  res.render("prev-blogs/blogs", { year: req.params.year });
 });
 
 app.get("/previous-blogs/:year/:blog", (req, res) => {
   res.render("prev-blogs/blog");
 });
 
+app.get("/compile/:year/:edition", (req, res) => {
+  let year = req.params.year;
+  let edition = req.params.edition;
+  res.sendFile(
+    "./public/compile/" + year + "/" + edition + "/" + edition + ".html",
+    { root: __dirname }
+  );
+});
+
 app.get("/updates", async (req, res) => {
   var page = req.query.page;
   if (page == undefined) {
-	page = 1;
+    page = 1;
   }
 
   var url = apiRoute + "items/updates?page=" + page;
-  const apiResponse = await axios.get(url)
-  
+  const apiResponse = await axios.get(url);
+
   const data = apiResponse.data;
   JSON.stringify(data);
   res.render("updates", { data: data.data });
 });
 
-app.get("/updates/:update",async (req, res) => {
+app.get("/updates/:update", async (req, res) => {
   var url = apiRoute + "items/updates/" + req.params.update;
-  const apiResponse = await axios.get(url)
-  
+  const apiResponse = await axios.get(url);
+
   const data = apiResponse.data;
   JSON.stringify(data);
 
@@ -65,25 +74,23 @@ app.get("/updates/:update",async (req, res) => {
 });
 
 app.get("/events/", async (req, res) => {
-	
   var page = req.query.page;
   if (page == undefined) {
-	page = 1;
+    page = 1;
   }
 
   var url = apiRoute + "items/events?page=" + page;
-  const apiResponse = await axios.get(url)
-  
+  const apiResponse = await axios.get(url);
+
   const data = apiResponse.data;
   JSON.stringify(data);
   res.render("events", { data: data.data });
 });
 
-app.get("/events/:event", async(req, res) => {
-  
+app.get("/events/:event", async (req, res) => {
   var url = apiRoute + "items/events/" + req.params.event;
-  const apiResponse = await axios.get(url)
-  
+  const apiResponse = await axios.get(url);
+
   const data = apiResponse.data;
   JSON.stringify(data);
 
@@ -91,10 +98,8 @@ app.get("/events/:event", async(req, res) => {
 });
 
 app.get("/sb-chapters", (req, res) => {
-
   const data = getData("public/content/sb-chapters.json");
   res.render("sb-chapters", { data: data });
-
 });
 
 app.get("*", function (req, res) {
