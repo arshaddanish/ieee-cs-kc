@@ -25,21 +25,21 @@
                           <div class="wpb_wrapper">
                             <div class="rs-blog-grid rs-blog ">
                               <div class="row">
-                                <% for (let index=0; index < 6; index++) { %>
+                                <% data.events.forEach(function(event) { %>
 
                                   <div class="blog-item col-lg-4 col-md-12 style1 event-item">
                                     <div class="event-card">
                                       <div class="blog-img image-scale"> <img width="1200" height="800"
-                                          src="../images/2.jpg"
-                                          class="attachment-post-thumbnail size-post-thumbnail wp-post-image event-img" alt=""
-                                          srcset="https://rstheme.com/products/wordpress/finoptis/wp-content/uploads/2018/11/2.jpg 1200w, https://rstheme.com/products/wordpress/finoptis/wp-content/uploads/2018/11/2-365x243.jpg 365w, https://rstheme.com/products/wordpress/finoptis/wp-content/uploads/2018/11/2-600x400.jpg 600w, https://rstheme.com/products/wordpress/finoptis/wp-content/uploads/2018/11/2-300x200.jpg 300w, https://rstheme.com/products/wordpress/finoptis/wp-content/uploads/2018/11/2-768x512.jpg 768w, https://rstheme.com/products/wordpress/finoptis/wp-content/uploads/2018/11/2-1024x683.jpg 1024w"
+                                          src="<%= event.image %>" class="attachment-full size-full wp-post-image"
+                                          class="attachment-post-thumbnail size-post-thumbnail wp-post-image event-img" alt="<%= event.name %>"
+                                          srcset="<%= event.image %>"
                                           sizes="(max-width: 1200px) 100vw, 1200px" />
-                                        <div class="blog-date"> <span class="date">19 </span> <span class="month">Nov
+                                        <div class="blog-date"> <span class="date"><%= event.day %> </span> <span class="month"><%= event.month %>
                                           </span></div>
                                       </div>
                                       <div class="bottom-shadow1 ">
                                         <div class="blog-meta">
-                                          <h3 class="blog-title">Small Business Trends</h3>
+                                          <h3 class="blog-title"><%= event.name %></h3>
                                           <!-- <div class="blog-date"> <span class="author">By admin</span><span class="seperator">/</span> <span class="categories"><a href="../category/corporate/index.html">Corporate </a></span></div> -->
                                         </div>
                                         <div class="admin-btns">
@@ -50,13 +50,35 @@
                                     </div>
                                   </div>
 
-                                  <% } %>
+                                  <% }) %>
                               </div>
                               <div class="pagination-area">
-                                <div class="nav-links"><span aria-current='page' class='page-numbers current'>1</span>
-                                  <a class='page-numbers' href='page/2/index.html'>2</a> <a class="next page-numbers"
-                                    href="page/2/index.html">Next &raquo;</a>
-                                </div>
+				<div class="nav-links">
+				      <% if(data.page-2> 1){ %>
+				      <a class="next page-numbers" href="/events?page=<%= data.page-1 %>">&laquo;</a>
+				      <% } %>
+
+				      <% for (var i=data.page-2 ; i < data.page; i++) { if (i> 0) { %>
+				      <a class="next page-numbers" href="/events?page=<%= i %>">
+					<%= i %>
+				      </a>
+				      <% }} %>
+
+				      <span aria-current='page' class='page-numbers current'>
+					<%= data.page %>
+				      </span>
+
+				      <% for (var i=data.page+1 ; i < data.page+3; i++) { if (i <=data.no_of_pages)
+						    { %>
+				      <a class="next page-numbers" href="/events?page=<%= i %>">
+					<%= i %>
+				      </a>
+				      <% }} %>
+
+				      <% if(data.page+2 < data.no_of_pages){ %>
+				      <a class="next page-numbers" href="/events?page=<%= data.page+1 %>">&raquo;</a>
+				      <% } %>
+				</div>
                               </div>
                             </div>
                           </div>
