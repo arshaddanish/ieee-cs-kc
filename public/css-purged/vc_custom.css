@@ -5,7 +5,7 @@
 .vc_custom_1543466383016 {
   padding-top: 52px !important;
   padding-bottom: 15px !important;
-  background-image: url(wp-content/uploads/2018/12/blue-bg.jpg?id=2579) !important;
+  background-image: url(../images/blue-bg.jpg) !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
@@ -13,7 +13,7 @@
 .vc_custom_1542443423538 {
   padding-top: 100px !important;
   padding-bottom: 100px !important;
-  background-image: url(../../public/images/cta.jpg) !important;
+  background-image: url(../images/cta.jpg) !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
