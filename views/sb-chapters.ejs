@@ -1,0 +1,77 @@
+<%- include ("partials/head"); %>
+<%- include ("partials/navbar-shadow"); %>
+
+<div id="page" class="site ">
+  <div class="main-contain updates-padding">
+    <div class="container">
+      <div id="content" class="site-content">
+        <div class="rs-heading style3  vc_custom_1543920863426  ">
+          <div class="title-inner">
+            <!-- <span style="color: #28406d" class="sub-text">[News]</span> -->
+            <h2 class="title" style="margin-bottom: 0;">SB Chapters</h2>
+          </div>
+          <!-- <div class="description">
+            <p>Accelerating innovative young minds.</p>
+          </div> -->
+        </div>
+        <div>
+          <table class="sb-chapters-table">
+            <thead>
+              <tr class="head">
+                <th class="top-left">OU Name</th>
+                <th class="top-right">OU Formed Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% i=1; data.forEach(function(item){ %>
+              <% if (i%2==0) { %>
+              <tr class="even">
+
+                <% if(item.url=='' ){ %>
+                <td>
+                  <%= item.name %>
+                </td>
+                <% } else{ %>
+                <td><a href="<%= item.url %>">
+                    <%= item.name %>
+                  </a></td>
+                <% } %>
+                <td>
+                  <%= item.date %>
+                </td>
+
+              </tr>
+
+              <% } else { %>
+
+              <tr class="odd">
+
+                <% if(item.url=='' ){ %>
+                <td>
+                  <%= item.name %>
+                </td>
+                <% } else{ %>
+                <td><a href="<%= item.url %>">
+                    <%= item.name %>
+                  </a></td>
+                <% } %>
+                <td>
+                  <%= item.date %>
+                </td>
+              </tr>
+
+              <% } i++; }) %>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("sbcs19").classList.add("current-menu-ancestor");
+    document.getElementById("home19").classList.remove("current_page_item", "current-menu-ancestor");
+  </script>
+
+  <%- include ("partials/footer"); %>

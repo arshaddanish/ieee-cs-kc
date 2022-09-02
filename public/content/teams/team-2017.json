@@ -1,0 +1,22 @@
+{
+	"execom":[
+		{
+			"name": "Mr. Srinivasan Ravindran",
+			"post": "Chair",
+			"image": "/images/members/mrsrinivasanravindran.jpg",
+			"linkedin": ""
+		},
+		{
+			"name": "Dr. G. Santhosh Kumar",
+			"post": "Vice-Chair",
+			"image": "/images/members/drgsanthoshkumar.jpg",
+			"linkedin": ""
+		},
+		{
+			"name": "Mr. M. P. Gilesh",
+			"post": "Secretary",
+			"image": "/images/members/mrmpgilesh.jpg",
+			"linkedin": ""
+		}
+	]
+}
