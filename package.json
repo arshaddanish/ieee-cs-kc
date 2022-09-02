@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "purge": "purgecss --css **/*.css --content **/*.ejs **/*.js --output public/css-purged -font -keyframes -v",
+    "purge": "purgecss --css **/*.css --content **/*.ejs **/*.js --output public/css-purged -font -keyframes -v -k public/compile/** public/css-purged-m/**",
     "mini": "css-minify -d public/css-purged -o public/css-purged-m"
   },
   "keywords": [],
