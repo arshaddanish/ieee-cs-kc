@@ -38,8 +38,9 @@
     width: 100%;
   }
 
-  .rs-services-default .services-wrap .services-item .services-title {
-    font-size: 18px;
+  .rs-services-default .services-wrap .services-item .services-title a {
+    font-size: 1rem;
+    font-weight: 600;
   }
 
   .feature-text {
