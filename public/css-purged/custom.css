@@ -83,3 +83,12 @@
   height: 200px;
   object-fit: cover;
 }
+
+/* ........................ */
+
+.landing {
+  background: url(../images/akcssc.jpg);
+  height: 90vh;
+  background-size: cover;
+  filter: brightness(40%);
+}
