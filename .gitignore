@@ -1,2 +1,6 @@
 node_modules
 uploads
+public/css-purged/styles.css
+public/css-purged/index.css
+public/css-purged-m/styles.min.css
+public/css-purged-m/index.min.css
