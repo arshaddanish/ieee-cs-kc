@@ -42,7 +42,7 @@ app.get("/admin/events", async (req, res) => {
   res.render("admin/events", { data: data.data });
 });
 
-app.get("/admin/delete-event/:type/:id", async (req, res) => {
+app.get("/admin/delete/:type/:id", async (req, res) => {
   let url = "/items/" + req.params.type + "/" + req.params.id;
   await axios.delete(url);
   res.redirect("/admin/"+req.params.type);
