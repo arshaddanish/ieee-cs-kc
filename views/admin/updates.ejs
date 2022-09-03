@@ -2,7 +2,6 @@
 <%- include ("../partials/admin-navbar-shadow"); %>
 <%- include ("../partials/loader"); %>
 
-
 <div id="page" class="site ">
   <div class="main-contain updates-padding loadah">
     <div class="container">
@@ -38,7 +37,7 @@
                                   </div>
                                   <div class="admin-btns">
                                     <div><a href="/admin/edit-update" class="btn btn-primary edit-btn">Edit</a></div>
-                                    <div><a href="" class="btn btn-danger delete-btn">Delete</a></div>
+                                    <div><a href="/admin/delete-event/updates/"+<%= update._id %> class="btn btn-danger delete-btn">Delete</a></div>
                                   </div>
                                 </div>
                               </div>
