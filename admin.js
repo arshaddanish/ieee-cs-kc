@@ -56,8 +56,8 @@ app.post("/admin/events", upload.single('image') ,(req, res) => {
 			"Content-Type": "multipart/form-data"
 		},
 	}).then(response => {
-		console.log(response.data);
-		res.redirect("/admin/events");
+		// console.log(response.data);
+		res.redirect("/admin/home");
 	});
 });
 
