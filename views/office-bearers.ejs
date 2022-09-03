@@ -67,10 +67,10 @@
                       <div class="wpb_wrapper">
                         <div class="rs-team-grid rs-team team-grid-style1">
 
-                          <div class="row">
+                          <div class="team-grid">
                             <% if (data.volunteers) { %>
                             <% data.volunteers.forEach(function (item) { %>
-                            <div class="col-md-3 col-sm-4 col-xs-6">
+                           
                               <div class="team-item">
                                 <div class="team-inner-wrap"> <a> <img src="<%= item.image  %>" alt="<%= item.name %>" /> </a>
                                   <div class="team-content1">
@@ -81,7 +81,7 @@
                                   <div class="social-icons1"> <a href="<%= item.linkedin %>" class="social-icon"><i class="fa fa-linkedin"></i></a></div>
                                 </div>
                               </div>
-                            </div>
+                            
                             <% });} %>
                           </div>
                         </div>
