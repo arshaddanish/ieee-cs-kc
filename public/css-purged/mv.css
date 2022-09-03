@@ -123,4 +123,8 @@
   .post-title {
     font-size: 22px;
   }
+
+  .bs-img {
+    margin-bottom: 0 !important;
+  }
 }
