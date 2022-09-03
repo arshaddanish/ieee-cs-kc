@@ -37,7 +37,8 @@ app.get("/previous-blogs/:year", (req, res) => {
 });
 
 app.get("/previous-blogs/:year/:blog", (req, res) => {
-  res.render("prev-blogs/blog");
+  let year = req.params.year;
+  res.render("prev-blogs/blog", {year: year});
 });
 
 app.get("/compile/:year/:edition", (req, res) => {

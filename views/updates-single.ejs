@@ -1,6 +1,7 @@
 <%- include ("partials/head"); %>
 <%- include ("partials/navbar-shadow"); %>
 
+<% let year = new Date(data.date).getFullYear() %> 
 <div id="page" class="site ">
   <div class="main-contain updates-padding">
     <div class="container">
@@ -17,14 +18,15 @@
           <div class="row padding-">
             <div class="col-md-12 ">
               <article id="post-2164" class="post-2164 post type-post status-publish format-standard has-post-thumbnail hentry category-corporate tag-business tag-corporate">
-                <div class="bs-img"> <img style="width:60%;" src="<%= data.image %>" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="<%= data.image %>" sizes="(max-width: 1200px) 100vw, 1200px" />
-                  <div class="blog-date"> <span class="date">19</span> <span class="month">Nov</span></div>
+                <div class="bs-img"> <img src="<%= data.image %>" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="<%= data.image %>" sizes="(max-width: 1200px) 100vw, 1200px" />
+                    
                 </div>
                 <div class="single-content-full">
                   <div class="bs-desc update-content">
-                    <h2>
+                    <h2 class="post-title">
                       <%= data.name %>
                     </h2>
+                    <p>[<%= data.day %> <%= data.month %> <%= year %>]</p>
                     <p>
                       <%= data.description %>
                     </p>

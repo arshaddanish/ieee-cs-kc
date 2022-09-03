@@ -187,3 +187,15 @@
 .landing .content button:hover a {
   color: #5866b5;
 }
+
+.bs-img img {
+  max-width: 600px;
+}
+
+.single-content-full {
+  max-width: 800px;
+}
+
+.post-title {
+  margin-bottom: 10px;
+}
