@@ -36,6 +36,7 @@
 
   .mobile-menu-container ul.sidenav.nav-active-menu-container {
     width: 100%;
+    height: 100%;
   }
 
   .rs-services-default .services-wrap .services-item .services-title a {
@@ -105,5 +106,17 @@
 
   #rs-header .menu-sticky.sticky {
     position: fixed !important;
+  }
+
+  .landing .content h2 {
+    font-size: 1.75rem;
+  }
+
+  .landing .content p {
+    font-size: 1rem;
+  }
+
+  .blog-button a {
+    padding-left: 0 !important;
   }
 }
