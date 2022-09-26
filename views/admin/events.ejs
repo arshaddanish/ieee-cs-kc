@@ -55,11 +55,11 @@
                               <div class="pagination-area">
 				<div class="nav-links">
 				      <% if(data.page-2> 1){ %>
-				      <a class="next page-numbers" href="/events?page=<%= data.page-1 %>">&laquo;</a>
+				      <a class="next page-numbers" href="/admin/events?page=<%= data.page-1 %>">&laquo;</a>
 				      <% } %>
 
 				      <% for (var i=data.page-2 ; i < data.page; i++) { if (i> 0) { %>
-				      <a class="next page-numbers" href="/events?page=<%= i %>">
+				      <a class="next page-numbers" href="/admin/events?page=<%= i %>">
 					<%= i %>
 				      </a>
 				      <% }} %>
@@ -70,13 +70,13 @@
 
 				      <% for (var i=data.page+1 ; i < data.page+3; i++) { if (i <=data.no_of_pages)
 						    { %>
-				      <a class="next page-numbers" href="/events?page=<%= i %>">
+				      <a class="next page-numbers" href="/admin/events?page=<%= i %>">
 					<%= i %>
 				      </a>
 				      <% }} %>
 
 				      <% if(data.page+2 < data.no_of_pages){ %>
-				      <a class="next page-numbers" href="/events?page=<%= data.page+1 %>">&raquo;</a>
+				      <a class="next page-numbers" href="/admin/events?page=<%= data.page+1 %>">&raquo;</a>
 				      <% } %>
 				</div>
                               </div>

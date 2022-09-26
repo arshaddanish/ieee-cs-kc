@@ -31,7 +31,6 @@ app.get("/admin", (req, res) => {
 });
 
 app.post("/admin", (req, res) => {
-    console.log(req.body);
     res.redirect("/admin/home");
 });
 
@@ -45,13 +44,27 @@ app.get("/admin/events", async (req, res) => {
         page = 1;
     }
 
-    var url = apiRoute + "items/events?page=" + page;
-    const apiResponse = await axios.get(url);
+    page = parseInt(page,10);
 
-    const data = apiResponse.data;
-    JSON.stringify(data);
+    var limit = 9;
+    var offset = (page - 1) * limit;
 
-    res.render("admin/events", { data: data.data });
+    var events = await db.query(`SELECT id,title,image,
+        DATE_FORMAT(date, '%b') AS month, 
+        DATE_FORMAT(date, '%d') AS day
+        FROM events WHERE category="events" 
+        ORDER BY id DESC LIMIT ${limit} OFFSET ${offset}`
+    );
+
+    var pages = await db.query(`SELECT CEIL(COUNT(*)/${limit}) AS pages FROM events WHERE category="events"`);
+
+    res.render("admin/events", { 
+        data:{
+            events: events,
+            page : page,
+            no_of_pages: pages[0].pages,
+        }
+    });
 });
 
 app.get("/admin/delete/:type/:id", async (req, res) => {
@@ -61,7 +74,7 @@ app.get("/admin/delete/:type/:id", async (req, res) => {
 
 app.post("/admin/events", upload.single("image"), async (req, res) => {
 
-    imagepath = "/public/images/uploads/" + req.file.filename;
+    imagepath = "/images/uploads/" + req.file.filename;
 
     const result = await db.query(
         `INSERT INTO events 
@@ -70,7 +83,6 @@ app.post("/admin/events", upload.single("image"), async (req, res) => {
         ("${req.body.title}", "${req.body.description}", "${imagepath}", "${req.body.type}","${req.body.date}")`
     );
 
-    console.log(result);
     res.redirect("/admin/home");
 });
 
@@ -80,13 +92,27 @@ app.get("/admin/updates", async (req, res) => {
         page = 1;
     }
 
-    var url = apiRoute + "items/updates?page=" + page;
-    const apiResponse = await axios.get(url);
+    page = parseInt(page,10);
 
-    const data = apiResponse.data;
-    JSON.stringify(data);
+    var limit = 9;
+    var offset = (page - 1) * limit;
 
-    res.render("admin/updates", { data: data.data });
+    var events = await db.query(`SELECT id,title,image,
+        DATE_FORMAT(date, '%b') AS month, 
+        DATE_FORMAT(date, '%d') AS day
+        FROM events WHERE category="updates" 
+        ORDER BY id DESC LIMIT ${limit} OFFSET ${offset}`
+    );
+
+    var pages = await db.query(`SELECT CEIL(COUNT(*)/${limit}) AS pages FROM events WHERE category="updates"`);
+
+    res.render("admin/updates", { 
+        data:{
+            events: events,
+            page : page,
+            no_of_pages: pages[0].pages,
+        }
+    });
 });
 
 app.get("/admin/statistics", (req, res) => {
@@ -111,8 +137,8 @@ app.post(
     ]),
     (req, res) => {
 
-        imagepath = "/public/images/uploads/" + req.files.image[0].filename;
-        author_imagepath = "/public/images/uploads/" + req.files.author_image[0].filename;
+        imagepath = "/images/uploads/" + req.files.image[0].filename;
+        author_imagepath = "/images/uploads/" + req.files.author_image[0].filename;
 
         const result = db.query(`INSERT INTO blogs 
             (title, content, date ,image, author, author_image, college, linkedin)
@@ -122,7 +148,7 @@ app.post(
 
         var year = new Date().getFullYear();
         res.redirect("/admin/blogs-" + year);
-});
+    });
 
 app.get("/admin/statistics", (req, res) => {
     res.render("admin/statistics");
@@ -147,14 +173,29 @@ app.get("/admin/:blog_year", async (req, res) => {
         if (page == undefined) {
             page = 1;
         }
+        page = parseInt(page,10);
 
-        var url = apiRoute + "blogs/year/" + blog_year.substr(6) + "?page=" + page;
-        const apiResponse = await axios.get(url);
+        var limit = 9;
+        var offset = (page - 1) * limit;
 
-        const data = apiResponse.data;
-        JSON.stringify(data);
+        var pages = await db.query(`SELECT CEIL(COUNT(*)/${limit}) AS pages FROM blogs WHERE YEAR(date) = ${blog_year.substr(6)}`);
 
-        res.render("admin/blogs", { data: data.data, year: blog_year });
+        var blogs = await db.query(`SELECT 
+            id,title,image,
+            DATE_FORMAT(date, '%b') AS month,
+            DATE_FORMAT(date, '%d') AS day
+            FROM blogs WHERE YEAR(date) = ${blog_year.substr(6, 4)}
+            ORDER BY date DESC LIMIT ${limit} OFFSET ${offset}`
+        );
+
+        res.render("admin/blogs", { 
+            data: {
+                blogs: blogs,
+                page : page,
+                no_of_pages: pages[0].pages,
+            }, 
+            year: blog_year 
+        });
     } else res.render("404");
 });
 
