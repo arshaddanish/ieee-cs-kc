@@ -34,8 +34,6 @@ const fs = require("fs");
 
 const db = require("./services/db");
 
-const apiRoute = "https://ieee-cs-kc.herokuapp.com/api/";
-
 // app.get("/createdb", async (req, res) => {
 //   try {
 //     const r = await db.query(
@@ -78,105 +76,117 @@ app.get("/admin/logout", (req, res) => {
 });
 
 app.get("/admin/home", (req, res) => {
-  if (!req.session.loggedin) res.redirect("/admin");
-  else res.render("admin/home");
+  // if (!req.session.loggedin) res.redirect("/admin");
+  // else
+  res.render("admin/home");
+});
+
+app.post("/admin/events", upload.single("image"), async (req, res) => {
+  // if (!req.session.loggedin) res.redirect("/admin");
+  // else {
+  let imagepath = "/images/uploads/" + req.file.filename;
+  // console.log(imagepath);
+  if (req.body.type === "events") {
+    const result = await db.query(
+      `INSERT INTO events 
+          (title, description, image, doc)
+          VALUES 
+          ("${req.body.title}", "${req.body.description}", "${imagepath}", "${req.body.date}")`
+    );
+    // console.log(result);
+    res.redirect("/admin/events");
+  } else {
+    const result = await db.query(
+      `INSERT INTO updates 
+          (title, description, image, doc)
+          VALUES 
+          ("${req.body.title}", "${req.body.description}", "${imagepath}", "${req.body.date}")`
+    );
+    res.redirect("/admin/updates");
+  }
+
+  // }
 });
 
 app.get("/admin/events", async (req, res) => {
-  if (!req.session.loggedin) res.redirect("/admin");
-  else {
-    var page = req.query.page;
-    if (page == undefined) {
-      page = 1;
-    }
+  // if (!req.session.loggedin) res.redirect("/admin");
+  // else {
+  var page = req.query.page;
+  if (page == undefined) {
+    page = 1;
+  }
 
-    page = parseInt(page, 10);
+  page = parseInt(page, 10);
 
-    var limit = 9;
-    var offset = (page - 1) * limit;
+  var limit = 9;
+  var offset = (page - 1) * limit;
 
-    var events = await db.query(`SELECT id,title,image,
+  var events = await db.query(`SELECT id,title,image,
         DATE_FORMAT(doc, '%b') AS month, 
         DATE_FORMAT(doc, '%d') AS day
         FROM events 
         ORDER BY id DESC LIMIT ${limit} OFFSET ${offset}`);
 
-    var pages = await db.query(
-      `SELECT CEIL(COUNT(*)/${limit}) AS pages FROM events WHERE category="events"`
-    );
+  var pages = await db.query(
+    `SELECT CEIL(COUNT(*)/${limit}) AS pages FROM events`
+  );
 
-    res.render("admin/events", {
-      data: {
-        events: events,
-        page: page,
-        no_of_pages: pages[0].pages,
-      },
-    });
-  }
+  res.render("admin/events", {
+    data: {
+      events: events,
+      page: page,
+      no_of_pages: pages[0].pages,
+    },
+  });
+  // }
 });
 
 app.get("/admin/delete/:type/:id", async (req, res) => {
-  if (!req.session.loggedin) res.redirect("/admin");
-  else {
-    const result = await db.query(
-      "DELETE FROM events" +
-        " WHERE id = " +
-        req.params.id +
-        " AND category = '" +
-        req.params.type +
-        "'"
-    );
-    res.redirect("/admin/" + req.params.type);
-  }
-});
-
-app.post("/admin/events", upload.single("image"), async (req, res) => {
-  if (!req.session.loggedin) res.redirect("/admin");
-  else {
-    imagepath = "/images/uploads/" + req.file.filename;
-
-    const result = await db.query(
-      `INSERT INTO events 
-        (title, description, image, category, doc)
-        VALUES 
-        ("${req.body.title}", "${req.body.description}", "${imagepath}", "${req.body.type}","${req.body.date}")`
-    );
-
-    res.redirect("/admin/home");
-  }
+  // if (!req.session.loggedin) res.redirect("/admin");
+  // else {
+  const result = await db.query(
+    "DELETE FROM events" +
+      " WHERE id = " +
+      req.params.id +
+      " AND category = '" +
+      req.params.type +
+      "'"
+  );
+  res.redirect("/admin/" + req.params.type);
+  // }
 });
 
 app.get("/admin/updates", async (req, res) => {
-  if (!req.session.loggedin) res.redirect("/admin");
-  else {
-    var page = req.query.page;
-    if (page == undefined) {
-      page = 1;
-    }
-
-    page = parseInt(page, 10);
-
-    var limit = 9;
-    var offset = (page - 1) * limit;
-
-    var events = await db.query(`SELECT id,title,image,
-        DATE_FORMAT(doc, '%b') AS month, 
-        DATE_FORMAT(doc, '%d') AS day
-        FROM updates
-        ORDER BY id DESC LIMIT ${limit} OFFSET ${offset}`);
-
-    var pages = await db.query(
-      `SELECT CEIL(COUNT(*)/${limit}) AS pages FROM events WHERE category="updates"`
-    );
-
-    res.render("admin/updates", {
-      data: {
-        events: events,
-        page: page,
-        no_of_pages: pages[0].pages,
-      },
-    });
+  // if (!req.session.loggedin) res.redirect("/admin");
+  // else {
+  var page = req.query.page;
+  if (page == undefined) {
+    page = 1;
   }
+
+  page = parseInt(page, 10);
+
+  var limit = 9;
+  var offset = (page - 1) * limit;
+
+  var events = await db.query(`SELECT id,title,image,
+          DATE_FORMAT(doc, '%b') AS month, 
+          DATE_FORMAT(doc, '%d') AS day
+          FROM updates 
+          ORDER BY id DESC LIMIT ${limit} OFFSET ${offset}`);
+
+  var pages = await db.query(
+    `SELECT CEIL(COUNT(*)/${limit}) AS pages FROM events`
+  );
+
+  res.render("admin/updates", {
+    data: {
+      events: events,
+      page: page,
+      no_of_pages: pages[0].pages,
+    },
+  });
+  // }
 });
 
 app.get("/admin/statistics", (req, res) => {
