@@ -141,18 +141,23 @@ app.get("/admin/events", async (req, res) => {
   // }
 });
 
-app.get("/admin/delete/:type/:id", async (req, res) => {
+app.get("/admin/delete/events/:id", async (req, res) => {
   // if (!req.session.loggedin) res.redirect("/admin");
   // else {
   const result = await db.query(
-    "DELETE FROM events" +
-      " WHERE id = " +
-      req.params.id +
-      " AND category = '" +
-      req.params.type +
-      "'"
+    `DELETE FROM events WHERE id = ${req.params.id}`
   );
-  res.redirect("/admin/" + req.params.type);
+  res.redirect("/admin/events");
+  // }
+});
+
+app.get("/admin/delete/updates/:id", async (req, res) => {
+  // if (!req.session.loggedin) res.redirect("/admin");
+  // else {
+  const result = await db.query(
+    `DELETE FROM updates WHERE id = ${req.params.id}`
+  );
+  res.redirect("/admin/updates");
   // }
 });
 

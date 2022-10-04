@@ -40,7 +40,7 @@
                                   </div>
                                   <div class="admin-btns">
                                     <div><a href="/admin/edit-event" class="btn btn-primary edit-btn">Edit</a></div>
-                                    <div><a href="/admin/delete/events/<%= event.id %>" class="btn btn-danger delete-btn">Delete</a></div>
+                                    <div><a href="/admin/delete/events/<%= event.id %>" class="btn btn-danger delete-btn"  onclick="return confirm('Are you sure you want to delete this item?')">Delete</a></div>
                                   </div>
                                 </div>
                               </div>
