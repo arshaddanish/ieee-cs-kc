@@ -14,6 +14,24 @@
 </footer>
 </div>
 <script>
+  Filevalidation = () => {
+    const fi = document.getElementById('file');
+    // Check if any file is selected.
+    if (fi.files.length > 0) {
+      for (const i = 0; i <= fi.files.length - 1; i++) {
+
+        const fsize = fi.files.item(i).size;
+        const file = Math.round((fsize / 1024));
+        // The size of the file.
+        if (file >= 1024) {
+          alert(
+            "File too Big, please select a file less than 1mb");
+        }
+      }
+    }
+  }
+</script>
+<script>
   document.onreadystatechange = function() {
     if (document.readyState !== "complete") {
       document.querySelector(".loader-container").style.display = "block";

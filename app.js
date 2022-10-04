@@ -2,12 +2,12 @@ const express = require("express");
 const app = express();
 const axios = require("axios");
 const fs = require("fs");
-const apiRoute = "https://ieee-cs-kc.herokuapp.com/api/";
+const db = require("./services/db");
 
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
-const cors = require('cors');
-app.use(cors())
+const cors = require("cors");
+app.use(cors());
 
 let adminRouter = require("./admin");
 app.use(adminRouter);
@@ -17,8 +17,18 @@ function getData(path) {
   return JSON.parse(jsonData);
 }
 
-app.get("/", (req, res) => {
-  res.render("home");
+app.get("/", async (req, res) => {
+  let events = await db.query(`SELECT id,title,description,image,
+  DATE_FORMAT(doc, '%b') AS month, 
+  DATE_FORMAT(doc, '%d') AS day
+  FROM events 
+  ORDER BY doc DESC LIMIT 6`);
+  let updates = await db.query(`SELECT id,title,description,image,
+  DATE_FORMAT(doc, '%b') AS month, 
+  DATE_FORMAT(doc, '%d') AS day
+  FROM updates 
+  ORDER BY doc DESC LIMIT 6`);
+  res.render("home", { events: events, updates: updates });
 });
 
 app.get("/office-bearers/:year", (req, res) => {
@@ -38,7 +48,7 @@ app.get("/previous-blogs/:year", (req, res) => {
 
 app.get("/previous-blogs/:year/:blog", (req, res) => {
   let year = req.params.year;
-  res.render("prev-blogs/blog", {year: year});
+  res.render("prev-blogs/blog", { year: year });
 });
 
 app.get("/compile/:year/:edition", (req, res) => {
@@ -56,46 +66,82 @@ app.get("/updates", async (req, res) => {
     page = 1;
   }
 
-  var url = apiRoute + "items/updates?page=" + page;
-  const apiResponse = await axios.get(url);
+  page = parseInt(page, 10);
 
-  const data = apiResponse.data;
-  JSON.stringify(data);
-  res.render("updates", { data: data.data });
+  var limit = 9;
+  var offset = (page - 1) * limit;
+
+  var events = await db.query(`SELECT id,title,description,image,
+          DATE_FORMAT(doc, '%b') AS month, 
+          DATE_FORMAT(doc, '%d') AS day
+          FROM updates 
+          ORDER BY doc DESC LIMIT ${limit} OFFSET ${offset}`);
+
+  var pages = await db.query(
+    `SELECT CEIL(COUNT(*)/${limit}) AS pages FROM events`
+  );
+
+  res.render("updates", {
+    data: {
+      events: events,
+      page: page,
+      no_of_pages: pages[0].pages,
+    },
+  });
 });
 
 app.get("/updates/:update", async (req, res) => {
-  var url = apiRoute + "items/updates/" + req.params.update;
-  const apiResponse = await axios.get(url);
-
-  const data = apiResponse.data;
-  JSON.stringify(data);
-
-  res.render("updates-single", { data: data.data });
+  var event = await db.query(`SELECT id,title,description,image,
+        DATE_FORMAT(doc, '%b') AS month, 
+        DATE_FORMAT(doc, '%d') AS day,
+        DATE_FORMAT(doc, '%Y') AS year
+        FROM updates 
+        WHERE id = ${req.params.update}
+        ORDER BY id DESC`);
+  // console.log(event);
+  res.render("updates-single", { data: event[0] });
 });
 
-app.get("/events/", async (req, res) => {
+app.get("/events", async (req, res) => {
   var page = req.query.page;
   if (page == undefined) {
     page = 1;
   }
 
-  var url = apiRoute + "items/events?page=" + page;
-  const apiResponse = await axios.get(url);
+  page = parseInt(page, 10);
 
-  const data = apiResponse.data;
-  JSON.stringify(data);
-  res.render("events", { data: data.data });
+  var limit = 9;
+  var offset = (page - 1) * limit;
+
+  var events = await db.query(`SELECT id,title,description,image,
+        DATE_FORMAT(doc, '%b') AS month, 
+        DATE_FORMAT(doc, '%d') AS day
+        FROM events 
+        ORDER BY doc DESC LIMIT ${limit} OFFSET ${offset}`);
+
+  var pages = await db.query(
+    `SELECT CEIL(COUNT(*)/${limit}) AS pages FROM events`
+  );
+
+  res.render("events", {
+    data: {
+      events: events,
+      page: page,
+      no_of_pages: pages[0].pages,
+    },
+  });
 });
 
 app.get("/events/:event", async (req, res) => {
-  var url = apiRoute + "items/events/" + req.params.event;
-  const apiResponse = await axios.get(url);
-
-  const data = apiResponse.data;
-  JSON.stringify(data);
-
-  res.render("events-single", { data: data.data });
+  var event = await db.query(`SELECT id,title,description,image,
+        DATE_FORMAT(doc, '%b') AS month, 
+        DATE_FORMAT(doc, '%d') AS day,
+        DATE_FORMAT(doc, '%Y') AS year
+        FROM events 
+        WHERE id = ${req.params.event}
+        ORDER BY id DESC`);
+  // console.log(event);
+  res.render("events-single", { data: event[0] });
 });
 
 app.get("/sb-chapters", (req, res) => {

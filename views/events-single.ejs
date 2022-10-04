@@ -1,7 +1,7 @@
 <%- include ("partials/head"); %>
 <%- include ("partials/navbar-shadow"); %>
 
-<% let year = new Date(data.date).getFullYear() %> 
+<% let year = new Date(data.date).getFullYear() %>
 <div id="page" class="site ">
   <div class="main-contain updates-padding">
     <div class="container">
@@ -10,7 +10,7 @@
           <div class="title-inner">
             <!-- <span style="color: #28406d" class="sub-text">[News]</span> -->
             <h2 class="title" style="margin-bottom: 0;">Events /<span style="color: gray ; font-size: 1.5rem">
-                <%= data.name %></span></h2>
+                <%= data.title %></span></h2>
           </div>
         </div>
         <div class="rs-blog-details pt-70 pb-70">
@@ -21,9 +21,9 @@
                 </div>
                 <div class="single-content-full">
                   <div class="bs-desc update-content">
-                    <h2 class="post-title"><%= data.name %></h2>
-                    <p>[<%= data.day %> <%= data.month %> <%= year %>]</p>
-                    <p><%= data.description %></p>
+                    <h2 class="post-title"><%= data.title %></h2>
+                    <p>[<%= data.day %> <%= data.month %> <%= data.year %>]</p>
+                    <p style="white-space: pre;"><%= data.description %></p>
                   </div>
                 </div>
                 <div class="clear-fix"></div>

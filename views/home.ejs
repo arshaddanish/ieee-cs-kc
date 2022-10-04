@@ -182,25 +182,21 @@
                         </div>
                         <div class="rs-blog home-blog-area ">
                           <div class="blog-carousel blog-slider owl-carousel owl-navigation-yes" data-carousel-options="{&quot;nav&quot;:false,&quot;navText&quot;:[&quot;&lt;i class=&#039;icofont icofont-bubble-left&#039;&gt;&lt;\/i&gt;&quot;,&quot;&lt;i class=&#039;icofont icofont-bubble-right&#039;&gt;&lt;\/i&gt;&quot;],&quot;dots&quot;:true,&quot;autoplay&quot;:true,&quot;autoplayTimeout&quot;:&quot;5000&quot;,&quot;stagePadding&quot;:0,&quot;autoplaySpeed&quot;:&quot;200&quot;,&quot;autoplayHoverPause&quot;:true,&quot;loop&quot;:true,&quot;margin&quot;:20,&quot;items&quot;:3,&quot;responsive&quot;:{&quot;0&quot;:{&quot;items&quot;:&quot;1&quot;},&quot;480&quot;:{&quot;items&quot;:&quot;1&quot;},&quot;768&quot;:{&quot;items&quot;:&quot;2&quot;},&quot;992&quot;:{&quot;items&quot;:&quot;3&quot;},&quot;1200&quot;:{&quot;items&quot;:&quot;3&quot;}}}">
-                            <% for(let i=0; i < 6; i++) { %>
+                            <% for(let i=0; i < updates.length; i++) { %>
                             <div class="blog-item style2 ">
-                              <div class="blog-img content-overlay"> <img width="1200" height="800" src="images/2.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />
-                                <div class="blog-date"> <span class="date">19 </span> <span class="month">Nov
+                              <div class="blog-img content-overlay"> <img width="1200" height="800" src="<%= updates[i].image %> " class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />
+                                <div class="blog-date"> <span class="date"><%= updates[i].day %> </span> <span class="month"><%= updates[i].month %>
                                   </span>
                                 </div>
                               </div>
                               <div class="blog-meta">
-                                <h3 class="blog-title"><a href="/updates/update">Small
-                                    Business Trends</a></h3>
+                                <h3 class="blog-title"><a href="/updates/<%= updates[i].id  %>"><%= updates[i].title %> </a></h3>
                               </div>
                               <!-- <div class="blog-slidermeta blog-date"> <span class="author">By admin</span><span
                                           class="seperator">/</span> <span class="category"><a
                                             href="category/corporate/index.html">Corporate</a></span></div> -->
                               <div class="home_full_blog slider-blog-title">
-                                <div class="blog-desc"> Below are the original Latin passages We denounce with
-                                  righteous indignation and dislike men who are so beguiled and demoralized by
-                                  the...
-                                </div>
+                                <div class="blog-desc"><%= updates[i].description.substring(0, 80) %>...</div>
                               </div>
                             </div>
                             <% } %>
@@ -323,25 +319,21 @@
                         </div>
                         <div class="rs-blog home-blog-area ">
                           <div class="blog-carousel blog-slider owl-carousel owl-navigation-yes" data-carousel-options="{&quot;nav&quot;:false,&quot;navText&quot;:[&quot;&lt;i class=&#039;icofont icofont-bubble-left&#039;&gt;&lt;\/i&gt;&quot;,&quot;&lt;i class=&#039;icofont icofont-bubble-right&#039;&gt;&lt;\/i&gt;&quot;],&quot;dots&quot;:true,&quot;autoplay&quot;:true,&quot;autoplayTimeout&quot;:&quot;5000&quot;,&quot;stagePadding&quot;:0,&quot;autoplaySpeed&quot;:&quot;200&quot;,&quot;autoplayHoverPause&quot;:true,&quot;loop&quot;:true,&quot;margin&quot;:20,&quot;items&quot;:3,&quot;responsive&quot;:{&quot;0&quot;:{&quot;items&quot;:&quot;1&quot;},&quot;480&quot;:{&quot;items&quot;:&quot;1&quot;},&quot;768&quot;:{&quot;items&quot;:&quot;2&quot;},&quot;992&quot;:{&quot;items&quot;:&quot;3&quot;},&quot;1200&quot;:{&quot;items&quot;:&quot;3&quot;}}}">
-                            <% for(let i=0; i < 6; i++) { %>
+                            <% for(let i=0; i < events.length; i++) { %>
                             <div class="blog-item style2 ">
-                              <div class="blog-img content-overlay"> <img width="1200" height="800" src="images/2.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />
-                                <div class="blog-date"> <span class="date">19 </span> <span class="month">Nov
+                              <div class="blog-img content-overlay"> <img width="1200" height="800" src="<%= events[i].image %> " class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />
+                                <div class="blog-date"> <span class="date"><%= events[i].day %> </span> <span class="month"><%= events[i].month %>
                                   </span>
                                 </div>
                               </div>
                               <div class="blog-meta">
-                                <h3 class="blog-title"><a href="/events/event">Small
-                                    Business Trends</a></h3>
+                                <h3 class="blog-title"><a href="/events/<%= events[i].id  %>"><%= events[i].title %> </a></h3>
                               </div>
                               <!-- <div class="blog-slidermeta blog-date"> <span class="author">By admin</span><span
-                                          class="seperator">/</span> <span class="category"><a
-                                            href="category/corporate/index.html">Corporate</a></span></div> -->
+                                            class="seperator">/</span> <span class="category"><a
+                                              href="category/corporate/index.html">Corporate</a></span></div> -->
                               <div class="home_full_blog slider-blog-title">
-                                <div class="blog-desc"> Below are the original Latin passages We denounce with
-                                  righteous indignation and dislike men who are so beguiled and demoralized by
-                                  the...
-                                </div>
+                                <div class="blog-desc"><%= events[i].description.substring(0, 80) %>...</div>
                               </div>
                             </div>
                             <% } %>

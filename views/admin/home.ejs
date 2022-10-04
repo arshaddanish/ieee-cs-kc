@@ -1,46 +1,46 @@
 <%- include ("../partials/head"); %>
-  <%- include ("../partials/admin-navbar-shadow"); %>
+<%- include ("../partials/admin-navbar-shadow"); %>
 
-    <div id="page" class="site ">
-      <div class="main-contain updates-padding">
-        <div class="container">
-          <div id="content" class="site-content">
-            <div class="rs-heading style3  vc_custom_1543920863426  ">
-              <div class="title-inner">
-                <!-- <span style="color: #28406d" class="sub-text">[News]</span> -->
-                <h2 class="title" style="margin-bottom: 0;">Add Post</h2>
-              </div>
-              <!-- <div class="description">
+<div id="page" class="site ">
+  <div class="main-contain updates-padding">
+    <div class="container">
+      <div id="content" class="site-content">
+        <div class="rs-heading style3  vc_custom_1543920863426  ">
+          <div class="title-inner">
+            <!-- <span style="color: #28406d" class="sub-text">[News]</span> -->
+            <h2 class="title" style="margin-bottom: 0;">Add Post</h2>
+          </div>
+          <!-- <div class="description">
             <p>Accelerating innovative young minds.</p>
           </div> -->
+        </div>
+
+        <div class="admin-form">
+          <form action="/admin/events" method="post" enctype="multipart/form-data">
+            <div class="mini-width-field">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="type" value="updates" id="flexRadioDefault1" checked >
+                <label class="form-check-label" for="flexRadioDefault1" style="margin-right: 2.5rem">
+                  Update
+                </label>
+
+                <input class="form-check-input" type="radio" name="type" value="events" id="flexRadioDefault2" >
+                <label for="flexRadioDefault2">
+                  Event
+                </label>
+              </div>
+              <input type="date" name="date" class="form-control" required>
+
+              <input id="file" type="file" name="image" class="form-control" placeholder="Poster" accept="image/*" onchange="Filevalidation()" required>
             </div>
+            <input type="text" name="title" class="form-control" placeholder="Title" required>
+            <textarea name="description" id="" cols="30" rows="10" class="form-control" placeholder="Content" required></textarea>
 
-            <div class="admin-form">
-              <form action="/admin/events" method="post" enctype="multipart/form-data">
-                <div class="mini-width-field">
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="type" value="updates" id="flexRadioDefault1" checked>
-                    <label class="form-check-label" for="flexRadioDefault1" style="margin-right: 2.5rem">
-                      Update
-                    </label>
-
-                    <input class="form-check-input" type="radio" name="type" value="events" id="flexRadioDefault2">
-                    <label for="flexRadioDefault2">
-                      Event
-                    </label>
-                  </div>
-                  <input type="date" name="date" class="form-control">
-
-                  <input type="file" name="image" class="form-control" placeholder="Poster">
-                </div>
-                <input type="text" name="title" class="form-control" placeholder="Title">
-                <textarea name="description" id="" cols="30" rows="10" class="form-control" placeholder="Content"></textarea>
-
-                <button type="submit" class="btn btn-primary">Add</button>
-              </form>
-            </div>
-          </div>
+            <button type="submit" class="btn btn-primary">Add</button>
+          </form>
         </div>
       </div>
+    </div>
+  </div>
 
-      <%- include ("../partials/admin-footer"); %>
+  <%- include ("../partials/admin-footer"); %>
