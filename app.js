@@ -6,8 +6,8 @@ const apiRoute = "https://ieee-cs-kc.herokuapp.com/api/";
 
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
-// const cors = require('cors');
-// app.use(cors())
+const cors = require('cors');
+app.use(cors())
 
 let adminRouter = require("./admin");
 app.use(adminRouter);
