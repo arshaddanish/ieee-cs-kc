@@ -75,7 +75,7 @@ app.get("/updates", async (req, res) => {
           DATE_FORMAT(doc, '%b') AS month, 
           DATE_FORMAT(doc, '%d') AS day
           FROM updates 
-          ORDER BY doc DESC LIMIT ${limit} OFFSET ${offset}`);
+          ORDER BY doc DESC, id DESC LIMIT ${limit} OFFSET ${offset}`);
 
   var pages = await db.query(
     `SELECT CEIL(COUNT(*)/${limit}) AS pages FROM events`
@@ -117,7 +117,7 @@ app.get("/events", async (req, res) => {
         DATE_FORMAT(doc, '%b') AS month, 
         DATE_FORMAT(doc, '%d') AS day
         FROM events 
-        ORDER BY doc DESC LIMIT ${limit} OFFSET ${offset}`);
+        ORDER BY doc DESC, id DESC LIMIT ${limit} OFFSET ${offset}`);
 
   var pages = await db.query(
     `SELECT CEIL(COUNT(*)/${limit}) AS pages FROM events`
