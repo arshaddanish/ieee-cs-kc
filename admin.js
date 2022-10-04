@@ -83,6 +83,7 @@ app.get("/admin/home", (req, res) => {
 app.post("/admin/events", upload.single("image"), async (req, res) => {
   if (!req.session.loggedin) res.redirect("/admin");
   else {
+    let description = req.body.description.replace(/"/g, '\\"');
     let imagepath = "/images/uploads/" + req.file.filename;
     // console.log(imagepath);
     if (req.body.type === "events") {
@@ -90,7 +91,7 @@ app.post("/admin/events", upload.single("image"), async (req, res) => {
         `INSERT INTO events 
           (title, description, image, doc)
           VALUES 
-          ("${req.body.title}", "${req.body.description}", "${imagepath}", "${req.body.date}")`
+          ("${req.body.title}", "${description}", "${imagepath}", "${req.body.date}")`
       );
       // console.log(result);
       res.redirect("/admin/events");
@@ -99,7 +100,7 @@ app.post("/admin/events", upload.single("image"), async (req, res) => {
         `INSERT INTO updates 
           (title, description, image, doc)
           VALUES 
-          ("${req.body.title}", "${req.body.description}", "${imagepath}", "${req.body.date}")`
+          ("${req.body.title}", "${description}", "${imagepath}", "${req.body.date}")`
       );
       res.redirect("/admin/updates");
     }
