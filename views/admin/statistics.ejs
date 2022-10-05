@@ -1,48 +1,48 @@
 <%- include ("../partials/head"); %>
-  <%- include ("../partials/admin-navbar-shadow"); %>
+<%- include ("../partials/admin-navbar-shadow"); %>
 
-    <div id="page" class="site ">
-      <div class="main-contain updates-padding">
-        <div class="container">
-          <div id="content" class="site-content">
-            <div class="rs-heading style3  vc_custom_1543920863426  ">
-              <div class="title-inner">
-                <!-- <span style="color: #28406d" class="sub-text">[News]</span> -->
-                <h2 class="title" style="margin-bottom: 0;">Statistics</h2>
-              </div>
-              <!-- <div class="description">
+<div id="page" class="site ">
+  <div class="main-contain updates-padding">
+    <div class="container">
+      <div id="content" class="site-content">
+        <div class="rs-heading style3  vc_custom_1543920863426  ">
+          <div class="title-inner">
+            <!-- <span style="color: #28406d" class="sub-text">[News]</span> -->
+            <h2 class="title" style="margin-bottom: 0;">Statistics</h2>
+          </div>
+          <!-- <div class="description">
             <p>Accelerating innovative young minds.</p>
           </div> -->
-            </div>
+        </div>
 
-            <div class="admin-form statistics">
-              <form action="">
-                <div>
-                  <label for="">SB Chapters: &nbsp;</label>
-                  <input type="number">
-                </div>
-                <div>
-                  <label for="">Professional Members: &nbsp;</label>
-                  <input type="number">
-                </div>
-                <div>
-                  <label for="Student Members">Student Members: &nbsp;</label>
-                  <input type="number">
-                </div>
-                <!-- <div>
+        <div class="admin-form statistics">
+          <form action="/admin/statistics" method="post">
+            <div>
+              <label for="">SB Chapters: &nbsp;</label>
+              <input type="number" name="chapters" required value=<%= stats[0].chapters %>>
+            </div>
+            <div>
+              <label for="">Professional Members: &nbsp;</label>
+              <input type="number" name="professionals" required value=<%= stats[0].professionals %>>
+            </div>
+            <div>
+              <label for="Student Members">Student Members: &nbsp;</label>
+              <input type="number" name="students" required value=<%= stats[0].students %>>
+            </div>
+            <!-- <div>
                   <label for="">Years Of Experience: &nbsp;</label>
                   <input type="number">
                 </div> -->
-                <div><button type="submit" class="btn btn-primary">Update</button></div>
-              </form>
-            </div>
-          </div>
+            <div><button type="submit" class="btn btn-primary">Update</button></div>
+          </form>
         </div>
       </div>
+    </div>
+  </div>
 
-      <script>
-        document.getElementById("stats19").classList.add("current-menu-ancestor");
-        document.getElementById("home19").classList.remove("current_page_item", "current-menu-ancestor");
-      </script>
+  <script>
+    document.getElementById("stats19").classList.add("current-menu-ancestor");
+    document.getElementById("home19").classList.remove("current_page_item", "current-menu-ancestor");
+  </script>
 
-      <%- include ("../partials/admin-footer"); %>
+  <%- include ("../partials/admin-footer"); %>

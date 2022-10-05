@@ -28,7 +28,11 @@ app.get("/", async (req, res) => {
   DATE_FORMAT(doc, '%d') AS day
   FROM updates 
   ORDER BY doc DESC LIMIT 6`);
-  res.render("home", { events: events, updates: updates });
+  let stats = await db.query(`SELECT * FROM stats`);
+  const date = new Date();
+  const yearOfDate = date.getFullYear();
+  yoe = yearOfDate - 2014;
+  res.render("home", { events: events, updates: updates, stats: stats, yoe: yoe });
 });
 
 app.get("/office-bearers/:year", (req, res) => {

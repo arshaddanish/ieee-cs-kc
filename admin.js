@@ -37,7 +37,7 @@ const db = require("./services/db");
 // app.get("/createdb", async (req, res) => {
 //   try {
 //     const r = await db.query(
-//       `create table admin (id int auto_increment primary key, username text, password text)`
+//       `create table stats (id int auto_increment primary key, chapters int, students int, professionals int)`
 //     );
 //     console.log(r);
 //   } catch (e) {
@@ -94,7 +94,7 @@ app.post("/admin/events", upload.single("image"), async (req, res) => {
           ("${req.body.title}", "${description}", "${imagepath}", "${req.body.date}")`
       );
       // console.log(result);
-      res.redirect("/admin/events");
+      res.redirect("/admin/home");
     } else {
       const result = await db.query(
         `INSERT INTO updates 
@@ -102,7 +102,7 @@ app.post("/admin/events", upload.single("image"), async (req, res) => {
           VALUES 
           ("${req.body.title}", "${description}", "${imagepath}", "${req.body.date}")`
       );
-      res.redirect("/admin/updates");
+      res.redirect("/admin/home");
     }
   }
 });
@@ -193,11 +193,23 @@ app.get("/admin/updates", async (req, res) => {
   }
 });
 
-app.get("/admin/statistics", (req, res) => {
-  // if (!req.session.loggedin) res.redirect("/admin");
-  // else {
-  res.render("admin/statistics");
-  // }
+app.get("/admin/statistics", async (req, res) => {
+  if (!req.session.loggedin) res.redirect("/admin");
+  else {
+    let stats = await db.query(`SELECT * FROM stats`);
+    res.render("admin/statistics", { stats: stats });
+  }
+});
+
+app.post("/admin/statistics", async (req, res) => {
+  if (!req.session.loggedin) res.redirect("/admin");
+  else {
+    let { chapters, students, professionals } = req.body;
+    let stats =
+      await db.query(`UPDATE stats set chapters = ${chapters}, students = ${students}, 
+  professionals = ${professionals} where id = 1`);
+    res.redirect("/admin/statistics");
+  }
 });
 
 app.get("/admin/add-blog", (req, res) => {
